@@ -86,7 +86,6 @@ numero1 = int(input("Escriba el primer número: "))
 numero2 = int(input("Escriba el segundo número: "))
 resultado = numero1 + numero2
 print("El resultad de la suma es: ", resultado)
-'''
 
 # OPERADORES ARITMÉTICOS
 operandoA = 8
@@ -109,3 +108,69 @@ modulo = operandoA % operandoB
 print(f'El resultado de la división o residuo (módulo) es: {modulo}')
 exponente = operandoA ** operandoB
 print(f'El resultado del exponente es: {exponente}')
+
+# OPERADORES DE ASIGNACIÓN
+miVariable3 = 10
+print(miVariable3)
+
+# Operadores de Reasignación
+# Suma
+miVariable3 = miVariable3 + 1
+print(miVariable3)
+
+miVariable3 += 1
+print(miVariable3)
+
+# Resta
+miVariable3 -= 2
+print(miVariable3)
+
+# Multiplicación
+miVariable3 *= 3
+print(miVariable3)
+
+# División
+miVariable3 /= 2
+print(miVariable3)
+
+# OPERADORES DE COMPARACIÓN
+# Igualdad
+d = 4
+b = 2
+resultado = d == b
+print(resultado)
+
+#Diferencia
+resultado = d != b
+print(resultado)
+
+# Mayor qué
+resultado = d > b
+print(resultado)
+
+# Menor qué
+resultado = d < b
+print(resultado)
+
+# Menor o Igual qué
+resultado = d <= b
+print(resultado)
+
+# Mayor o Igual qué
+resultado = d >= b
+print(resultado)
+'''
+# OPERADORES LÓGICOS
+a = False
+b = False
+resultado = a and b
+print(resultado)
+
+# Operador Or
+resultado = a or b
+print(resultado)
+
+# Operador Not
+resultado = not a
+print(resultado)
+

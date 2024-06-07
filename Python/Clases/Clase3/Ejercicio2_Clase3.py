@@ -1,9 +1,9 @@
 # Se solicita incluir la siguiente información acerca de un libro:
-# título
-# autor
+#   'Título'
+#   'Autor'
 # Debes imprimir la información en el siguiente formato:
-# Proporciona el título:
-# Proporciona el autor:
+#   Proporciona el título:
+#   Proporciona el autor:
 # <título> fue escrito por <autor>
 
 titulo = input('Ingrese el título de un libro.');
