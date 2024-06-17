@@ -1,22 +1,28 @@
 SINTAXIS SIMILARES ENTRE JAVA Y JAVASCRIPT
-Operadores Simplificados
+Operadores Simplificados / Compuestos
 	+=
 	-=
 	*=
 	/=
+	%=
+	**=
 
 Operadores Aritméticos
 	+
 	-
 	*
 	/
+	% //Residuo
+	** //Exponente
 
 Operadores de Asignación
 	=
+  Los operadores simplificados también asignan.
 
-Operadores de Comparación
-	==
-	
+Operadores de Comparación (Boolean)
+	==  -> Revisa el valor sin importar el tipo.
+   Operador de Igualdad Esctricta:
+	=== -> Revisa el valor y el tipo también.
 Documentar / Comentarios
 	//    -> Para una línea de comentarios.
 	/* */ -> Para múltiples líneas de comentarios.
@@ -33,11 +39,19 @@ Secuencias de Escape
 
 Operador de Aumento
 	++
+  Ejemplos:
+     let z = ++a; //PreIncremento
+     z = a++; //PosIncremento
 
 Operador de Decremento
 	--
 
+Operador Distinto / Diferente (Boolean)
+	!= -> Comprueba valores sin revisar el tipo.
+	!== -> Comprueba el valor y también el tipo.
 
-
-
-
+Operadores Relacionales (Boolean)
+	<
+	>
+	<=
+	>=

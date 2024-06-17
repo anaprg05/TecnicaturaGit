@@ -1,10 +1,11 @@
-
 // Ejercicio Práctica 1 - Clase 7:
 //  Utilizar los operadores de asignación NO vistos en clase.
 //      Resta: -=
 //      Multiplicación: *=
 //      División: /=
 //      Módulo: %=
+
+package Clase7;
 
 public class EjercicioPractica1_Clase7 {
     public static void main(String[] args) {
