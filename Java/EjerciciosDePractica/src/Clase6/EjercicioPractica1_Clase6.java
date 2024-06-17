@@ -1,8 +1,9 @@
-
-// Ejercicio 1:
+// Ejercicio Práctica 1 - Clase 6:
 //  Indicar si el usuario es mayor de edad o no.
 
-public class Ejercicio1_Clase6 {
+package Clase6;
+
+public class EjercicioPractica1_Clase6 {
     public static void main(String[] args) {
         var edad = 15;
         var adulto = edad >= 18;

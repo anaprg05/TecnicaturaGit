@@ -1,4 +1,4 @@
-// Ejercicio 1:
+// Ejercicio Práctica 1 - Clase 3:
 //  Se solicita incluir la siguiente información acerca de un libro:
 //      'Título'
 //      'Autor'
@@ -7,10 +7,12 @@
 //      Proporciona el autor:
 //  <título> fue escrito por <autor>
 
+package Clase3;
+
 import java.util.Scanner;
 
 
-public class Ejercicio1_Clase3 {
+public class EjercicioPractica1_Clase3 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el título del libro: ");
