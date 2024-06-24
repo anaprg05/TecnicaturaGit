@@ -1,0 +1,56 @@
+.lenguajesSection h2 {
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+}
+
+.containerLenguajes {
+    max-width: 1200px; /* Increased max-width for wider container */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #A98467;
+    align-items: center;
+    width: 90%; /* Increased width for wider container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lenguajes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6C584C;
+}
+
+.lenguaje {
+    background-color: #ADC178;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.lenguaje ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.lenguaje li {
+    font-size: 150%;
+    color: black;
+}
+
+.lenguaje .iconos {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}

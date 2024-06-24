@@ -1,0 +1,68 @@
+
+/* Container */
+
+
+
+.sobreMi {
+    display: flex;
+    justify-content: center;
+}
+
+.containerSobreMi {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    max-width: 1100px;
+    margin: auto;
+}
+  
+.textoSobreMi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerSobreMi h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #6C584C;
+}
+
+.containerSobreMi img{
+    border-radius: 50%;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.imgSobreMi {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 2rem; /* Espacio entre la imagen y el texto cuando está a la izquierda */
+}
+  
+.infoSobreMi {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 24px;
+}
+  
+/* Media query para diseño responsive */
+@media (max-width: 768px) {
+    .containerSobreMi {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .imgPerfil {
+        margin-right: 0; /* Elimina el margen derecho en diseño responsive */
+        margin-bottom: 1rem; /* Espacio entre la imagen y el texto en diseño responsive */
+    }
+  
+    .infoSobreMi {
+        text-align: center; /* Alinea el texto al centro en diseño responsive */
+    }
+}

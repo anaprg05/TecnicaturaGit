@@ -1,83 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/sobreMi.css">
+    <link rel="stylesheet" href="./CSS/habilidades.css">
+    <link rel="stylesheet" href="./CSS/proyectos.css">
+    <link rel="stylesheet" href="./CSS/lenguajesAprendidos.css">
+
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap" rel="stylesheet">
+
     <title>Portafolio - Ana Paula Ríos Garín</title>
 </head>
+
 <body>
+    <!--Encabezado-->
     <header>
-        <img src="./Imagenes/logoUTN.png" class="logo_facu">
-        <img src="" class="">
-        <nav class="navegation">
-            <a href="#sobrelosalumnos">Sobre Mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#lenguajesaprendidos">Lenguajes aprendidos</a>
-        </nav>
+        <div class="container">
+            <h1>Portafolio Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobreMi" class="boton">Sobre Mí</a></li>
+                    <li><a href="#habilidades" class="boton">Habilidades</a></li>
+                    <li><a href="#proyectos" class="boton">Proyectos</a></li>
+                    <li><a href="#lenguajesAprendidos" class="boton">Lenguajes Aprendidos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <h2 id="sobrelosalumnos">SOBRE MÍ</h2>
-    <div class="container-sobremi">
-        <!-- Información de la alumna -->
-        <div class="">
-            <div class="">
-                <div class="">
-                        <h3 class="info_alumno">ANA PAULA RÍOS GARÍN</h3>
-                        <p class="info_alumno">Técnica en Electrónica.</p>
-                        <p>Al estudiar la tecnicatura en electrónica en el secundario, me empecé a interesar en la programación, así que hice un curso de Junior Achievement (Yo Puedo Programar - Mundo Digital) en 2021 y me decidí por estudiar la Tecnicatura en Programación.</p>
-                        <p>Alumna de la Tecnicatura en Programación de la UTN de San Rafael. Actualmente cursa virtual, ya que se encuentra en Buenos Aires.</p>
-                        <p class="info_alumno">Conocimiento en: HTML, CSS, C++(Arduino).</p>
-                </div>
-                <div class="">
-                    <img src="" class="foto_alumno">
-                </div>
+    
+    <!--Pequeña Introducción-->
+        <div class="containerSobreMi">
+            <div class="textoSobreMi">
+                <h2 id="sobreMi">Ana Paula Ríos Garín</h2>
+                <p class="infoSobreMi">Técnica en Electrónica y Próxima Técnica en Programación</p>
+            </div>
+            <div class="imgSobreMi">
+                <img src="./Imagenes/fotoAlumno.jpg" alt="Ana Paula Ríos Garín Fotografía">
             </div>
         </div>
+    <section class="hero">
+    </section>
 
-        <section id="proyectos" class="proyectos">
-            <h2>PROYECTOS</h2>
-            <div class="galeria_proyectos">
-                <div class="proyecto">
-                    <img src="" alt="">
-                    <h3 class="titulo_proyecto">PROYECTO 1</h3>
-                    <p class="descripcion_proyecto">Descripción del proyecto</p>
-                    <a href="#">Ver más</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Tecnologías</a>
+    <!--Habilidades-->
+    <section class="habilidades">
+        <div class="containerHabilidades">
+            <h2 id="habilidades">Habilidades</h2>
+            <p></p>
+            <div class="habilidadesGrid">
+                <div class="habilidadItem">
+                    <img src="./Imagenes/adaptabilidad.png" alt="">
+                    <h3>Adaptabilidad</h3>
+                    <p>Capacidad de ajustarme a diferentes situaciones, tecnologías y cambios en el entorno de desarrollo.</p>
                 </div>
-        </section>
-        <div>
-            <div class="izquierda">
-                <h2 id="lenguajesaprendidos">LENGUAJES APRENDIDOS</h2>
-                <div class="container_lenguajes">
-                    <h3 class="lenguaje">PYTHON</h2>
-                    <img src="./Imagenes/logoPYTHON.png" class="logo_lenguajes">
+
+                <div class="habilidadItem">
+                    <img src="./Imagenes/aprendizaje.png" alt="">
+                    <h3>Aprendizaje</h3>
+                    <p>Capacidad que no se limita a adquirir conocimientos técnicos, sino que también implica desarrollar una serie de habilidades blandas y una mentalidad adecuada para enfrentar y resolver problemas de manera eficiente y creativa.</p>
                 </div>
-                <div class="container_lenguajes">
-                    <h3 class="lenguaje">JAVA</h2>
-                    <img src="./Imagenes/logoJAVA.png" class="logo_lenguajes">
+
+                <div class="habilidadItem">
+                    <img src="./Imagenes/creatividad.png" alt="">
+                    <h3>Creatividad</h3>
+                    <p>Habilidad que mejora la capacidad de resolver problemas y permite a los desarrolladores crear software más innovador, eficiente y atractivo.</p>
                 </div>
-                <div class="container_lenguajes">
-                    <h3 class="lenguaje">HTML</h2>
-                    <img src="./Imagenes/logoHTML.png" class="logo_lenguajes">
+
+                <div class="habilidadItem">
+                    <img src="./Imagenes/flexibilidad.png" alt="">
+                    <h3>Flexibilidad</h3>
+                    <p>Capacidad que permite a los desarrolladores adaptarse a un entorno tecnológico en constante cambio, enfrentar desafíos de manera efectiva y mantener una alta calidad en su trabajo a pesar de las incertidumbres y cambios en los proyectos.</p>
                 </div>
-                <div class="container_lenguajes">
-                    <h3 class="lenguaje">CSS</h2>
-                        <img src="./Imagenes/logoCSS.png" class="logo_lenguajes">
-                </div>        
-                <div class="container_lenguajes">
-                    <h3 class="lenguaje">JAVASCRIPT</h2>
-                    <img src="./Imagenes/logoJAVASCRIPT.png" class="logo_lenguajes">
+
+                <div class="habilidadItem">
+                    <img src="./Imagenes/ingles.png" alt="">
+                    <h3>Inglés</h3>
+                    <p>Capacidad que facilita el acceso a recursos, mejora la comunicación y colaboración, y permite a los desarrolladores mantenerse actualizados y competitivos en un entorno global.</p>
+                </div>
+
+                <div class="habilidadItem">
+                    <img src="./Imagenes/trabajoEnEquipo.png" alt="">
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Capacidad  que mejora la eficiencia, la calidad del software y el ambiente de trabajo. Los desarrolladores que pueden colaborar efectivamente con otros son más capaces de enfrentar los desafíos y entregar proyectos exitosos.</p>
                 </div>
             </div>
-            <div class="derecha"></div>
         </div>
-        <footer>
-            <div class="izquierda">
-                <h1>PORTAFOLIO - TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN</h1>
-            <img src="./Imagenes/logoUTN.png" class="logo_facu">
+    </section>
+
+    <!--Proyectos-->
+    <section class="proyectos">
+        <h2 id="proyectos">Proyectos</h2>
+        <div class="containerProyectos">
+            <!--PROYECTO 1 - PÁGINA WEB-->
+            <div class="proyecto">
+                <img src="./Imagenes/ProyectoMundoDigital.png" alt="">
+                <h3>PROYECTO MUNDO DIGITAL</h3>
+                <p>Proyecto de página web (HTML, CSS, JAVASCRIPT) realizado en el curso 'Mundo Digital' de Junior Achievement Argentina en el año 2021.</p>
+                <p>El objetivo del curso era realizar una página web funcional utilizándo diferentes lenguajes.</p>
+                <a href="#">Ver más</a>
+                <a href="#https://github.com/anaprg05/YoDibujo.git">GitHub</a>
             </div>
-        </footer>
+        
+            <!--PROYECTO 2 - ARPA LÁSER-->
+            <div class="proyecto">
+                <img src="./Imagenes/ProyectoArpaLaser.jpg" alt="">
+                <h3>PROYECTO ARDUINO</h3>
+                <p>Proyecto de fin de curso (ARUDINO) realizado en el Instituto Leonardo Murialdo - Pio XII en el año 2022.</p>
+                <p>Para este proyecto se buscaba aplicar los conocimientos de Arduino y sensores aprendidos durante el año. Mi equipo realizó un "Arpa Láser" utilizando sensores de luz y diodos láser.</p>
+                <a href="#">Ver más</a>
+                <a href="#">GitHub</a>
+            </div>
+        
+            <!--PROYECTO 3 - CHÁSIS A CONTROL REMOTO-->
+            <div class="proyecto">
+                <img src="./Imagenes/ProyectoChasis.jpg" alt="">
+                <h3>PROYECTO ESP32</h3>
+                <p>Proyecto de fin de curso (Automatización y Control) realizado en el Instituto Leonardo Murialdo - Pio XII en el año 2022.</p>
+                <p>El objetivo era realizar el diseño y montaje de un proyecto integrador, incluyendo todo lo aprendido durante la cursada, en este caso un robot (auto) controlado vía WiFi.</p>
+                <a href="#">Ver más</a>
+                <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Lenguajes Aprendidos-->
+    <section class="lenguajesSection">
+    <h2 id="lenguajesAprendidos">Lenguajes Aprendidos</h2>
+        <div class="containerLenguajes">
+            <div class="lenguajes">
+                <div class="lenguaje">
+                    <img src="./Imagenes/python.png" alt="" class="iconos">
+                    <h2>Phyton</h2>
+                    <ul>
+                        <li>Sencillo</li>
+                        <li>Versátil</li>
+                        <li>Interpretado</li>
+                        <li>Popular</li>
+                        <li>Extensible</li>  
+                    </ul>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="./Imagenes/java.png" alt="" class="iconos">
+                    <h2>Java</h2>
+                    <ul>
+                        <li>Robusto</li>
+                        <li>Portable</li>
+                        <li>Orientado a Objetos</li>
+                        <li>Seguro</li>
+                        <li>Escalable</li>  
+                    </ul>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="./Imagenes/html-5.png" alt="" class="iconos">
+                    <h2>HTML</h2>
+                    <ul>
+                        <li>Estructuración de Contenido</li>
+                        <li>Lenguaje de Marcado</li>
+                        <li>Etiquetas y Elementos</li>
+                        <li>Semántico</li>
+                        <li>Base de la Web</li>  
+                    </ul>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="./Imagenes/css-3.png" alt="" class="iconos">
+                    <h2>CSS</h2>
+                    <ul>
+                        <li>Estilización Visual</li>
+                        <li>Hojas de Estilo</li>
+                        <li>Sectores y Propiedades</li>
+                        <li>Diseño Responsivo</li>
+                        <li>Separación de Contenido y Presentación</li>  
+                    </ul>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="./Imagenes/java-script.png" alt="" class="iconos">
+                    <h2>JavaScript</h2>
+                    <ul>
+                        <li>Lenguaje de Scripting</li>
+                        <li>Interactividad Web</li>
+                        <li>Orientado a Objetos</li>
+                        <li>Asíncrono</li>
+                        <li>Compatibilidad con Navegadores</li>  
+                    </ul>
+                </div>
+
+                <div class="lenguaje">
+                    <img src="./Imagenes/arduino.png" alt="" class="iconos">
+                    <h2>Arduino</h2>
+                    <ul>
+                        <li>Microcontrolador</li>
+                        <li>Lenguaje C/C++</li>
+                        <li>Entradas y Salidas</li>
+                        <li>Bibliotecas</li>
+                        <li>Prototipado Rápido</li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pie de Página-->
+    <footer>
+        <div class="contenidoFooter">
+            <div class="footerLogo">
+                <img src="./Imagenes/logoUTN.png" alt="">
+            </div>
+        
+            <p class="footerCopyright">&copy; 2024 - Ana Paula Ríos Garín </p>
+            <p class="footerCopyright">Tecnicatura en Programación - UTN San Rafael</p>
+        </div>
+    </footer>
+
 </body>
 </html>

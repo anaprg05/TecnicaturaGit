@@ -1,0 +1,243 @@
+/* COLORES
+    #E3E7BF -> Cream
+    #DDE5B6 -> Tea Green
+    #C5D397 -> Sage
+    #ADC178 -> Olivine
+    #ABA370 -> Ecru
+    #A98467 -> Chamoisee
+    #9A7960 -> Chamoisee
+    #8B6E5A -> Raw Umber
+    #7B6353 -> Coyote
+    #6C584C -> Umber
+*/
+
+/* FUENTES
+    "Montserrat", sans-serif;
+    "Playwrite SK", cursive;
+*/
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+  
+  .playwrite {
+    font-family: "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #E3E7BF;
+    line-height: 1.6;
+    display: flex;
+  flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 50px;
+}
+
+/*HEADER - Principal*/
+header {
+    background-color: #6C584C;
+    color: #E3E7BF;
+    padding: 50px;
+}
+
+header h1 {
+    float: left;
+    margin-right: 40px;
+}
+
+header nav {
+    float: right;
+}
+
+/*HEADER - Links y Botones*/
+header a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #DDE5B6;
+}
+
+ul {
+    list-style: none;
+}
+
+.boton, input[type="submit"] {
+    background-color: #7B6353;
+    color: #fff;
+    border: none;
+    border-radius: 7%;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.boton:hover, input[type="submit"]:hover {
+    background-color: #ABA370;
+}
+
+header ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 30px;
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 120%;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #6C584C;
+    color: #E3E7BF;
+    text-align: center;
+}
+
+footer .contenidoFooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footerLogo img{
+    width: 300px;
+    height: auto;
+}
+
+
+/*PÁGINA COMPLETA*/
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem; /* margen a lo alto */
+        line-height: 2.5rem; /* espaciado entre los párrafos de texto */
+        font-size: small; /* tamaño de la fuente */
+    }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navegation {
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }
+}
+
+/*SECCIÓN PROYECTOS*/
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+    .proyecto{
+        width: calc(100% - 40px);
+    }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .proyecto{
+        width: calc(50% - 40px);
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+    .proyecto{
+        width: calc(33% - 40px);
+    }
+}
+
+/* Responsive Image Styles */
+
+@media (max-width: 768px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid,.portfolio-grid,.testimonials-grid {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
+ 
+ @media (max-width: 480px) {
+    .header.hero {
+         height: 50vh;
+     }
+    .header.hero h2 {
+         font-size: 36px;
+     }
+    .header.hero p {
+         font-size: 18px;
+     }
+    .header.hero-img {
+         width: 150px;
+         height: 150px;
+     }
+ }
+ 
