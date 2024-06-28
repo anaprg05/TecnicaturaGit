@@ -1,8 +1,4 @@
-
-/* Container */
-
-
-
+/* Sección Sobre Mí */
 .sobreMi {
     display: flex;
     justify-content: center;
@@ -12,57 +8,67 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 2rem;
-    margin-top: 5rem;
+    padding: 4rem;  
     line-height: 2.5rem;
     font-size: large;
     max-width: 1100px;
     margin: auto;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
 }
-  
-.textoSobreMi{
+
+.textoSobreMi {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1; /* Asegura que el texto ocupe el espacio disponible */
 }
 
 .containerSobreMi h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #6C584C;
+    color: #4D3628;
 }
 
-.containerSobreMi img{
+.containerSobreMi img {
     border-radius: 50%;
     margin: auto;
-    margin-left: 50px;
+    width: auto;
+    height: 260px;
 }
 
 .imgSobreMi {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin-right: 2rem; /* Espacio entre la imagen y el texto cuando está a la izquierda */
+    margin-right: 2rem;
+    flex-shrink: 0; /* Evita que la imagen se reduzca en pantallas pequeñas */
 }
-  
+
 .infoSobreMi {
-    text-align: left; /* Alinea el texto a la izquierda */
-    font-size: 24px;
+    text-align: center;
+    font-size: 30px;
+    flex: 1; /* Asegura que la información ocupe el espacio disponible */
 }
-  
+
 /* Media query para diseño responsive */
 @media (max-width: 768px) {
     .containerSobreMi {
         flex-direction: column;
         align-items: center;
+        padding: 2rem; /* Reduce el padding en pantallas más pequeñas */
     }
-  
-    .imgPerfil {
+
+    .imgSobreMi {
         margin-right: 0; /* Elimina el margen derecho en diseño responsive */
         margin-bottom: 1rem; /* Espacio entre la imagen y el texto en diseño responsive */
     }
-  
+
     .infoSobreMi {
         text-align: center; /* Alinea el texto al centro en diseño responsive */
+        font-size: large; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+    }
+
+    .containerSobreMi h2 {
+        font-size: 36px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
     }
 }

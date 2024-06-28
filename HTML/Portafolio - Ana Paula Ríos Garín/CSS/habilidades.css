@@ -1,3 +1,4 @@
+/* Sección Habilidades */
 .containerHabilidades {
     max-width: 1100px;
     margin: auto;
@@ -8,7 +9,7 @@
 }
 
 .habilidades {
-    padding: 60px 0;
+    padding: 60px 20px;
     background-color: #C5D397;
 }
 
@@ -16,6 +17,7 @@
     font-size: 48px;
     text-align: center;
     margin: auto;
+    color: #4D3628;
 }
 
 .habilidadesGrid {
@@ -42,8 +44,51 @@
 }
 
 .habilidadItem p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
+/* Media query para pantallas medianas (tabletas) */
+@media (max-width: 1023px) {
+    .habilidadesGrid {
+        grid-template-columns: repeat(1, 1fr); /* Cambiar a una columna */
+    }
+    
+    .habilidadItem {
+        padding: 20px;
+    }
+
+    .habilidadItem h3 {
+        font-size: 22px;
+    }
+
+    .habilidadItem p {
+        font-size: 18px;
+    }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .habilidades {
+        padding: 40px 10px; /* Reducir padding para móviles */
+    }
+
+    .habilidades h2 {
+        font-size: 36px; /* Reducir tamaño de la fuente del título */
+    }
+
+    .habilidadItem img {
+        width: 80px; /* Reducir el tamaño de las imágenes */
+    }
+
+    .habilidadItem h3 {
+        font-size: 20px; /* Reducir tamaño de la fuente */
+        margin-bottom: 15px; /* Ajustar margen inferior */
+    }
+
+    .habilidadItem p {
+        font-size: 16px; /* Reducir tamaño de la fuente */
+        margin-bottom: 20px; /* Ajustar margen inferior */
+    }
+}

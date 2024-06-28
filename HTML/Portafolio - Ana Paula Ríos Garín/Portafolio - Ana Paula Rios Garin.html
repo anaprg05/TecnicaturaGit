@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="stylesheet" href="./CSS/sobreMi.css">
+    <link rel="stylesheet" href="./CSS/estudios.css">
     <link rel="stylesheet" href="./CSS/habilidades.css">
     <link rel="stylesheet" href="./CSS/proyectos.css">
     <link rel="stylesheet" href="./CSS/lenguajesAprendidos.css">
+    <link rel="stylesheet" href="./CSS/contacto.css">
 
     <!--FUENTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +32,17 @@
             <nav>
                 <ul>
                     <li><a href="#sobreMi" class="boton">Sobre Mí</a></li>
+                    <li><a href="#estudios" class="boton">Estudios</a></li>
                     <li><a href="#habilidades" class="boton">Habilidades</a></li>
                     <li><a href="#proyectos" class="boton">Proyectos</a></li>
                     <li><a href="#lenguajesAprendidos" class="boton">Lenguajes Aprendidos</a></li>
+                    <li><a href="#contacto" class="boton">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     
-    <!--Pequeña Introducción-->
+    <!--Sobre Mi-->
         <div class="containerSobreMi">
             <div class="textoSobreMi">
                 <h2 id="sobreMi">Ana Paula Ríos Garín</h2>
@@ -50,6 +54,37 @@
         </div>
     <section class="hero">
     </section>
+
+    <!--Estudios-->
+    <div class="containerEstudio">
+        <div class="estudios">
+            <h2 id="estudios">Estudios</h2>
+            <div class="estudio">
+                <img src="./Imagenes/juniorAchievement.jpg" alt="" class="estudioImg">
+                <div class="estudioContenido">
+                    <h3 class="estudioNombre">Junior Achievement</h3>
+                    <p class="estudioAnio">2021</p>
+                    <p class="estudioTexto">Curso de programación en HTML, CSS y JAVASCRIPT.</p>
+                </div>
+            </div>
+            <div class="estudio">
+                <img src="./Imagenes/murialdoPioXII.jpg" alt="" class="estudioImg">
+                <div class="estudioContenido">
+                    <h3 class="estudioNombre">Instituto Leonardo Murialdo - Pío XII</h3>
+                    <p class="estudioAnio">2023</p>
+                    <p class="estudioTexto">Tecnicatura en Electrónica.</p>
+                </div>
+            </div>
+            <div class="estudio">
+                <img src="./Imagenes/UTN.jpg" alt="" class="estudioImg">
+                <div class="estudioContenido">
+                    <h3 class="estudioNombre">Universidad Tecnológica Nacional</h3>
+                    <p class="estudioAnio">2024</p>
+                    <p class="estudioTexto">Tecnicatura en programación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Habilidades-->
     <section class="habilidades">
@@ -128,7 +163,6 @@
                 <p>El objetivo era realizar el diseño y montaje de un proyecto integrador, incluyendo todo lo aprendido durante la cursada, en este caso un robot (auto) controlado vía WiFi.</p>
                 <a href="#">Ver más</a>
                 <a href="#">GitHub</a>
-                </div>
             </div>
         </div>
     </section>
@@ -213,17 +247,51 @@
         </div>
     </section>
 
+    <!--Contacto-->
+    <div class="containerContacto">
+        <h2 id="contacto" class="contacto">CONTACTO</h2>
+        <div class="contactoDiv">
+            <form>
+                <div>
+                    <label for="nombre" class="label">Nombre</label>
+                    <input type="texto" id="nombre" name="nombre" placeholder="Tu Nombre" class="input">
+                </div>
+                <div>
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" class="input">
+                </div>
+                <div>
+                    <label for="mensaje" class="label">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" class="input"></textarea>
+                </div>
+                <button type="enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <!--Pie de Página-->
     <footer>
         <div class="contenidoFooter">
             <div class="footerLogo">
                 <img src="./Imagenes/logoUTN.png" alt="">
             </div>
-        
             <p class="footerCopyright">&copy; 2024 - Ana Paula Ríos Garín </p>
             <p class="footerCopyright">Tecnicatura en Programación - UTN San Rafael</p>
+
+            <div class="footerSocial">
+                <a href="https://www.instagram.com/ani.p.rg/" target="_blank" aria-label="Instagram">
+                <img src="./Imagenes/instagram.png" class="logoSocialFooter"></a>
+
+                <a href="https://discordapp.com/users/1217255416954617876" target="_blank" aria-label="Discord">
+                <img src="./Imagenes/discord.png" class="logoSocialFooter"></a>
+
+                <a href="https://github.com/anaprg05" target="_blank" aria-label="GitHub">
+                <img src="./Imagenes/github.png" class="logoSocialFooter"></a>
+
+                <a href="https://www.linkedin.com/in/anapaularíosgarín" target="_blank" aria-label="LinkedIn">
+                <img src="./Imagenes/linkedin.png" class="logoSocialFooter"></a>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>

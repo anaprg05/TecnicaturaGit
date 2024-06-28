@@ -1,3 +1,4 @@
+/* Sección Lenguajes */
 .lenguajesSection h2 {
     font-size: 48px;
     text-align: center;
@@ -14,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 2%;
 }
 
 .lenguajes {
@@ -24,17 +26,15 @@
 
 .lenguajes h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: #6C584C;
 }
 
 .lenguaje {
     background-color: #ADC178;
-    padding: 20px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-    width: 48%;
+    width: 30%;
     box-sizing: border-box;
 }
 
@@ -45,12 +45,56 @@
 }
 
 .lenguaje li {
-    font-size: 150%;
+    font-size: 120%;
     color: black;
+    margin-bottom: 2%;
 }
 
 .lenguaje .iconos {
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 300px;
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (max-width: 1023px) {
+    .lenguaje {
+        width: 45%; /* Cambiar a dos columnas */
+    }
+
+    .lenguaje li {
+        font-size: 110%; /* Ajustar tamaño de fuente */
+    }
+
+    .lenguaje .iconos {
+        width: 60%; /* Ajustar tamaño de iconos */
+    }
+
+    .lenguajesSection h2 {
+        font-size: 36px; /* Reducir tamaño de la fuente */
+    }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .containerLenguajes {
+        padding: 20px 10px; /* Ajustar padding para móviles */
+    }
+
+    .lenguaje {
+        width: 100%; /* Cambiar a una columna */
+        margin: 10px 0; /* Ajustar margen para mejor separación */
+    }
+
+    .lenguaje li {
+        font-size: 100%; /* Ajustar tamaño de fuente */
+    }
+
+    .lenguaje .iconos {
+        width: 70%; /* Ajustar tamaño de iconos */
+    }
+
+    .lenguajesSection h2 {
+        font-size: 28px; /* Reducir tamaño de la fuente */
+    }
 }
