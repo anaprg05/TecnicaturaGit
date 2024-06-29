@@ -1,4 +1,5 @@
-# Dadas las horas trabajadas de 5 personas y la tarifa de pago, calcular el salario y la sumatoria de todos los salarios.
+# Dadas las horas trabajadas de 5 personas y la tarifa de pago, 
+# calcular el salario y la sumatoria de todos los salarios.
 
 def calcularSalario(horasTrabajadas, tarifa):
     salario = horasTrabajadas * tarifa
