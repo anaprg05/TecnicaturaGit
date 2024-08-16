@@ -25,6 +25,35 @@ public class EjercicioWhile01 {
         System.out.println("CICLO FOR");
         for(var contando = 0; contando < 7; contando++){
             System.out.println("contando = " + contando);
+            System.out.println(" ");
+            
+            if(contando % 2 == 0){
+                System.out.println("PALABRA BREAK");
+                System.out.println("contando = " + contando);
+                break; //Imprime solo el 0
+            }
         }
+        
+        System.out.println(" ");
+        
+        System.out.println("PALABRA CONTINUE");
+        for(var contando = 0; contando < 7; contando++){
+            if(contando % 2 == 0){
+                continue;
+            }
+            System.out.println("contando = " + contando);
+        }
+        /*
+        System.out.println(" ");
+        
+        System.out.println("ETIIQUETA LABEL");
+        inicio;
+        for(var contando = 0; contando < 7; contando++){
+            if(contando % 2 == 0){
+                System.out.println("contando = " + contando);
+                continue inicio;
+            }
+        }
+        */
     }
 }
