@@ -262,3 +262,111 @@ lista3.sort(reverse=True)
 print(lista3)
 
 # REPASO DE TUPLAS
+# ¿Qué se puede usar dentro de las tuplas?
+#   Se pueden utilizar: index, count, len.
+# Para modificar una tupla hay que convertirla en lista, modificar esa lista y volver a convertirla en tupla.
+# Las tuplas pueden contener diferentes tipos de datos dentro de si.
+tupla = (4, 'Hola', 6.78, [1, 2, 78], 4, 'Hola')
+print(tupla)
+
+# Se puede buscar un dato dentro de la tupla
+# Acción booleana -> Su respuesta es tipo booleana
+print(4 in tupla)
+
+# REPASO DEL TIPO SET O CONJUNTO
+# Los conmjuntos pueden tener distintos tipos de datos, pero los valores de los mismos deben ser únicos, no se pueden repetir.
+# ¿Cómo definir un conjunto?
+# Para poder inicializar un elemento vacío, solo se puede utilizar set, de otra forma, saltará error.
+conjunto2 = set()
+conjunto1 = {'bye',}
+conjunto2.add(7)
+conjunto2.add('Hola')
+print(conjunto2)
+
+conjunto1.add('Hola')
+print(conjunto1)
+
+# Preguntar si el número 3 NO está en el 'conjunto1'
+# Acción booleana -> Su respuesta es tipo booleana
+print(3 not in conjunto1) 
+
+# Cómo hacer la igualdad de dos conjuntos
+# Acción booleana -> Su respuesta es tipo booleana
+print(conjunto1 == conjunto2)
+
+# Operaciones en conjuntos
+# RECORDAR -> No sigue una linea de índices, lo que imprima será en orden aleatorio
+# La linea (|) une dos conjuntos
+conjunto3 = conjunto1 | conjunto2
+print(conjunto3)
+
+# Intersección (&) -> El elemento que tienen en común dos (o más) conjuntos
+conjunto3 = conjunto1 & conjunto2
+print(conjunto3)
+
+# Mostrar elementos que están en un conjunto pero no en el otro
+conjunto3 = conjunto1 - conjunto2
+print(conjunto3)
+
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+# Diferencia (^) -> Son los elementos que están en los dos conjuntos pero no están compartidos
+conjunto3 = conjunto1 ^ conjunto2
+print(conjunto3)
+
+# Cómo determinar si un conjunto es subconjunto de otro
+# Acción booleana -> Su respuesta es tipo booleana
+conjunto3 = conjunto1 | conjunto2
+print(conjunto1.issubset(conjunto3))
+print(conjunto2.issubset(conjunto3))
+
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+# Cómo saber si los conjuntos no comparten ningún elemento en común
+# Acción booleana -> Su respuesta es tipo booleana
+# True = Superconjunto
+print(conjunto3.issuperset(conjunto1))
+print(conjunto3.issuperset(conjunto2))
+
+print(conjunto2.issuperset(conjunto3))
+
+# Cómo saber si ambos conjuntos son disconexos, es decir, que no comparten elementos en común
+# Acción booleana -> Su respuesta es tipo booleana
+print(conjunto1.isdisjoint(conjunto2))
+
+# Convertir un conjunto totalmente inmutable
+# 'frozenset' hace que el conjunto sea totalmente inmutable
+# No se puede agregar, modificar ni eliminar elementos del conjunto
+conjunto1 = frozenset
+
+# REPASO DICCIONARIOS
+diccionarioNuevo = {
+                    'Azul': 'Blue', 
+                    'Rojo': 'Red', 
+                    'Verde': 'Green', 
+                    'Amarillo': 'Yellow'
+                    }
+print(diccionarioNuevo)
+
+# Cómo eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {'Ana': {'Edad': 19, 'Altura': 1.49}, 'Lucas': {'Edad': 19, 'Altura': 1.83}, 'Lautaro': {'Edad': 16, 'Altura': 1.65}}
+print(diccionario2)
+
+# Cómo recorrer el diccionario
+for llave in diccionario2:
+    print(llave)
+
+# Cómo mostrar los valores dentro del diccionario
+for valor in diccionario2.values():
+    print(valor)
+
+# Cómo ver todos los datos (valor y llave)
+for llave, valor in diccionario2.items():
+    print(valor, llave)
+
