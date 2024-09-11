@@ -409,3 +409,29 @@ print(cola)
 seRetira = cola.pop(0)
 print(f'Cliente atendido: {seRetira}')
 print(cola)
+
+seleccionArgentina = {
+                        10: {'Nombre': 'Leonel', 'Apellido': 'Messi', 'Edad': '35', 'Altura': '1.70', 'Precio': '50 millones', 'Posición': 'Extremo Derecho'},
+                        11: {'Nombre': 'Angel', 'Apellido': 'Di María', 'Edad': '34', 'Altura': '1.80', 'Precio': '12 millones', 'Posición': 'Extremo Derecho'},
+                        21: {'Nombre': 'Paulo', 'Apellido': 'Dybala', 'Edad': '28', 'Altura': '1.77', 'Precio': '35 millones', 'Posición': 'Media Punta'},
+                        19: {'Nombre': 'Nicolás', 'Apellido': 'Otamendi', 'Edad': '34', 'Altura': '1.83', 'Precio': '3.5 millones', 'Posición': 'Defensa Central'},
+                        1: {'Nombre': 'Franco', 'Apellido': 'Armani', 'Edad': '35', 'Altura': '1.89', 'Precio': '3.5 millones', 'Posición': 'Portero'}
+                        }
+
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
+
+#--------------------------------------------
+# Clase Math
+import math
+
+# Sacar la raíz cuadrada (sqrt)
+numero = int(input('Ingrese un número positivo: '))
+
+while numero < 0:
+    print('Error -> Debería ser un número positivo.')
+    numero = int(input('Ingrese un número positivo: '))
+
+# Para evitar que el número decimal sea demasiado larga, el .2f sirve para que hayan solo dos números después de la coma.
+print(f'\n Su raís cuadrada es: {math.sqrt(numero):.2f}')
+

@@ -7,7 +7,7 @@
 # seleccionArgentina = {
 #                       10: {'Nombre': 'Leonel', 'Apellido': 'Messi', 'Edad': '35', 'Altura': '1.70', 'Precio': '50 millones', 'Posición': 'Extremo Derecho'},
 #                       11: {'Nombre': 'Angel', 'Apellido': 'Di María', 'Edad': '34', 'Altura': '1.80', 'Precio': '12 millones', 'Posición': 'Extremo Derecho'},
-#                       24: {'Nombre': 'Paulo', 'Apellido': 'Dybala', 'Edad': '28', 'Altura': '1.77', 'Precio': '35 millones', 'Posición': 'Media Punta'},
+#                       21: {'Nombre': 'Paulo', 'Apellido': 'Dybala', 'Edad': '28', 'Altura': '1.77', 'Precio': '35 millones', 'Posición': 'Media Punta'},
 #                       19: {'Nombre': 'Nicolás', 'Apellido': 'Otamendi', 'Edad': '34', 'Altura': '1.83', 'Precio': '3.5 millones', 'Posición': 'Defensa Central'},
 #                       1: {'Nombre': 'Franco', 'Apellido': 'Armani', 'Edad': '35', 'Altura': '1.89', 'Precio': '3.5 millones', 'Posición': 'Portero'}
 #                 }
