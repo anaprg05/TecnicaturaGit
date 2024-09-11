@@ -370,3 +370,42 @@ for valor in diccionario2.values():
 for llave, valor in diccionario2.items():
     print(valor, llave)
 
+# Método Pilas
+# Pilas usando listas, el método se conoce como pila pero se utiliza una lista
+# Pila se trata de trabajar siempre con el último elemento (agregar o quitar)
+pila = [1, 2, 3]
+print(pila)
+
+# Agregar elementos a la pila por el final
+# Esto quiere decir que el último elemento ingresado es el último en salir
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# Sacar elementos a la pila por el final
+# La función pop saca y retorna el último elemento de la lista
+# El elemento que se va a eliminar será almacenado en la variable 'elementoBorrado'
+elementoBorrado = pila.pop()
+print(pila)
+print(f'El elemento eliminado es: {elementoBorrado}')
+
+# Método Cola
+# Cola usando listas, el método se conoce como cola pero se utiliza una lista
+# Estructura de datos tipo fifo (first input / first output)
+# Quiere decir que último elemento agregado será al final y que el primer elemento en la cola será el primero en entrar y salir
+cola = ['Ana', 'Paula', 'Nelson', 'Lautaro']
+print(cola)
+
+# Agregarm elementos al final de la cola
+cola.append('Lucas')
+cola.append('Mercedes')
+print(cola)
+
+# Sacar elementos de la cola
+# El elemento que se va a eliminar será almacenado en la variable 'seRetira'
+seRetira = cola.pop(0)
+print(f'Cliente atendido: {seRetira}')
+print(cola)
+seRetira = cola.pop(0)
+print(f'Cliente atendido: {seRetira}')
+print(cola)
