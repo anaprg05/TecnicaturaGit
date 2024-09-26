@@ -4,7 +4,7 @@ Ejercicio 1: Ciclos - Clase Scanner
     hasta que se introduzca un número negativo.
 */
 
-package ejerciciosciclos;
+package ejerciciosciclos.Clase1;
 import java.util.Scanner;
 
 public class Ejercicio1_Ciclos{

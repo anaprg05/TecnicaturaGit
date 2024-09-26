@@ -4,7 +4,7 @@ Ejercicio 2: Ciclos - Clase Scanner y Clase JOptionPane
     se repetirá hasta que se introduza el número cero (0).
 */
 
-package ejerciciosciclos;
+package ejerciciosciclos.Clase2;
 import javax.swing.JOptionPane;
 
 public class Ejercicio2_CiclosJOptionPane {

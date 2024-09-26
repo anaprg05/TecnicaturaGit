@@ -435,3 +435,199 @@ while numero < 0:
 # Para evitar que el número decimal sea demasiado larga, el .2f sirve para que hayan solo dos números después de la coma.
 print(f'\n Su raís cuadrada es: {math.sqrt(numero):.2f}')
 
+# List Unpacking: Desempaquetado de listas
+# Creación de una función con dos parámetros
+def show(name, lastname):
+    print(name + " " + lastname)
+
+# Creación de una lista con nombres
+persona = ['Ana', 'Garín']
+
+# FORMAS DE PASAR POR LOS DATOS
+# Se pasa por cada dato de la lista (uno por uno) directamente a la función
+show(persona[0], persona[1])
+
+# A diferencia del anterior, se pasa todo junto
+show(*persona)
+
+# Estos procesos se pueden realizar también para las tuplas
+persona2 = ('Nelson', 'Ríos')
+show(*persona2)
+
+# También, se pueden realizar para diccionarios
+persona3 = {
+    'lastname': 'Atim', 'name': 'Mercedes'
+}
+
+# Para los diccionarios es necesario poner dos asteriscos, uno para clave y otro para valor
+show(**persona3)
+
+# Repaso del Ciclo for else
+# Creación una lista de números 
+numbers = [1, 2, 3, 4, 5]
+
+# Creación de un ciclo for con una variable 'n'
+for n in numbers:
+    print(n)
+    # Única forma de evitar que se ejecute el else
+    # if n == 3:
+    #     break
+# El else se va a ejecutar siempre, incluso si la lista está vacía
+else:
+    print('Esto se terminó.')
+
+#  List Comprehension: Lista de Comprensión
+# Este método sirve para tomar solo lo necesario de una lista sin hacer ningúntipo de modificaciones en la misma
+
+# Creación de una lista de nombres (String)
+names = ['Mariana', 'Wanda', 'Nicolás', 'Cirano', 'Melina']
+
+# Se realiza la compresión
+alongM = [m for m in names if m[0] == 'M'] # Esto regresa una lista nueva
+# m -> Cada elemento en singular
+# m para m en names -> Se recorre cada uno de los elementos de la lista 'names'
+# if m[0] == 'M' -> Condición en la cuál, si los elementos en adelante es igual a la letra 'm', 
+# se regresará a una nueva lista que se guardará en 'alongM'
+
+# Mostrar la lista nueva
+print(alongM)
+
+# Este proceso se puede hacer en tuplas y diccionarios
+# Diccionario
+botellaC = {
+    {'name': 'Quilmes', 'country': 'Arg'},
+    {'name': 'Corona', 'country': 'Mx'},
+    {'name': 'Stella Artois', 'country': 'Belgium'}
+}
+
+# Diccionario para guardar lo que se desea mantener a parte
+Arg = [b for b in botellaC if b[country] == 'Arg']
+# Es lo mismo que antes, se recorre elemento por elemento del diccionario
+# La condición se cumple si el elemento que se recorre singularmente dentro de 'country' es igual al valor 
+# de Arg, entonces se creará el diccionario con el nombre Arg
+print(Arg)
+print(botellaC)
+
+# Funciones: Paso de Argumentos
+# Definición de función
+def miFuncion(name, lastName):
+    print("Saludos al profe si lee este archivo de Python. \n")
+    print(f'Nombre: {name}, Apellido: {lastName}')
+
+# Parámetros -> Son las variables que se declaren en la función
+# Argumentos -> Es el valor que se le envía a la función
+
+# Se manda a llamar la función y se pasan los argumentos
+# Para evitar errores, a la hora de llamar a la función hay que pasarle los argumentos
+# La función se puede llamar reiteradas veces pero con diferentes argumentos 
+miFuncion('Nicolás', 'Mercado')
+miFuncion('Wanda', 'Lanatta')
+miFuncion('Mariana', 'Aguilera')
+
+# Funciones: Palabra return
+# Creación de una función para sumar
+def sumar(a, b):
+    # Hay dos opciones
+    # 1. Asignar a una variable el resultado de la operación y esa es la variable que se va a retornar
+    # 2. Regresar el resultado de la operación con la palabra 'return' 
+    # haciendo la operación dentro del bloque
+    return a + b 
+
+# Creación de una variable y llamado a la función
+# Aquí la función necesita que se le introduzcan los argumentos
+# resultado = sumar(78, 22)
+# print(f'El resultado de la suma es: {resultado}')
+print(f'El resultado de la suma es: {sumar(55, 45)}')
+
+# Funciones: Valores por Default en Argumentos
+# Creación de función
+# Declarar que los argumentos son de tipo entero no determinará el tipo de valor que tendrán
+def sumar2(a:int = 0, b:int = 0) -> int:
+    return a + b
+
+# resultado tirará error porque faltan los argumentos requeridos, 
+# para evitar esto es necesario ponerle un valor por default a los mismos
+resultado = sumar2()
+
+# Imprime el resultado default
+print(f'Resultado de la suma: {resultado}')
+
+#Imprime el resultado con los valores pasados en el print
+print(f'Resultado de la suma: {sumar2(22, 66)}')
+
+# Funciones: Argumentos, Variables en Funciones
+# Definición de función
+# Si se desconoce el número de argumentos que la función recibirá, se utiliza el *, 
+# así los argumentos varían
+# Normalmente se utiliza *args
+def listaNombres(*nombres):
+    for nombre in nombres:
+        # La variable nombre se convertirá en una tupla
+        print(nombre)
+
+# Fuera del bloque, se pasarán los argumentos
+# Por más que se impriman en líneas diferentes, los argumentos seguirán agregándose sin problemas
+listaNombres('Mercedes', 'Nelson', 'Nicolás', 'Mariana', 'Wanda')
+listaNombres('Melina', 'Cirano', 'Ana', 'Ariel', 'Natalia', 'Osvaldo', 'Liliana')
+
+# Argumentos variables para un diccionario
+# Definición de función
+# El parámetro para poder recibir el diccionario completo es **. 
+# Lo más utilizado es **kwargs para recibir argumentos
+# kwargs -> key word argument
+def listarTerminos(**terminos):
+    for llave, valor in terminos.itrms():
+        print(f'{llave} : {valor}')
+
+# No se mostrará nada
+listarTerminos()
+
+# Se pueden iniciar varios tipos de datos (menos números)
+listarTerminos(IDE = 'Integrated Develoment Enviroment', PK = 'Primary Key')
+listarTerminos(Nombre = 'Leonel Messi')
+
+# Lista de elementos con funciones (convertir)
+# Distintos tipos de datos como argumentos
+# Definición de función (establecimiento tipo lista)
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+# Creación de lista
+nombres2 = ['Nelson', 'Mercedes', 'Mariana']
+# Llamado a la lista
+desplegarNombres(nombres2)
+
+# Este llamado se imprimira de forma que cada uno de los elementos quede en cada renglón. 
+# Es decir: 
+# A 
+# n
+# a
+desplegarNombres('Ana')
+
+# En caso de llamar un número entero, saltará error a la hora de imprimir, 
+# ya que no es un objeto iterable
+#   desplegarNombres(10)
+# Si se llaman a dos números (o más) enteros, el error persistirá
+#   desplegarNombres(10, 11)
+
+# Para recorrer números enteros, hay que transformar en tupla
+# Para que sea una tupla con un solo elemento, 
+# no hay que olvidar de dejar la coma al lado del mismo ya que sin ella saltará error
+desplegarNombres((10, 11))
+# Una alternativa a la tupla, es la lista
+desplegarNombres([22, 55])
+
+# Funciones recursivas con factorial
+def factorial(numero):
+    # Caso Base
+    if numero == 1:
+        return 1
+    else:
+        # Caso Recursivo
+        return numero * factorial(numero - 1)
+
+# Resultado en código duro
+resultado = factorial(5)
+print(f'El factorial del número 5 es: {resultado}')
+
