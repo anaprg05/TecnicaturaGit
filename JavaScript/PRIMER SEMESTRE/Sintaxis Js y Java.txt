@@ -1,5 +1,5 @@
-SINTAXIS SIMILARES ENTRE JAVA Y JAVASCRIPT
-Operadores Simplificados / Compuestos
+# SINTAXIS SIMILARES ENTRE JAVA Y JAVASCRIPT
+## Operadores Simplificados / Compuestos
 	+=
 	-=
 	*=
@@ -7,7 +7,7 @@ Operadores Simplificados / Compuestos
 	%=
 	**=
 
-Operadores Aritméticos
+## Operadores Aritméticos
 	+
 	-
 	*
@@ -15,19 +15,20 @@ Operadores Aritméticos
 	% //Residuo
 	** //Exponente
 
-Operadores de Asignación
+## Operadores de Asignación
 	=
   Los operadores simplificados también asignan.
 
-Operadores de Comparación (Boolean)
+## Operadores de Comparación (Boolean)
 	==  -> Revisa el valor sin importar el tipo.
-   Operador de Igualdad Esctricta:
+###   Operador de Igualdad Esctricta:
 	=== -> Revisa el valor y el tipo también.
-Documentar / Comentarios
+
+## Documentar / Comentarios
 	//    -> Para una línea de comentarios.
 	/* */ -> Para múltiples líneas de comentarios.
 
-Secuencias de Escape
+## Secuencias de Escape
 	\' = Mostrar una comilla simple dentro de una cadena en la salida de información.
 	\" = Mostrar doble comilla dentro de una cadena en la salida de información.
 	\\ = Barra invertida: sirve para mostrar una back slash.
@@ -37,25 +38,25 @@ Secuencias de Escape
 	\b = Retroceso.
 	\f = Salto de página.
 
-Operador de Aumento
+## Operador de Aumento
 	++
   Ejemplos:
      let z = ++a; //PreIncremento
      z = a++; //PosIncremento
 
-Operador de Decremento
+## Operador de Decremento
 	--
 
-Operador Distinto / Diferente (Boolean)
+## Operador Distinto / Diferente (Boolean)
 	!= -> Comprueba valores sin revisar el tipo.
 	!== -> Comprueba el valor y también el tipo.
 
-Operadores Relacionales (Boolean)
+## Operadores Relacionales (Boolean)
 	<
 	>
 	<=
 	>=
 
-Operadores Lógicos
+## Operadores Lógicos
 	And -> && Doble aspersan
 	Or -> || 
