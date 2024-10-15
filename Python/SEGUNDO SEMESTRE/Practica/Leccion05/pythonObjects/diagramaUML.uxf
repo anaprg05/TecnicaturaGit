@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>279</x><y>216</y><w>189</w><h>117</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+- nombre: str
+- apellido: str
+- edad: int
+--
+
+*/mostrarDetalle()/*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>63</x><y>423</y><w>189</w><h>63</h></coordinates><panel_attributes>persona1: Persona
+--
+nombre: str = 'Ana'
+apellido: str = 'Ríos'
+edad: int = 19</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>423</y><w>189</w><h>63</h></coordinates><panel_attributes>persona2: Persona
+--
+nombre: str = 'Lucas'
+apellido: str = 'Cerbino'
+edad: int = 20</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>324</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>369</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>369</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>360</y><w>252</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>360</y><w>252</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>99</y><w>360</w><h>90</h></coordinates><panel_attributes>/*Métodos de Instancia*/
+Unified Modelig Languaje (UML)
+--
+Se utiliza para:  
+- Creación de diagramas (por ej. de flujo)
+- Documentar clases, objetos, etc.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
