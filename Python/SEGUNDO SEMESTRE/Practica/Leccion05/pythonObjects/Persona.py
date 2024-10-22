@@ -90,4 +90,3 @@ persona3.mostrarDetalle()
 
 persona4 = Persona('César', 'Cerbino', 22, 'Teléfono', '11 5764-8964', 'Calle Poeta Risso', 789, 'Manzana', 7, 'Casa', 29, Altura = 1.80, Peso = 83, ColorFavorito = 'Rojo', Auto = 'Fiat', Modelo = 2012)
 persona4.mostrarDetalle()
-
