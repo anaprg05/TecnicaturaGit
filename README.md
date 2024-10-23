@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EntregaPrimerSemestreUTN
 # CLASE 1
 ## CREACIÓN DE CARPETAS
@@ -309,3 +310,6 @@
 ### 5. Authenticator app: Edit
 ### Esto para agregar a través de un QR una app que genere cada 1 segundo nuevos códigos numéricos para la autenticación, yo recomiendo la aplicación: Twilio Authy Authenticator
 ### Es recomendable iniciar sesión, osea registrarnos y guardar estos datos para que al cambiar un dispositivo sigamos teniendo acceso.
+=======
+# TecnicaturaGit
+>>>>>>> 8628560a3a83833492a7887cebb83473891be0fc
