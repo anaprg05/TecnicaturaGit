@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>55</x><y>66</y><w>231</w><h>154</h></coordinates><panel_attributes>&lt;&lt;FiguraGeometrica&gt;&gt;
+--
++ alto
++ ancho 
+--
++ get_alto()
++ set_alto(alto)
++ get_ancho()
++ get_ancho(ancho)
++ __str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>451</x><y>88</y><w>231</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Color&gt;&gt;
+--
++ color
+--
++ get_color()
++ set_color(color)
++ __str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>473</x><y>451</y><w>231</w><h>77</h></coordinates><panel_attributes>&lt;&lt;Rectangulo&gt;&gt;
+--
++ area()
++ __str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>209</y><w>374</w><h>264</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;320;220</additional_attributes></element><element><id>UMLClass</id><coordinates><x>77</x><y>451</y><w>231</w><h>77</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
+- area()
++ __str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>264</x><y>187</y><w>330</w><h>286</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;240;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>209</y><w>99</w><h>264</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>187</y><w>99</w><h>286</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;240</additional_attributes></element></diagram>

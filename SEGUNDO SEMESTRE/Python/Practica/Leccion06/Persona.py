@@ -32,7 +32,7 @@ class Empleado(Persona):
     def __init__(self, nombre, edad, sueldo):
         # super() -> constructor de la clase padre
         super().__init__(nombre, edad)
-        self. sueldo = sueldo
+        self.sueldo = sueldo
 
     @property
     def sueldo(self):
