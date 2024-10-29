@@ -27,6 +27,7 @@ const navegacion= ref([
 a {
   padding: 5px;
   color: #DDE5B6;
+  font-weight: 400;
 }
 
 .navBar {

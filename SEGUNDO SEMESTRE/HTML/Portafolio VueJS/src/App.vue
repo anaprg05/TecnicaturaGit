@@ -57,6 +57,10 @@
 
 // STYLE - CSS
 <style scoped>
+h2{
+  font-weight: 700;
+}
+
 footer {
   display: flex;
   flex-direction: column;

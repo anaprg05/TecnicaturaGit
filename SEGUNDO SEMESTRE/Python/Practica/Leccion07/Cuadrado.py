@@ -18,6 +18,8 @@ class Cuadrado(FiguraGeometrica, Color):
         Color.__init__(self, color)
 
     # Definición de método
+    # Si se quita, no se puede instanciar la clase Cuadrado porque la clase padre es abstracta
+    # Al ser la clase padre abstracta, las clases hijas automáticamente son abstractas
     def calcularArea(self):
         return self._alto * self._ancho
 
