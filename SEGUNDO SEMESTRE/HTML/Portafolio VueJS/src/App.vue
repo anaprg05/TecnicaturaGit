@@ -73,6 +73,10 @@ footer {
 footer a, p {
   color: #ADC178;
 }
+
+footer a:hover {
+  text-decoration: underline;
+}
 </style>
 
 // TERMINAL

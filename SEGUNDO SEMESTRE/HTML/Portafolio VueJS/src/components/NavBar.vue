@@ -44,6 +44,10 @@ a {
   margin-right: 1rem;
 }
 
+.navItem:hover {
+  text-decoration: underline;
+}
+
 .navBarMenu {
   display: flex;
   justify-content: flex-end;
