@@ -129,6 +129,7 @@ function Persona3(nombre, apellido, email){ // Constructor
         return this.nombre+' '+this.apellido;
     }
 }
+
 let padre = new Persona3('Mercedes', 'Atim', 'atimmer@gmail.com');
 // padre.nombre = 'Francisco'; <- se puede modificar sin problemas
 padre.telefono = '54 11 1325-5643'; // Propiedad exclusiva del objeto padre
