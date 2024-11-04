@@ -11,6 +11,13 @@ class Persona{
     // Definición de atributo perteneciente a la clase y no
     // a un objeto
     static contadorPersonas = 0;
+    
+    // Constantes estáticas
+    // Método que simula una constante
+    static get MAX_OBJ(){
+        // Límite de creación de objetos 
+        return 5;
+    }
 
     // Atributo No Estático
     // Se asocia a los objetos
@@ -24,10 +31,15 @@ class Persona{
         this._nombre = nombre;
         this._apellido = apellido;
 
-        // Cada vez que se instancie una nueva persona, el contador
-        // incrementará y recibirá un ID único
-        this.idPersona = ++ Persona.contadorPersonas;
-        // console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
+        if (Persona.contadorPersonas < Persona.MAX_OBJ){
+            // Cada vez que se instancie una nueva persona, el contador
+            // incrementará y recibirá un ID único
+            this.idPersona = ++ Persona.contadorPersonas;
+            // console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
+        }
+        else{
+            console.log('Se ha superado el máximo de objetos permitidos.')
+        }
     }
 
     // MÉTODOS SET Y GET
@@ -177,6 +189,18 @@ console.log(persona1.toString());
 console.log(persona2.toString());
 console.log(empleado1.toString());
 
-let persona3 = new Persona('Sebastián', 'Rodríguez');
+let persona3 = new Persona('Lautaro', 'Ríos');
 console.log(persona3.toString());
 console.log(Persona.contadorPersonas);
+
+console.log(Persona.MAX_OBJ);
+// Una constante estática no se puede modificar o
+// alterar
+// Persona.MAX_OBJ = 10;
+console.log(Persona.MAX_OBJ);
+
+let persona4 = new Persona('Ana', 'Garín');
+console.log(persona4.toString());
+
+let persona5 = new Persona('Milo', 'Ríos');
+console.log(persona5.toString());
