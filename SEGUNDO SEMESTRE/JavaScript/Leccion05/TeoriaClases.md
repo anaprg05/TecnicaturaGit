@@ -24,3 +24,11 @@ HOSTING
 primero hay que definir la clase para poder utilizarla. En cambio, si se 
 trabaja con funciones, se puede llamar a la función y luego definirla ya que
 se aplica el concepto de hosting.
+
+-------------------------------------------------------------------------------
+SOBREESCRITURA
+
+    Es la modificación del comportamiento de un método dentro de la clase padre.
+
+    Para realizar una sobreescritura es necesario utilizar exactamente el mismo
+nombre del método anterior, sino se creará un método completamente nuevo.
