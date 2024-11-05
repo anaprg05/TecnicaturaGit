@@ -1,0 +1,2 @@
+Operaciones.PruebaAritmetica
+Operaciones.Persona
