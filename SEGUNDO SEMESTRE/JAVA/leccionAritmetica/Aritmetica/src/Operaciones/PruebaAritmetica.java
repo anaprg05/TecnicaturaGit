@@ -1,6 +1,7 @@
 
 package Operaciones;
 
+// Clase pública
 public class PruebaAritmetica {
     // Método MAIN
     public static void main(String[] args) {
@@ -34,8 +35,14 @@ public class PruebaAritmetica {
         Aritmetica aritmetica2 = new Aritmetica(5, 8);
         System.out.println("aritmetica2 a: " + aritmetica2.a);
         System.out.println("aritmetica2 b: " + aritmetica2.b);
+        
+        Persona persona = new Persona("Ana", "Ríos");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre = " + persona.nombre);
+        System.out.println("Persona apellido = " + persona.apellido);
     }
     
+    // Modularidad -> crear un nuevo método 
     // Creación de nuevo método
     public static void miMetodo(){
         // Creación de una variable
@@ -45,6 +52,17 @@ public class PruebaAritmetica {
         
         // Para evitar este error, hay que llamar desde el main al método "miMetodo"
         System.out.println("Aquí hay otro método.");
+    }  
+}
+
+// Creación de clase (default o package)
+class Persona{
+    // Atributos
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
-                  
 }
