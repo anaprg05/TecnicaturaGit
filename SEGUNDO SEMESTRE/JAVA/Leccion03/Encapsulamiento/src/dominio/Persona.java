@@ -3,6 +3,9 @@ package dominio;
 
 public class Persona {
     // Atributos con modificador de acceso tipo 'private'
+    // Si se borra el modificador 'private' pasará a ser 'default' o 'package'
+    // Si se escribe la palabra 'default' o 'package' saltará error, no hay que
+    // escribirla porque se hace de manera interna.
     private String nombre;
     private double sueldo;
     private boolean eliminado;
@@ -45,4 +48,11 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
+    // toString
+    // Convierte en una cadena cada atributo
+    public String toString(){
+        return "Persona [ nombre: " + this.nombre +
+                ", sueldo: $" + this.sueldo +
+                ", eliminado: " + this.eliminado + " ]";
+    }
 }
