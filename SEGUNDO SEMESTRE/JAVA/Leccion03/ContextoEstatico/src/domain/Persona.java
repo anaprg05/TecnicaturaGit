@@ -46,6 +46,6 @@ public class Persona {
     // La notación Override agrega información extra al método
     @Override
     public String toString() {
-        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + '}';
+        return "Persona{" + "idPersona = " + idPersona + ", nombre = " + nombre + '}';
     }
 }
