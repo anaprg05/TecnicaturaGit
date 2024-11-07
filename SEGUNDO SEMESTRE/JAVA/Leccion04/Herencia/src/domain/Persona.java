@@ -5,7 +5,7 @@ public class Persona {
     // Atributos de herencia
     // Para que las clases hijas accedan a los objetos dentro del atributo 
     // encapsulado, no se utiliza 'private', se utiliza 'protected'
-    private String nombre;
+    String nombre;
     private char genero;
     private int edad;
     private String direccion;
