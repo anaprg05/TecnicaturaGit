@@ -39,11 +39,11 @@ public class Orden {
             // total += producto.getPrecio();
             // Línea de código -> Junta las dos líneas de códigos anteriores
             //                    en una sola
-            total *= this.productos[i].getPrecio();
+            total += this.productos[i].getPrecio();
         }
         return total;
     }
-    
+  
     // Creación de método
     public void mostrarOrden(){
         System.out.println("ID Orden: " + idOrden);
