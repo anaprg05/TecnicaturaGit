@@ -28,4 +28,31 @@ public class Orden {
             System.out.println("Se ha superado el máximo de productos: " + Orden.MAX_PRODUCTOS);
         }
     }
+    
+    // Creación de método
+    public double calcularTotal(){
+        // Variable temporal
+        double total = 0;
+        // Ciclo for
+        for (int i = 0; i < this.contadorProductos; i++) {
+            // Producto producto = this.productos[i];
+            // total += producto.getPrecio();
+            // Línea de código -> Junta las dos líneas de códigos anteriores
+            //                    en una sola
+            total *= this.productos[i].getPrecio();
+        }
+        return total;
+    }
+    
+    // Creación de método
+    public void mostrarOrden(){
+        System.out.println("ID Orden: " + idOrden);
+        double totalOrden = this.calcularTotal();
+        System.out.println("El total de la orden es: $" + totalOrden);
+        System.out.println("Productos de la orden: ");
+        // Ciclo for
+        for (int i = 0; i < this.contadorProductos; i++) {
+            System.out.println(this.productos[i]);
+        }
+    }
 }
