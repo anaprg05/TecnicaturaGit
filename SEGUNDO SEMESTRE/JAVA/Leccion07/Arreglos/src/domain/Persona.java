@@ -23,7 +23,6 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre: " + nombre + '}' + ', ' + super.toString();
+        return "Persona{" + "nombre: " + nombre + '}' + ", " + super.toString();
     }
-    
 }
