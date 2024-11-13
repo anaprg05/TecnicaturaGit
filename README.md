@@ -11,3 +11,7 @@
 - Base de Datos I
 - Probabilidad y Estadística
 - Inglés I
+
+## Tercer Semestre
+
+## Cuarto Semestre
