@@ -1,4 +1,4 @@
-# TecnicaturaGit
+# ![utnfrsr](https://github.com/user-attachments/assets/d68d89fc-e7d5-4049-b14e-11ad8a8d954b) TecnicaturaGit
 ## CÁTEDRAS DE CADA SEMESTRE
 ## Primer Semestre
 - Programción I (Lunes y Miércoles)
