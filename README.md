@@ -1,4 +1,4 @@
- ![utnfrsr](https://github.com/user-attachments/assets/4c08aaca-aad0-4260-b6a3-42aa98eee0ee)
+![utnfrsr](https://github.com/user-attachments/assets/8ed986c0-d563-4572-804a-4cf76be07618)
 # TecnicaturaGit
 ## CÁTEDRAS DE CADA SEMESTRE
 ## Primer Semestre
