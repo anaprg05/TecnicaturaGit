@@ -1,6 +1,8 @@
 
 package test;
 
+import domain.Persona;
+
 public class TestMatrices {
     public static void main(String[] args) {
         // Una matriz es un arreglo de arreglos, conformado por filas y columnas
@@ -50,6 +52,29 @@ public class TestMatrices {
         for (int i = 0; i < frutas.length; i++) {
             for (int j = 0; j < frutas[i].length; j++){
                 System.out.println("frutas [" + i + "][" + j + "]: " + frutas[i][j]);
+            }
+        }
+        
+        // Matriz de Objetos
+        // Creación de la matriz de objetos
+        Persona personas[][] = new Persona[2][3];
+        
+        // Asignación de valores de la matriz
+        personas[0][0] = new Persona("Ana Paula");
+        personas[0][1] = new Persona("Lucas");
+        personas[0][2] = new Persona("Lautaro");
+        personas[1][0] = new Persona("Ana");
+        personas[1][1] = new Persona("Nelson");
+        personas[1][2] = new Persona("Mercedes");
+        
+        System.out.println("\nMatriz de Personas: ");
+        imprimir(personas);
+    }
+    
+    public static void imprimir(Object matriz[][]){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println("matriz [" + i + "][" + j + "]: " + matriz[i][j]);
             }
         }
     }
