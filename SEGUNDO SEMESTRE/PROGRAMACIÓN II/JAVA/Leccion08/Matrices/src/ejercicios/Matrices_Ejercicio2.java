@@ -8,6 +8,6 @@ package ejercicios;
 
 public class Matrices_Ejercicio2 {
     public static void main(String[] args) {
-        
+        int matriz[][] = new int[7][7];
     }
 }

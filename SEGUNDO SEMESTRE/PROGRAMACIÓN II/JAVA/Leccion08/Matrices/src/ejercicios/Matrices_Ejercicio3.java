@@ -8,6 +8,7 @@ package ejercicios;
 
 public class Matrices_Ejercicio3 {
     public static void main(String[] args) {
+        //int matriz[][] = new int[][];
         
     }
 }
