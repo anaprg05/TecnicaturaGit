@@ -51,3 +51,16 @@ Sin embargo, uno de los principales defectos de esta arquitectura es la posible 
 
 ### *SISTEMA KERNEL HÍBRIDO*
 ​Se considera una evolución que aúna las arquitecturas monolítica y microkernel, persiguiendo las ventajas de ambas. Consiste en un diseño microkernel, pero con una implementación monolítica, que consigue una gran estabilidad y un significativo rendimiento (como ventajas de ambos modelos, respectivamente). A diferencia de los sistemas microkernel, los sistemas híbridos añadirían en su espacio kernel los drivers de dispositivos y todo lo relativo a la comunicación entre procesos, como servicios fundamentales para ejecutar en modo supervisor.
+
+## *¿CUÁLES SON LOS COMPONENTES DEL SISTEMA OPERATIVO?​*
+Los Componentes de los sistemas operativos son los siguientes:​
+  - ​Gestión de archivos.​
+  - Gestión de procesos.​
+  - Gestión de dispositivos de E/S.​
+  - Gestión de redes.​
+  - Gestión de la memoria principal.​
+  - Gestión del almacenamiento secundario.​
+  - Gestión de la seguridad.
+
+### *¿CUÁLES SON LOS 5 SISTEMAS OPERATIVOS MÁS COMUNES?​*
+LOS CINCO SISTEMAS OPERATIVOS MÁS COMUNES SON MICROSOFT WINDOWS, APPLE MACOS, LINUX, ANDROID Y EL IOS DE APPLE.
