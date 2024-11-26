@@ -63,3 +63,26 @@ Prioridad:
 **- System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
 
      git config --system
+
+- *Configurar el usuario que va a escribir en la bitácora.* Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. Con git config podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. Esto lo podemos realizar mediante los comandos:
+
+      git config --local user.name "Nombre Apellido"
+      git config --local user.email "tuemail@ejemplo.com" (para configurar el usuario que va a escribir
+                                                           en la "Bitácora" desde una máquina).
+
+- *Para traer todas las actualizaciones que hemos realizado.*
+
+      git config --list
+      git config --l (atajo) 
+
+### **¿Cómo creas tu primer repositorio?**
+
+- El comando **ls** muestra todos los archivos en carpeta.
+- El comando **mkdir (make directory)** crea una carpeta.
+
+      Ejemplo: mkdir nombre-del-proyecto
+      cd nombre-del-proyecto/ (para entrar a la carpeta existente).
+      git init (una vez dentro de la carpeta, ejecutar este comando).
+
+“Todos los archivos y carpetas que empiezan con . (punto) son archivos o carpetas ocultos”
+-
