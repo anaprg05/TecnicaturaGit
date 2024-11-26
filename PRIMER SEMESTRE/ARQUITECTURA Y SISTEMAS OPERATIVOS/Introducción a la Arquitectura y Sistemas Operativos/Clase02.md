@@ -31,3 +31,23 @@ La arquitectura de los sistemas operativos ha ido evolucionando de la mano del d
 
 ## *COMPARATIVA ENTRE SISTEMAS OPERATIVOS MONOLÍTICOS, MICROKERNEL E HÍBRIDOS*
 ### *SISTEMAS MONOLÍTICOS*
+  - Su nombre procede de los sistemas que tenían una única estructura, es decir, un gran programa dividido en rutinas (subprogramas), en la que todas ellas tenían los mismos privilegios (ejecutándose en modo supervisor) y se podían llamar unas a otras. Se ejecutaba en un espacio de direcciones de memoria principal único y compartido por las diferentes rutinas. Por ello, es sencillo su diseño y, sobre todo, su rendimiento o velocidad. ​
+  - Ejemplos de ello fueron los sistemas operativos DOS y las primeras versiones de UNIX. A día de hoy, los sistemas operativos basados en sistemas monolíticos han mejorado, dejando atrás sus mayores inconvenientes: difícil evolución y resolución de errores y baja estabilidad. Un ejemplo de sistema operativo monolítico es Ubuntu.
+
+### *​SISTEMA MICROKERNEL*
+Su principal propósito es el de liberar al núcleo del máximo de su funcionalidad. Se pretende restringir el uso del modo supervisor (o modo núcleo) y facilitar la evolución y el mantenimiento del sistema operativo. De esta manera, el kernel se encargaría básicamente de: ​
+  - La gestión de la memoria. ​
+  - Gestiones prioritarias de procesos e hilos. ​
+  - Control básico de la comunicación entre el resto de procesos o servicios. 
+
+El resto de servicios quedarían fuera del núcleo, ahora ejecutándose en modo usuario, como, por ejemplo, la gestión de archivos, los protocolos de comunicaciones o los drivers de dispositivos.​
+
+La idea es que un proceso cliente, como, por ejemplo, una aplicación de usuario cualquiera, desea obtener servicio de un proceso servidor del sistema operativo. Para ello, la primera envía un mensaje a la segunda a través del micronúcleo, y el micronúcleo es el que se encarga de la comunicación y gestión necesaria para que todos los clientes sean atendidos con eficiencia por los diferentes servidores. De esta manera, tanto clientes como servidores se ejecutan en modo usuario, y una pequeña parte de todo el proceso (la más crítica), en modo núcleo. Con esto se mejora: ​
+  - La seguridad del sistema operativo, al ejecutarse la mayoría de los procesos en modo usuario.​
+  - La estabilidad. ​
+  - La actualización del sistema operativo. 
+
+Sin embargo, uno de los principales defectos de esta arquitectura es la posible sobrecarga en la gestión de procesos que ocasiona un deterioro en el rendimiento del sistema. Un ejemplo de sistema operativo microkernel es MINIX.
+
+### *SISTEMA KERNEL HÍBRIDO*
+​Se considera una evolución que aúna las arquitecturas monolítica y microkernel, persiguiendo las ventajas de ambas. Consiste en un diseño microkernel, pero con una implementación monolítica, que consigue una gran estabilidad y un significativo rendimiento (como ventajas de ambos modelos, respectivamente). A diferencia de los sistemas microkernel, los sistemas híbridos añadirían en su espacio kernel los drivers de dispositivos y todo lo relativo a la comunicación entre procesos, como servicios fundamentales para ejecutar en modo supervisor.
