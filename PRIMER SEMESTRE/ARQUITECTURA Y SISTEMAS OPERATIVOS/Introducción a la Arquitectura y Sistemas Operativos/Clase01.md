@@ -1,4 +1,4 @@
-# ***Primer Momento: Introducción a los Sistemas Operativos***
+# ***Introducción a los Sistemas Operativos***
 
 ### *Funcionalidades de un Sistema Operativo:*
 
