@@ -21,4 +21,45 @@ CVS, Subversion, SourceSafe, ClearCase, Darcs, Bazaar , Plastic SCM, Git, Mercur
 - Gracias a este sistema, los desarrolladores del proyecto podrán trabajar de forma independiente hasta el momento en el que tengan que poner en común con el resto del equipo su código, controlando los cambios en las versiones y mejorando el seguimiento al desarrollo.
 
 ## **Terminología**
-*Repositorio ("repository")*: El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
+**-** *Repositorio ("repository")*: El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
+
+  **1-** *Repositorios Locales*: Los cambios son guardados localmente y no se comparten con nadie. Esta arquitectura es la antecesora de las dos siguientes. El modelo local utiliza una copia de la base de control de versiones y una copia de los archivos del proyecto. Este tipo es el más sencillo y no es recomendable cuando se trabaja en equipo ya que todos tienen que acceder a los mismos archivos.
+  
+  **2-** *Repositorios Centralizados*: Existe un repositorio centralizado de todo el código, del cual es responsable un único usuario (o conjunto de ellos). Se facilitan las tareas administrativas a cambio de reducir flexibilidad, pues todas las decisiones fuertes (como crear una nueva rama) necesitan la aprobación del responsable.
+
+Se realiza en un servidor que se encargará de recibir y dar los cambios realizados en el archivo a cada uno de los usuarios.
+
+**3-** *Repositorios Distribuidos*: Cada usuario tiene su propio repositorio. Los distintos repositorios pueden intercambiar y mezclar revisiones entre ellos. Es frecuente el uso de un repositorio, que está normalmente disponible, que sirve de punto de sincronización de los distintos repositorios locales.
+
+El modelo distribuido es el más utilizado, en este caso cada usuario tiene un control de versiones propio que a su vez son manejadas por el servidor. 
+
+## **Comandos para la configuración de GIT**
+*Git config*: es un comando que permite configurar  todos los aspectos de cómo funcionará Git de manera local, global o system.
+
+  - *git config mantiene su valor entre actualizaciones.* Por lo tanto, se debe configurar solo una vez. Todos los archivos de configuración tienen la misma sintaxis, pero un alcance diferente. Esto ofrece mucha flexibilidad.
+
+  Existe 3  comandos para el almacenamiento:
+  
+  **- Local.**
+    
+  **- Global.**
+    
+  **- System.**
+
+Además, es importante recordar que cada nivel anula los valores del nivel anterior.
+
+Prioridad:
+    
+    Local > Global > System
+
+**- Local**: las configuraciones locales están disponibles solo para el repositorio actual. Puede hacer que git lea y escriba desde la computadora que se está utilizando solo localmente .
+
+          git config --local
+
+**- Global**: las configuraciones globales están disponibles para los usuarios actuales para todos los proyectos.
+
+     git config --global
+
+**- System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
+
+     git config --system
