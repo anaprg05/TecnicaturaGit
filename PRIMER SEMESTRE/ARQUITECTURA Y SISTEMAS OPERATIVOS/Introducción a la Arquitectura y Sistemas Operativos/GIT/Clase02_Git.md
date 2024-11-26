@@ -68,3 +68,65 @@ El flujo de trabajo básico en Git es el siguiente:
       git --help branch
       git --help branch (Manual Git)
 
+- Para pasar al Estado de preparación:
+
+      git add <archivo>
+
+    - Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero se necesita añadirlos al área de preparación.
+    - Los usuarios mueven los cambios desde el espacio  de trabajo al área de preparación, antes de aprobarlos/commit hacia el repositorio.
+    - El comando “git add .” permite registrar todos los cambios del directorio de trabajo.
+    - Si queremos eliminar el archivo de nuestra zona de preparación antes de enviarlo al repositorio.
+
+          git  rm --cached "nombre del archivo"
+          git reset
+
+    - En espacio de preparación ya tenemos un archivo para enviar a nuestro repositorio y ser commiteado.
+
+### *GIT STATUS*
+- Permite visualizar el estado de los cambios en el directorio de trabajo y en el área de preparación comparando con el repositorio. Muestra una lista de los archivos modificados o añadidos.
+- Aun no tenemos commit y también nos dice que tenemos archivos sin traquear.
+- Los archivos que están  listos ser trackeados, nos aparecen en "rojo".
+- Para pasar nuestros archivos desde el área de trabajo al área de preparación utilizaremos el comando.
+
+      git add «nombre del archivo que se va a mover»
+
+- Luego volvemos a ejecutar.
+
+      git status (para ver el nuevo estado del nuestro archivo.)
+
+
+- Una vez trackeado nos aparece el archivo de "color verde", eso significa que esta listo para ser enviado al repositorio.
+
+      New film: archivo
+
+### *COMMIT*
+- Una vez que nuestro archivo ya esta en nuestra área de preparación vamos a pasarlo a nuestra área de repositorio.
+- Se inicia los commit (carpeta .git)
+- Nos abrirá un editor de texto que se llama
+
+      Vim
+
+### *Editor de texto(Vim)*
+- Una vez que estamos en el editor de texto, nos va a permitir realizar los comentarios sobre las modificaciones que realicemos a nuestro proyecto.
+- En la pantalla del editor nos aparece un mensaje con # , eso quiere decir que todo lo que este  en esas líneas será ignorado, solo nos sirve como contexto de lo que estamos realizando.
+- Sólo en la primera línea nos aparece sin #, en esa línea escribiremos nuestro primer commit
+
+      « mi primer commit con git» ( se inicia el proyecto)
+
+IMPORTANTE: si no escribimos algo no habrá commit.
+-
+
+- Comandos para guardar texto
+
+      Ctrlo S
+
+- Comando para salir del editor
+
+      Ctrol X
+
+- Nos aparece el primer commit:
+
+      « mi primer commit con git»( se inicia el proyecto)
+
+- Nos menciona la cantidad de archivos agregados + la cantidad de líneas utilizadas de código.
+- Nos menciona el nombre de los archivos creados.
