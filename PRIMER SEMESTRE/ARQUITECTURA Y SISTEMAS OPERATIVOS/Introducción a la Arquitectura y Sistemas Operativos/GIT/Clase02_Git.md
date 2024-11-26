@@ -130,3 +130,37 @@ IMPORTANTE: si no escribimos algo no habrá commit.
 
 - Nos menciona la cantidad de archivos agregados + la cantidad de líneas utilizadas de código.
 - Nos menciona el nombre de los archivos creados.
+
+### *GIT LOG*
+- Con este comando veremos nuestro primer commit.
+- Será el cuaderno, la "Bitácora" que mostrará en pantalla todos los commits, todos los mensajes).
+- Nos aparece el Autor del commit( nombre, apellido y el correo).
+- Fecha y hora del sistema y el mensaje que realizamos en nuestro editor de texto.
+- Cada commit tiene un número identificador  y que permite de manera ordenara realizar cada commit en mi proyecto, de manera que es imposible que se repitan.
+
+- *Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit*:
+
+**Paso 1:** Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
+
+**Paso 2:** Tecleamos Git status
+              " veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
+              
+**Paso 3:** Tecleamos Git add .Para añadir lo que contiene ambas carpetas
+
+En caso de querer agregar un archivo especifico se debe teclear Git add "nombre del archivo"
+Para borrar el archivo del área de preparación Git reset .
+
+**Paso 4:** nuevamente tecleamos Git Status
+            " ahora nos aparecerán los archivos que fueron añadidos en color verde "
+            
+**Paso 5:** nuestros archivos están listos para ser commiteados 
+               Git commit 
+                nos abre el editor de texto Vim
+               en la primera línea escribimos " mi primer commit de git"
+                guardamos nuestro mensaje del editor con : w  o  Ctrol. S 
+                 y Ctrol. x para salir del editor .
+
+ otra opción es:
+                Git commit --m  "mi primer commit de git" y damos enter
+                
+**Paso 6:** Git log   leemos nuestro commit 
