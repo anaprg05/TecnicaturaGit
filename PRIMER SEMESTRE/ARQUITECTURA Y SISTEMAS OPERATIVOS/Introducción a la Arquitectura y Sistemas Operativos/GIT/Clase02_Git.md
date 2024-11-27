@@ -138,29 +138,18 @@ IMPORTANTE: si no escribimos algo no habrá commit.
 - Fecha y hora del sistema y el mensaje que realizamos en nuestro editor de texto.
 - Cada commit tiene un número identificador  y que permite de manera ordenara realizar cada commit en mi proyecto, de manera que es imposible que se repitan.
 
-- *Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit*:
+### *Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit*
 
 **Paso 1:** Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
 
-**Paso 2:** Tecleamos Git status
-              " veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
+**Paso 2:** Tecleamos **git status**. Veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
               
-**Paso 3:** Tecleamos Git add .Para añadir lo que contiene ambas carpetas
+**Paso 3:** Tecleamos **git add .** para añadir lo que contiene ambas carpetas. En caso de querer agregar un archivo especifico se debe teclear **git add "nombre del archivo"**. Para borrar el archivo del área de preparación **git reset**.
 
-En caso de querer agregar un archivo especifico se debe teclear Git add "nombre del archivo"
-Para borrar el archivo del área de preparación Git reset .
-
-**Paso 4:** nuevamente tecleamos Git Status
-            " ahora nos aparecerán los archivos que fueron añadidos en color verde "
+**Paso 4:** nuevamente tecleamos **git status**. Ahora nos aparecerán los archivos que fueron añadidos en color verde.
             
-**Paso 5:** nuestros archivos están listos para ser commiteados 
-               Git commit 
-                nos abre el editor de texto Vim
-               en la primera línea escribimos " mi primer commit de git"
-                guardamos nuestro mensaje del editor con : w  o  Ctrol. S 
-                 y Ctrol. x para salir del editor .
-
- otra opción es:
-                Git commit --m  "mi primer commit de git" y damos enter
+**Paso 5:** nuestros archivos están listos para ser commiteados **git commit** nos abre el editor de texto Vim en la primera línea escribimos " mi primer commit de git" guardamos nuestro mensaje del editor con : w  o  Ctrol. S y Ctrol. x para salir del editor. Otra opción es:
                 
-**Paso 6:** Git log   leemos nuestro commit 
+     git commit --m  "mi primer commit de git"
+                
+**Paso 6:** git log - leemos nuestro commit.
