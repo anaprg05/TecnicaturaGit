@@ -53,44 +53,31 @@
 - Luego nos aparece el commit, con la descripción de lo que hemos modificado.
 - Con Git log  vemos la línea de commit que se va formando, para salir tecleamos la letra q
 
+- Cuando tenemos archivos modificados se puede utilizar el siguiente comando
+
+      git commit –am «escribimos el comentario de nuestro commit»
+
+- No se puede utilizar con archivos nuevos.
+- Sólo con archivos modificados.
+
+### *Comando Git Checkout*
+- El comando  git checkout me permite borrar archivos modificados .
+- No me permite eliminar archivos nuevos.
+
+      git checkout « nombre del archivo»
+      git checkout –f (nos va a permitir borrar todos los últimos cambios realizados)
 
 
+### *Git RESTORE*
+    git restore  --stage «nombre del archivo».
+- Vuelve el archivo al área de trabajo y poder modificarlos.
+  
+### *Comando  Git Diff*
+- Me permite saber qué agregué en el espacios de preparación.
+- Nos muestra las modificaciones que hicimos en el archivo de nuestro repositorio.
+- Este comando nos permite saber que tipo de modificaciones hicimos.
 
+      git diff --stat
+- Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
 
-
-
-
-Cuando tenemos archivos modificados se puede utilizar el siguiente comando
-•Git commit –am «escribimos el comentario de nuestro commit»
-•No se puede utilizar con archivos nuevos.
-•Sólo con archivos modificados
-
-
-Comando Git Checkout:
-•El comando  git checkout me permite borrar archivos modificados .
-•No me permite eliminar archivos nuevos.
-•Git checkout « nombre del archivo»
-
-
-•Git checkout –f « nos va a permitir borrar todos los últimos cambios realizados
-
-
-Git RESTORE
-git restore  --stage «nombre del archivo».
-•Vuelve el archivo al área de trabajo y poder modificarlos
-
-
-Comando  Git Diff
-Me permite saber qué agregué en el espacios de preparación.
-Nos muestra las modificaciones que hicimos en el archivo de nuestro repositorio.
-Este comando nos permite saber que tipo de modificaciones hicimos.
-
-
-Git Diff --Stat
-Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
-
-
-Git diff –-numstat ( solo para ver los números de líneas añadidas y eliminadas)
-
-
-
+      git diff –-numstat (solo para ver los números de líneas añadidas y eliminadas)
