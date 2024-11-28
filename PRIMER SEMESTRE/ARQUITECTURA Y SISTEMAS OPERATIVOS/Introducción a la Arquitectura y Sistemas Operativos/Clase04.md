@@ -19,8 +19,12 @@
 
 ## **VENTAJAS Y DESVENTAJAS DE WINDOWS**
 ### *VENTAJAS*
-- .
+- Es el más conocido de todos.​
+- Dispone de más aplicaciones que los demás sistemas operativos.​
+- Windows 10, su versión más reciente, se actualiza cada 6 meses, así que no hay necesidad de comprar otra versión cada cierto tiempo.
 
 ### *DESVENTAJAS*
-- .
-
+- Es un software de pago.​
+- Algunos controladores y aplicaciones de versiones anteriores de podrían no ser compatibles con las más recientes.​
+- La mayoría de los virus informáticos están diseñados para atacar a este SO.​
+- Históricamente, es el más inestable de los 3 sistemas operativos evaluados.
