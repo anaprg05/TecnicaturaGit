@@ -25,3 +25,47 @@
   
         Copy miarchivo1.txt miarchivo12.txt
 
+## **​LÍNEA DE COMANDO MS-DOS**
+- Podemos ejecutar cualquier otro programa a través del DOS, por ejemplo, bajo Windows:
+
+        notepad.exe ​
+        notepad​
+
+### *¿Cuáles son los comandos básicos?*
+- Los comandos son: 
+
+      cd <nombre del directorio>​
+- *"cd"* es un comando fundamental en DOS. Este permite cambiar el directorio actual​
+
+      dir [nombre del directorio]​
+- *"dir"* permite listar el contenido del directorio actual o del directorio dado como argumento.​
+​
+
+      Copy <fuente><destino>​
+- *"Copy"* permite copiar un archivo <fuente> hacia un archivo <destino>.​
+
+
+      move <fuente> <destino>​
+- *"move"* permite mover un archivo <fuente> hacia un archivo <destino>.​
+
+
+ 
+        del <archivo>​
+- *"del"* elimina el archivo dado como argumento.​
+
+
+        ren <fuente> <destino>​
+- *"ren"* renombra el archivo dado como argumento.​
+
+
+        edit <nombre de archivo>​
+- *"edit"* abre el editor DOS por defecto para editar el archivo dado como argumento.​
+
+
+        cls​
+- *"cls"* es útil para limpiar la pantalla DOS.​
+
+
+        exit​
+- *"exit"* permite cerrar un terminal DOS.
+
