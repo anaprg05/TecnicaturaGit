@@ -7,9 +7,9 @@
 
 ### *Guiones en Git*
 - Para entender los comando que estamos aplicando desde **Git Bach** es importante saber el significado.
-  - (un sólo guión)  acompaña una o dos letra
+  - -(un sólo guión)  acompaña una o dos letra
 
-        Ej: Git checkout -b
+          Ej: Git checkout -b
 
   - -- (dos guiones) acompañan una palabra
  
