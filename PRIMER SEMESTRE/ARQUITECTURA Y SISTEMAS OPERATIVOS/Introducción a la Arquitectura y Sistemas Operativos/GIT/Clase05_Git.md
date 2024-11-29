@@ -5,3 +5,17 @@
 ## **El concepto de HEAD**
 - Se refiere al commit que está dentro de tu repositorio posicionado en cada momento. Por regla general HEAD suele coincidir con el último commit de la rama en la que estés ubicado, ya que habitualmente estás trabajando en lo último. Pero si te mueves hacia cualquier otro commit anterior entonces el HEAD estará más atrás.
 
+### *Guiones en Git*
+- Para entender los comando que estamos aplicando desde **Git Bach** es importante saber el significado.
+  - (un sólo guión)  acompaña una o dos letra
+
+        Ej: Git checkout -b
+
+  - -- (dos guiones) acompañan una palabra
+ 
+    
+         Ej: Git log --
+
+
+- **«Cuando se hace Git log el HEAD nos indica en que rama estamos ubicado.»**
+
