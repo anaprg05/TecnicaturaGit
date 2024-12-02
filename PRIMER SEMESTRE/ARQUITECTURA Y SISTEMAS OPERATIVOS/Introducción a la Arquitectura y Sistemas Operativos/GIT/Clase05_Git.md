@@ -46,91 +46,74 @@
 
       - Como se puede apreciar en la imagen, se crea una rama auxiliar, se realizan commit en ella y luego se fusiona  nuevamente a la rama principal o rama Master.
 
+## **Git Merge**
+### *¿Qué es Git Merge?*
 
+- Git Merge es un comando que se usa para fusionar ramas independientes en una sola rama en Git.
+- Cuando se usa el comando de fusión en Git, solo se actualiza la rama actual para reflejar la fusión y la rama de destino no se ve afectada. Esto significa que, a menudo, Git Merge se usa junto con git checkout para seleccionar la rama actual y git branch para eliminar una rama fuente desactualizada.
+- Git Merge es un comando para fusionar ramas en Git
+  - ¿Cómo funciona Git Merge?:
+    - El uso principal del comando Git Merge es fusionar dos ramas. También se utiliza para fusionar cadenas de confirmación en un historial unificado.
+    - Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de combinación de ramas. En la siguiente ilustración, Git Merge tomará dos ramas y encontrará una confirmación de base común entre ellas. Cuando Git encuentra una confirmación de base común, crea una nueva confirmación de combinación y combina los cambios en la secuencia de cada confirmación de combinación. Aquí, tenemos 2 sucursales: sucursal principal y sucursal de etapa. Ahora, fusionaremos la rama del escenario con la rama principal.
+  - ¿Cómo fusionar las ramas que hemos creado?
+    - Utilizarás el comando:
 
+          git merge
 
+    - Indicarás haciendo:
 
+          git merge «nombre de la rama» (a la rama cuál querrás fusionar con master)
 
-
-¿Qué es Git Merge?
-
-Git Merge es un comando que se usa para fusionar ramas independientes en una sola rama en Git.
-
-Cuando se usa el comando de fusión en Git, solo se actualiza la rama actual para reflejar la fusión y la rama de destino no se ve afectada. Esto significa que, a menudo, Git Merge se usa junto con git checkout para seleccionar la rama actual y git branch para eliminar una rama fuente desactualizada.
-
-Git Merge es un comando para fusionar ramas en Git
-
-¿Cómo funciona Git Merge?:
-
-El uso principal del comando Git Merge es fusionar dos ramas. También se utiliza para fusionar cadenas de confirmación en un historial unificado.
-
-Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de combinación de ramas. En la siguiente ilustración, Git Merge tomará dos ramas y encontrará una confirmación de base común entre ellas. Cuando Git encuentra una confirmación de base común, crea una nueva confirmación de combinación y combina los cambios en la secuencia de cada confirmación de combinación. Aquí, tenemos 2 sucursales: sucursal principal y sucursal de etapa. Ahora, fusionaremos la rama del escenario con la rama principal.
-
-Cómo fusionar las ramas que hemos creado?
-
-•Utilizarás el comando git merge
-
-•Indicarás haciendo git merge «nombre de la rama» a la rama cuál querrás fusionar con master.
 
 «Siempre tener en cuenta que cuando se mezclan ramas se debe tener cuidado con los archivos que se han tocado. Cuando no se tocan los mismos archivos no hay inconvenientes, pero cuando se tocan los mismos archivos git no sabrá cuál archivo agregar y habrá un conflicto.»
+-----
 
-¿Qué pasa si sólo aplicamos el siguiente comando?:
+  - ¿Qué pasa si sólo aplicamos el siguiente comando?:
 
-Git merge « el nombre de la rama que quiero fusionar»
+        git merge «el nombre de la rama que quiero fusionar»
 
- Nos Abrirá un editor de texto ( Vim, Atomo, Nano, VSC, etc.)
+    - Nos Abrirá un editor de texto ( Vim, Atomo, Nano, VSC, etc.).
 
-«colocaremos la mezcla de la rama master con la nueva rama»
+          «colocaremos la mezcla de la rama master con la nueva rama»
 
-Salimos del editor
+    - Salimos del editor
 
-Ctrol S y Ctrol X
+          Ctrol S y Ctrol X
+          O con Esc : WQ!
 
-O con Esc : WQ!
+    - Cerramos el editor de texto y nos actualiza el commit con la fusión de las 2 ramas.
+    - Tecleamos:
 
-Cerramos el editor de texto y nos actualiza el commit con la fusión de las 2 ramas.
+          git log  --oneline  --all  --graph --decorate
 
-Tecleamos:
+    - Nos aparecerá el commit con la fusión con el fin de la rama e integrándose a la Rama Master.
+  - Para eliminar mi fusión de ramas:
+    - En caso que se produzca un conflicto en mis ramas, con el siguiente comando hacemos que cada rama vuelva a su posición original.
 
-Git log  --oneline  --all  --graph --decorate
+          git merge --abort
 
-Nos aparecerá   el commit con la fusión con el fin de la rama e integrándose  a la Rama Master.
+  - ¿Cómo eliminar una rama?
+    - Estando ubicados en la rama Master, borramos la rama auxiliar que habíamos creado.
 
+          git branch -D "nombre de la rama"
+          (No se puede eliminar una rama en la cual estás ubicado)
+          (La opción -D siempre debe ser mayúscula)
+    - Se eliminará la rama creada
+    - Tecleamos:
 
-Para eliminar mi fusión de ramas:
+          git log --oneline --all --graph --decorate
 
-En caso que se produzca un conflicto en mis ramas, con el siguiente comando hacemos que cada rama vuelva a su posición original.
+    - Nos aparecerá la rama Master, pero desaparece la que habíamos creado.
+  - ¿Cómo resolver conflictos en el merge de ramas?
+    - Cuando realizas un git merge y te aparece un conflicto deberás proceder de la siguiente manera:
+      - Abrir tu editor de texto, allí git agregará estás 3 líneas
 
-Git merge --abort
-
-
-
-¿Cómo eliminar una rama?
-
-Estando ubicados en la rama Master, borramos la rama auxiliar que habíamos creado.
-
-git branch -D "nombre de la rama"
-
-(No se puede eliminar una rama en la cual estás ubicado)
-
-(La opción -D siempre debe ser mayúscula)
-
-Se eliminará la rama creada
-
-Tecleamos
-
-Git log --oneline --all --graph --decorate
-
-Nos aparecerá la rama Master, pero desaparece la que habíamos creado.
-
-¿Cómo resolver conflictos en el merge de ramas?
-
-Cuando realizas un git merge y te aparece un conflicto deberás proceder de la siguiente manera:
-
-•Abrir tu editor de texto, allí git agregará estás 3 líneas
-1.<<<<< HEAD (Current Change)(esta te muestra en que rama estás ubicado y los cambios actuales)
-2.===== (esta para dividir los cambios)
-
-3. >>>>> nombre-rama (Incoming Change) (esta te muestra la rama a la cual le estás haciendo el merge y sus cambios)
-•Analizar cuáles cambios deben ser tomados de estas ramas y eliminar los que no serán utilizados.
-•Borrar las líneas que git agregó y dejar en el HEAD todos los cambios que serán utilizados
+            1.<<<<< HEAD (Current Change)
+              (esta te muestra en que rama estás ubicado y los cambios actuales)
+        
+            2.===== (esta para dividir los cambios)
+        
+            3. >>>>> nombre-rama (Incoming Change)
+                (esta te muestra la rama a la cual le estás haciendo el merge y sus cambios)
+      - Analizar cuáles cambios deben ser tomados de estas ramas y eliminar los que no serán utilizados.
+      - Borrar las líneas que git agregó y dejar en el HEAD todos los cambios que serán utilizados
