@@ -1,69 +1,39 @@
 # ***Comandos y funcionalidades Git***
+## **Funcionalidades de Nuestras Ramas**
+- Una rama es un espacio temporal donde  vamos a trabajar diferentes funcionalidades que van a ser agregadas a nuestro proyecto.
+- En la rama Master o rama Main va a ser  la rama principal de todo el proyecto.
+- Git los va a permitir ir avanzando de manera cronológica sobre nuestro proyecto.
+- También podremos viajar en el tiempo y volver a consultar modificaciones anteriores.
 
-
-
-Funcionalidades de Nuestras ramas:
-
-Una rama es un espacio temporal donde  vamos a trabajar diferentes funcionalidades que van a ser agregadas a nuestro proyecto.
-
-En la rama Master o rama Main va a ser  la rama principal de todo el proyecto.
-
-Git los va a permitir ir avanzando de manera cronológica sobre nuestro proyecto.
-
- También podremos viajar en el tiempo y volver a consultar modificaciones anteriores.
-
-Nuestra  Rama Máster o Main es un espacio temporal.
-
-Aquí es donde nosotros trabajamos con nuestro proyecto.
-
-Cada punto representa una confirmación , o sea un avance, una nueva funcionalidad, un punto en el tiempo.
-
-A medida que nuestro proyecto avanza  vamos trabajando en modificaciones o actualizaciones que vamos haciendo para su mejora.
-
-Estas modificaciones las va a realizar  de manera cronológica, de manera lineal, tenemos nuestra rama donde vamos trabajando,
-
-nuestro repositorio, nuestro proyecto.
-
-No siempre los cambios que realicemos serán utilizados en nuestro proyecto
-
-Hay ocasiones en las que un cambio no necesariamente va a ser aplicado al proyecto.
-
-Puede ser un cambio que el cliente ha pedido y que nada más es para prueba.
-
-Puede ser un cambio que el proyecto no amerita al final de todo.
-
-Por éste motivo hacemos uso de ramas auxiliares.
+### *Nuestra Rama Máster o Main es un Espacio Temporal*
+- Aquí es donde nosotros trabajamos con nuestro proyecto.
+- Cada punto representa una confirmación, o sea un avance, una nueva funcionalidad, un punto en el tiempo.
+- A medida que nuestro proyecto avanza  vamos trabajando en modificaciones o actualizaciones que vamos haciendo para su mejora.
+- Estas modificaciones las va a realizar  de manera cronológica, de manera lineal, tenemos nuestra rama donde vamos trabajando, nuestro repositorio, nuestro proyecto.
+- No siempre los cambios que realicemos serán utilizados en nuestro proyecto, hay ocasiones en las que un cambio no necesariamente va a ser aplicado al proyecto.
+- Puede ser un cambio que el cliente ha pedido y que nada más es para prueba.
+- Puede ser un cambio que el proyecto no amerita al final de todo.
+- Por éste motivo hacemos uso de ramas auxiliares.
 
  Una regla general de Git es que en la rama Main nunca se debe trabajar cambios, solo en ramas auxiliares.
+----- 
+- Hay una regla que dice que en la rama main nunca se debe trabajar cambios, lo hemos hecho a través de las ramas auxiliares.
+- Ahora bien, si en dado caso nosotros queremos que estos cambios sí se incorporen a la Rama Master, a la Rama Main, o sea el proyecto como tal.
+- Cuando hacemos cambios en el proyecto, que no estamos seguros que se van a implementar, simplemente podemos eliminarlos, pero no va a haber ningún cambio sobre la rama main.
+- Y a eso es a lo que se le conoce como trabajo con  ramas.
 
-Hay una regla que dice que en la rama main nunca se debe trabajar cambios, lo hemos hecho a través de las ramas auxiliares.
-
-Ahora bien, si en dado caso nosotros queremos que estos cambios sí se incorporen a la Rama Master,
-
-a la Rama Main, o sea el proyecto como tal.
-
-Cuando hacemos cambios en el proyecto, que no estamos seguros que se van a implementar, simplemente podemos eliminarlos, pero no va a haber ningún cambio sobre la rama
-
-main.
-
-Y a eso es a lo que se le conoce como trabajo con  ramas.
-
-Funcionalidad del  Merge :
-
-Cuando hacemos un  Merge, estamos realizando la unión de una Rama temporal a la Rama Main.
-
-En el último punto se realiza la unión y los puntos del commit que hicimos en nuestra rama auxiliar se unen con los commit de nuestra rama Master.
+## **Funcionalidad del Merge**
+- Cuando hacemos un  Merge, estamos realizando la unión de una Rama temporal a la Rama Main.
+- En el último punto se realiza la unión y los puntos del commit que hicimos en nuestra rama auxiliar se unen con los commit de nuestra rama Master.
 
 
-¿Cómo se trabaja con Git?
+## **¿Cómo se trabaja con Git?**
+- Por lo general siempre se trabaja con ramas.
+- Siempre tendremos una rama principal (Master o Main) y ramas auxiliares.
+- La Rama Master no podemos tocarla.
 
-•Por lo general siempre se trabaja con ramas.
-•Siempre tendremos una rama principal (Master o Main) y ramas auxiliares
-•La Rama Master no podemos tocarla.
-
-¿Quiénes son los únicos que van a poder trabajar sobre la Master ?
-
-Siempre en cada proyecto habrá líderes, ellos serán los únicos que estarán a cargo de modificar la Master, los demás integrantes no estarán autorizados.
+### *¿Quiénes son los únicos que van a poder trabajar sobre la Master?*
+- Siempre en cada proyecto habrá líderes, ellos serán los únicos que estarán a cargo de modificar la Master, los demás integrantes no estarán autorizados.
 
 Creación de Ramas:
 
