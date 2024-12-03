@@ -25,37 +25,28 @@
 - Es importante configurar nuestro usuario y correo para que en el momento de realizar los commit queden nuestras firmas en cada uno de ellos. ​
 - La configuración se realiza cuando iniciamos nuestro repositorio, una solo vez​.
 
-TRES ESTADOS DE GIT:
-Es importante entender los tres estados de git, ya que cada dato e información que vamos a guardar y añadir a nuestro repositorio pasará por los tres estados de Git.​
+## **TRES ESTADOS DE GIT**
+- Es importante entender los tres estados de git, ya que cada dato e información que vamos a guardar y añadir a nuestro repositorio pasará por los tres estados de Git.​
 
-LOS​ COMANDOS​ QUE MÁS​ UTILIZAREMOS
-Git Add .
+## **LOS​ COMANDOS​ QUE MÁS​ UTILIZAREMOS**
+        git add .
+- Este comando me permite añadir cualquier archivo o modificación a mi repositorio.
+  
+        git commit –m
+- ​Este comando me permite confirmar cada archivo o modificación realizada para ser enviada a mi repositorio
 
-Este comando me permite añadir cualquier archivo o modificación a mi repositorio
+## **RAMAS**
+- Cuando hablamos de ramas debemos diferenciar entre la rama master y las ramas auxiliares .
+- La rama master se inicia en el momento que creamos nuestro repositorio y será la rama principal de nuestro proyecto. ​Las ramas auxiliares me permite realizar modificaciones sin alterar la rama Master.​
 
-Git Commit –m
+### *MODIFICACIONES EN LA RAMA MASTER*
+- Todas las modificaciones que realicemos en las ramas auxiliares antes de ser añadidas a la rama Master, sólo serán confirmadas por los líderes del proyecto. ​
 
-​Este comando me permite confirmar cada archivo o modificación realizada para ser enviada a mi repositorio
+### *ELIMINAR RAMAS*
+- Es importante recordar que una vez que utilicemos unas ramas para hacer actualizaciones a nuestro proyecto podremos eliminarlas para que no se nos sature de ramas. ​
 
-RAMAS
-Cuando hablamos de ramas debemos diferenciar entre la rama master y las ramas auxiliares ​
-
-La rama master se inicia en el momento que creamos nuestro repositorio y será la rama principal de nuestro proyecto. ​Las ramas auxiliares me permite realizar modificaciones sin alterar la rama Master.​
-MODIFICACIONES EN LA RAMA MASTER:
-Todas las modificaciones que realicemos en las ramas auxiliares antes de ser añadidas a la rama Master, sólo serán confirmadas por los líderes del proyecto. ​
-
-ELIMINAR RAMAS
-Es importante recordar que una vez que utilicemos unas ramas para hacer actualizaciones a nuestro proyecto podremos eliminarlas para que no se nos sature de ramas. ​
-
-NUEVAS VERSIONES ​DE ​NUESTRO PROYECTO
-Cada actualización que añadiremos a nuestro proyecto podremos llamarlas Versiones o Tag ​
-
-Estas Tags o etiquetas me permitirán generando nuevas versiones del proyecto. ​
-
-También podemos eliminar dichas etiquetas si se cree conveniente
-
-A medida que vamos realizando mejoras y actualizaciones a nuestro proyecto tendremos la posibilidad de ir versionando el mismo. 
-
-
-
-
+### *NUEVAS VERSIONES ​DE ​NUESTRO PROYECTO*
+- Cada actualización que añadiremos a nuestro proyecto podremos llamarlas Versiones o Tag.
+- Estas Tags o etiquetas me permitirán generando nuevas versiones del proyecto. ​
+- También podemos eliminar dichas etiquetas si se cree conveniente.
+- A medida que vamos realizando mejoras y actualizaciones a nuestro proyecto tendremos la posibilidad de ir versionando el mismo. 
