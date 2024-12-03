@@ -35,239 +35,168 @@
 ### *¿Quiénes son los únicos que van a poder trabajar sobre la Master?*
 - Siempre en cada proyecto habrá líderes, ellos serán los únicos que estarán a cargo de modificar la Master, los demás integrantes no estarán autorizados.
 
-Creación de Ramas:
+### *Creación de Ramas*
+- Desde las ramas de cada desarrollador, se sacarán ramas para trabajar en la rama que le queda a cada uno.
+- Una vez que se cumple el trabajo en cada rama se debe volver a la rama Master.
 
-Desde las ramas de cada desarrollador, se sacarán ramas para trabajar en la rama que le queda a cada uno.
+### *Cuando ejecutamos Merge*
+- Cuando hablamos de utilizar el comando Merge, hablamos de la integración de las ramas auxiliares (que se han estado trabajando por separado) a nuestra rama Master.
+- Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y modificando las mismas ramas y esto puede generar conflictos.
 
-Una vez que se cumple el trabajo en cada rama se debe volver a la rama Master.
+### *Cambio sólo realizados en nuestras ramas auxiliares*
+- Todos los cambios que realizaremos en nuestro proyecto los realizaremos en nuestras ramas auxiliares para luego pasarlos a nuestra Rama Master o Main.
+- Una vez que ya confirmamos nuestros cambios en nuestras Ramas auxiliares, son enviados a la Master o Main.
+- Allí los líderes controlarán que los cambios realizados funcionen
 
-Cuando ejecutamos Merge:
+      Nuestra carpeta . GIT IGNORE
+      .git ignore
 
-Cuando hablamos de utilizar el comando Merge, hablamos de la integración de las ramas auxiliares (que se han estado trabajando por separado) a nuestra rama Master.
+- Es una carpeta creada en del directorio de trabajo en el momento de ejecutar git init. Esta carpeta contiene reglas sobre qué archivos y/o carpetas deben ser ignorados por git.
+- Cualquier archivo que ignoremos no aparecerá en la salida de un git status y además será ignorado cuando utilicemos un comando git add. Esto no quiere decir que los archivos ignorados sean eliminados de tu equipo local, sino que permanecerán ahí pero nunca se subirán al repositorio.
+- Vamos a crear un documento para que luego sea ignorado por Git de nombre requisitos
 
-Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y modificando las mismas ramas y esto puede generar conflictos.
+### *Ignorando Archivos*
+- Para ignorar archivos utilizaremos el comando:
 
-Cambio sólo realizados en nuestras ramas auxiliares:
+      git ignore
 
-Todos los cambios que realizaremos en nuestro proyecto los realizaremos en nuestras ramas auxiliares para luego pasarlos a nuestra Rama Master o Main.
+- Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git.
 
-Una vez que ya confirmamos nuestros cambios en nuestras Ramas auxiliares, son enviados a la Master o Main.
+### *Para Cambiar de una Rama a Otra*
+- En las clases anteriores estuvimos utilizando los comandos:
 
-Allí los líderes controlarán que los cambios realizados funcionen
+      git checkout master
+      git switch
 
-Nuestra carpeta . GIT IGNORE
+- Uno de los comandos que utilizamos para visualizar las ramas creadas:
 
- .git ignore
+      git branch
 
-Es una carpeta creada en del directorio de trabajo en el momento de ejecutar git init. Esta carpeta contiene reglas sobre qué archivos y/o carpetas deben ser ignorados por git.
+### *¿Cómo Cambiar el Nombre de la Rama Master?*
+- Podemos cambiar el nombre de nuestra Rama Master a través de una configuración global.
+- En primer lugar digitaremos:
 
-Cualquier archivo que ignoremos no aparecerá en la salida de un git status y además será ignorado cuando utilicemos un comando git add. Esto no quiere decir que los archivos ignorados sean eliminados de tu equipo local, sino que permanecerán ahí pero nunca se subirán al repositorio. 
+      git branch
 
-Vamos a crear un documento para  que luego sea ignorado por Git de nombre requisitos
+- Este comando me permite visualizar las ramas que tengo.
+- Para cambiar el nombre de las ramas:
 
-Ignorando Archivos:
+      git branch -m (nombre actual de la rama « Master») (nuevo nombre «Main»)
 
-Para ignorar archivos utilizaremos el comando:
+- Este comando solo te permite cambiar el nombre de la rama Master a Main o al revés de Main a Master
+  
+### *¿Qué Pasa si no me Aparece Ninguna Rama?*
+- Cuando utilizamos el comando:
 
-Git Ignore
+      git branch
+    
 
-Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git
+- Si no nos aparece ninguna rama es porque aun no hemos realizado ningún commit y tampoco hemos creado una nueva rama.
+- En el momento que comenzamos a realizar commit, nos figurará la rama Master o Main.
+- Con Git Branch vamos a poder visualizar las ramas que hemos creado
 
-Ignorando Archivos:
+## **Proyectos en Git**
+- Cuando trabajamos proyectos en git por lo general trabajamos con diferentes versiones de nuestro Proyecto.
+- Los desarrolladores prefieren llevar siempre un proyecto por versiones, por pasos o por diferentes puntos:
+  - Se revisa el producto.
+  - Se realiza un testing rápido y se verifica que el proyecto vaya conforme a lo pedido por el cliente.
 
-Para ignorar archivos utilizaremos el comando:
+### *Los Tags*
+- Git nos permite crear este tipo de seguimientos o versiones.
+- Para ello  nos da los Tags, un tag o etiqueta también es un identificador que nos permite seleccionar un grupo de modificaciones o cambios que realizamos y agruparlas en una versión o Tag.
+- Comando para trabajar por versiones nuestro proyecto:
+  - El comando que utilizaremos para ordenar nuestras diferentes versiones del proyecto en el que estemos trabajando es el siguiente.
 
-Git Ignore
+        git tag (Nombre que va a llevar el Tag)
 
-Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git
+  - Ej:
 
-Para cambiar de una rama a otra:
+        git tag Versión 1
 
-En las clases anteriores estuvimos utilizando los comandos
+  - Es importante seleccionar sólo los commit que van  a ser parte de esa Versión 1 de nuestro proyecto.
 
-Git Checkout Master
+### *¿Cómo Realizar la Selección de los Commit que Quiero Versionar o Separar con Etiqueta?*
+- Para ello utilizaremos el comando:
 
-Git Switch
+      git reset  --hard (n° del commit hasta donde vamos a seleccionar)
 
-Uno de los comandos que utilizamos para visualizar las ramas creadas
+- Solo quedan seleccionados los commit hasta el numero de hash que seleccionamos, esos commit serian los que formarán parte de la versión 1 de nuestro proyecto.
+- Tener en cuenta que todos los commit que quedan fuera o más recientes cambios desaparecerán. No es aconsejable utilizarlo si se esta trabajando de forma global. Ya que se borrarían los commit a todos los desarrolladores que estén trabajando en el proyecto.
+- Sólo nos figurarán los commit hasta el número de hash seleccionado.
+- El puntero se posicionará donde queremos agregar nuestra etiqueta, según el hash que seleccionemos.
 
-Git Branch
+### *Pasos para Agregar Nuestra Tag o Etiqueta a Nuestro Proyecto*
+- En primer lugar ejecutaremos el comando:
 
-¿Cómo cambiar el nombre  de la Rama Master?
+      git log --oneline
 
-Podemos cambiar el nombre de nuestra Rama Master a través de una configuración global
+- Veremos todos los commit a etiquetar en una versión. Luego utilizaremos el comando:
 
-En primer lugar digitaremos
+      git tag versión1 «numero del hash»
 
-Git branch
+- Con Git Tag añadiremos la etiqueta de nuestra versión y además con el siguiente comando veremos nuestra tag en el commit seleccionado:
 
-Este comando me permite visualizar las ramas que tengo
+      git log --oneline --all 
 
-Para cambiar el nombre de las ramas:
+- Para comprobar si mi etiqueta ya se añadió utilizo el siguiente comando.
 
-Git branch -m (nombre actual de la rama « Master») (nuevo nombre «Main»)
+      git tag
 
- 
+- Nos arrojará la versión que estamos trabajando o que tenemos hasta el momento.
+- El siguiente comando nos mostrará la lista de los commit y en el último commit que trabajamos nos figurará, pegado a nuestra Main, la etiqueta de la versión que estamos trabajando:
 
-Este comando solo te permite cambiar el nombre de la rama Master a Main o al revés de Main a Master
+      git log --oneline 
 
+### *¿Cómo Eliminamos un Tags?*
+- Para eliminar un Tag o etiqueta de nuestro proyecto, realizamos el siguiente comando:
 
-¿Qué pasa si no me aparece ninguna rama?
+      git tag –d (nombre de la versión)
 
-Cuando utilizamos el comando
+- Por ejemplo:
 
-Git Branch
+      git tag –d versión 1
 
-    ?
+- Luego tecleamos:
 
-Si no nos aparece ninguna rama es porque aun no hemos realizado ningún commit y tampoco hemos creado una nueva rama.
+      git tag
 
-En el momento que comenzamos a realizar commit, nos figurará la rama Master o Main.
+- Y nos arrojará las versiones que nos queden o ninguna en el caso que solo tengamos una.
 
-Con Git Branch vamos a poder visualizar las ramas que hemos creado
+- Con el comando *git tag -d «nombre de la version»* eliminamos etiqueta, con git log --oneline --all vemos los cambios.
+- Otra forma de agregar etiquetas o versiones a nuestro proyecto es utilizando el siguiente comando:
 
+      git tag -a «nombre del Tag» -m «mensaje del tag»
 
-Proyectos en Git:
+- En este comando creamos una etiqueta, pero añadimos un mensaje con –m.
+- Si tecleamos:
 
-Cuando trabajamos proyectos en git por lo general
+      git tag (nos aparecerá)
+      V1.0
 
-trabajamos con diferentes versiones de nuestro Proyecto.
+- Si utilizamos: 
 
-Los desarrolladores prefieren llevar siempre un proyecto
+      git log --oneline
 
-por versiones, por pasos o por diferentes puntos:
+- También nos figurará al lado de main o master, la etiqueta: 
 
-•Se revisa el producto
-•Se realiza un testing rápido y se verifica que el proyecto
- vaya conforme a lo pedido por el cliente.
+      Tag: V1.0
 
-Los Tags:
+### *Git Show*
+- Este comando me permite ver una descripción detallada de la etiqueta que utilizamos anteriormente.
 
-Git nos permite crear este tipo de seguimientos o versiones.
+      git tag -a v1.0 -m «versión 1 del proyecto»
 
-Para ello  nos da los Tags, un tag o etiqueta también es un
+- Digitaremos entonces:
 
- identificador que nos permite seleccionar un grupo de
+      git show V1.0
 
-modificaciones o cambios que realizamos y agruparlas en
-
-una versión o Tag.
-
-Comando para trabajar por versiones nuestro proyecto:
-
-El comando que utilizaremos para ordenar nuestras diferentes versiones del proyecto en el que estemos trabajando es el siguiente.
-
-Git Tag (Nombre que va a llevar el Tag)
-
-Ej:
-
- Git Tag Versión 1
-
-Es importante seleccionar sólo los commit que van  a ser parte de esa Versión 1 de nuestro proyecto
-¿ Cómo realizar la selección de los commit que quiero versionar o separar con etiqueta?
-
-Para ello utilizaremos el comando
-
-Git Reset  --hard (n° del commit hasta donde vamos a seleccionar)
-
-Solo quedan seleccionados los commit hasta el numero de hash que seleccionamos, esos commit serian los que formarán parte de la versión 1 de nuestro proyecto.
-
-Tener en cuenta que todos los commit que quedan fuera o más recientes cambios desaparecerán. No es aconsejable utilizarlo si se esta trabajando de forma global. Ya que se borrarían los commit a todos los desarrolladores que estén trabajando en el proyecto
-
-Sólo nos figurarán los commit hasta el número de hash seleccionado.
-
-El puntero se posicionará donde queremos agregar nuestra etiqueta, según el hash que seleccionemos.
-
-
-Pasos para agregar nuestra Tag o etiqueta a nuestro proyecto
-En primer lugar ejecutaremos el comando
-
-Git log --oneline
-
-Veremos todos los commit a etiquetar en una versión. Luego utilizaremos el comando
-
-Git Tag versión1 «numero del hash»
-
-Con Git Tag añadiremos la etiqueta de nuestra versión y además con
-
- git log --oneline --all, veremos nuestra tag en el commit seleccionado
-
-
-
-Para comprobar si mi etiqueta ya se añadió utilizo el siguiente comando.
-
-Git Tag
-
-Nos arrojará la versión que estamos trabajando o que tenemos hasta el momento.
-
-Git log  --oneline nos mostrará la lista de los commit y en el último commit que trabajamos nos figurará,  pegado a nuestra Main, la etiqueta de la versión que estamos trabajando.
-
-
-¿Cómo eliminamos un Tags?
-
-Para eliminar un Tag o etiqueta de nuestro proyecto , realizamos el siguiente comando
-
-Git tag –d (nombre de la versión)
-
-Por ejemplo:
-
-Git Tag –d versión 1
-
-Luego tecleamos
-
-Git Tag
-
-Y nos arrojará las versiones que nos queden o ninguna en el caso que solo tengamos una.
-
-Con el comando Git Tag -d «nombre de la version» eliminamos etiqueta
-
-con git log --oneline --all vemos los cambios
-
-
-Otra forma de agregar etiquetas o versiones a nuestro proyecto es utilizando el siguiente comando:
-
-Git tag -a «nombre del Tag» -m «mensaje del tag»
-
-En este comando creamos una etiqueta  pero añadimos un mensaje con –m
-
-Si tecleamos
-
-Git Tag  ( nos aparecerá)
-
-V1.0
-
-Si utilizamos
-
-Git log --oneline
-
-También nos figurará al lado de main o master, la etiqueta
-
-Tag : V1.0
-
-Git Show:
-
-Este comando me permite ver una descripción detallada de la etiqueta que utilizamos anteriormente.
-
-Git tag -a v1.0  -m «versión 1 del proyecto»
-
- digitaremos entonces:
-
-Git show V1.0
-
-Nos mostrará una información extra:
-
--La versión o Tag
-
--El Autor, cuando fue creado
-
--El mensaje que añadí a la etiqueta cuando cree mi versión.
-
--El commit donde esta ubicado.
-
--Me aparece un Diff con los cambios realizados.
-
-El comando Git Show nos permite ver detalles de nuestros cambios y modificaciones realizadas en nuestro repositorio.
-
+- Nos mostrará una información extra:
+  - La versión o Tag.
+  - El Autor, cuando fue creado.
+  - El mensaje que añadí a la etiqueta cuando cree mi versión.
+  - El commit donde esta ubicado.
+  - Me aparece un Diff con los cambios realizados.
+- El comando Git Show nos permite ver detalles de nuestros cambios y modificaciones realizadas en nuestro repositorio.
 
 Creando una etiqueta desde un commit anterior:
 
