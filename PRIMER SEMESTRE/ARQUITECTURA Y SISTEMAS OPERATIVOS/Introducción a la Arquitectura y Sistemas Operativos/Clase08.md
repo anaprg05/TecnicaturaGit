@@ -32,7 +32,8 @@
 ### *La Gestión de Identidad y Acceso (IAM)*
 - Define los roles y privilegios de acceso para cada usuario, así como las condiciones bajo las cuales se le otorgan o niegan sus privilegios. Las metodologías IAM incluyen el inicio de sesión único, que permite a un usuario iniciar sesión en una red una vez sin volver a ingresar las credenciales durante la misma sesión; autenticación multifactor, que requiere dos o más credenciales de acceso; cuentas de usuario privilegiadas, que otorgan privilegios administrativos solo a ciertos usuarios; y gestión del ciclo de vida del usuario, que gestiona la identidad y los privilegios de acceso de cada usuario desde el registro inicial hasta el término. Las herramientas de IAM también pueden brindar a sus profesionales de ciberseguridad una visibilidad más completa de la actividad sospechosa en los dispositivos de los usuarios finales, incluidos los puntos finales a los que no pueden acceder físicamente. Esto ayuda a acelerar los tiempos de investigación y respuesta para aislar y contener el daño de una brecha de seguridad.​
 ​
-​### *Una Plataforma de Seguridad de Datos Integral*
+
+### *Una Plataforma de Seguridad de Datos Integral*
 - Protege la información confidencial en varios entornos, incluidos los entornos multinube híbridos. Las mejores plataformas de seguridad de datos brindan visibilidad automatizada y en tiempo real de las vulnerabilidades de los datos, así como supervisión continua que alerta sobre las vulnerabilidades y los riesgos de los datos antes de que se conviertan en brechas de seguridad; también deben simplificar la conformidad regulatoria de la privacidad de datos del gobierno y de la industria. Las copias de seguridad y el cifrado también son vitales para mantener los datos seguros.
 
 ### *La Gestión de Eventos e Información de Seguridad (SIEM)*
