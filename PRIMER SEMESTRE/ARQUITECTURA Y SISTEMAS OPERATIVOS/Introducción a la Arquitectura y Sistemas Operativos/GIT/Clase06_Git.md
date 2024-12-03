@@ -198,111 +198,83 @@
   - Me aparece un Diff con los cambios realizados.
 - El comando Git Show nos permite ver detalles de nuestros cambios y modificaciones realizadas en nuestro repositorio.
 
-Creando una etiqueta desde un commit anterior:
+### *Creando una Etiqueta desde un Commit Anterior*
+- Otra manera de crear una versión de tu proyecto es a partir de un commit.
+- Con el siguiente comando:
 
-Otra manera de crear una versión de tu proyecto es a partir de un commit
+      git log --oneline
+- Seleccionamos y copiamos el hash desde donde queremos comenzar nuestra 1ra. Versión
 
-Con el siguiente comando:
+      git tag «nombre de la versión» (n° hash)
 
-Tecleamos git log  --oneline y seleccionamos y copiamos el hash desde donde queremos comenzar nuestra 1ra. Versión
+ - Por ejemplo:
 
-Git Tag «nombre de la versión» (n° hash)
+       git tag v1.0  028bf55
 
-Por ejemplo:
+  - Si digitamos el siguiente comando nos aparecerá la lista de los commit, pero en el commit que habíamos elegido figurará la etiqueta donde esta nuestra versión 1.0
 
-Git Tag v1.0  028bf55
+        git log --oneline 
 
-Si digitamos el comando
+- Con Git log --oneline --all podremos ver la versión en el otro commit seleccionado.
 
-Git log --oneline nos aparecerá la lista de los commit, pero en el commit que habíamos elegido figurará la etiqueta  donde esta nuestra versión 1.0
+### *Para Eliminar el Tag*
+- Utilizaremos el siguiente comando
 
-Con Git log --oneline --all podremos ver la versión en el otro commit seleccionado
+      git tag –d «versión creada»
 
+ - Ejemplo:
 
-Para eliminar el Tag
+       git tag –d v1.0
 
-Utilizaremos el siguiente comando
+  - Y me borrará la etiqueta de mi versión.
+  - Comprobamos con el comando:
 
-Git tag –d «versión creada»
+        git log --oneline 
 
-Ejemplo
+- Podemos ver que se elimino nuestra v 1.0 del commit.
+- Para agregar una etiqueta con un comentario desde el commit que seleccionemos:
+   - Seleccionaremos uno de los commit desde donde queremos que figure nuestra etiqueta de nuestra versión.
+   - Para ello utilizaremos:
 
-Git tag –d v1.0
+         git tag –a «nombre de la versión» –m «mensaje de la versión» n° hash
 
-Y me borrará la etiqueta de mi versión
+   - Por ejemplo:
 
-Comprobamos con el comando
+         git tag –a v1.0 –m «primera versión de mi proyecto» 7bc3d84
 
-Git log --oneline 
+     - Tecleamos Git log --oneline y veremos los commit con el commit seleccionado con su etiqueta de la versión de nuestro proyecto.
 
-Podemos ver que se elimino nuestra v 1.0 del commit
+### *Para agregar otras versiones a nuestro proyecto*
+- Seguiremos los pasos anteriores pero respetaremos el órden de nuestras etiquetas.
+- En este caso si ya tenemos creada la etiqueta de nuestra Versión 1.0, seleccionaremos otro commit desde donde vamos a iniciar nuestra versión, en este caso seria nuestra versión 2.0
 
+      git tag –a v2.0 –m «versión 2 del proyecto»
 
-Para agregar una etiqueta con un comentario desde el commit que seleccionemos:
+- Si ejecutamos Git log --oneline nos figurarán las dos versiones realizadas.
+- También puedes ejecutar Git Show (mas la versión elegida) para ver los detalles que te permite el comando mencionado.
+- Con git tag –a «nombre de la version» –m «mensaje de la version» nos permite utilizar luego git show
+- Cuando nos encontramos modificando archivos y se nos solicita unas nuevas modificaciones.
+- Cuando  nos encontramos modificando, trabajando o creando más archivos de nuestro proyecto, ya sea porque vamos avanzando o porque simplemente hay modificaciones que hacer, es muy probable que en algún punto tengamos que hacer algo así como un freno de emergencia, como un stop de emergencia.
+- Por ejemplo: Si estamos trabajando en algún archivo y de pronto el cliente pide una actualización urgente o un cambio que es de vida o muerte, es algo que debe hacerse en el momento.
+- Pero aún no se ha terminado con las modificaciones  que se estaban realizando, no has acabado tu progreso  por Múltiples razones.
+- ¿Cómo vamos a solucionar esto?
 
-Seleccionaremos uno de los commit desde donde queremos que figure nuestra etiqueta de nuestra versión.
+      git stash
 
-Para ello utilizaremos:
+- Me permite generar  un campo temporal en el que se va a guardar el progreso de nuestro proyecto.
+- Hacemos la modificación que el cliente pide y ya luego podemos continuar en donde lo habíamos dejado.
+- Vamos a teclear:
 
-Git tag –a «nombre de la versión» –m «mensaje de la versión» n° hash
+      git stash
 
-Por ejemplo:
+- Y nos guardará los cambios sin que se alteren las modificaciones en que estamos trabajando.
+- Para realizar las modificaciones que nuestro cliente nos esta pidiendo con urgencia.
+- Luego ejecutaremos git add y comitearemos las modificaciones.
 
- 
+      git commit –am «mensaje del commit»
 
-Git tag –a v1.0 –m «primera versión de mi proyecto» 7bc3d84
+- Luego con el siguiente comando recuperaremos las modificaciones en las que estábamos trabajando y podremos seguir trabajando en ellas:
 
-Tecleamos Git log --oneline y veremos los commit con el commit seleccionado con su etiqueta de la versión de nuestro proyecto.
+      git stash pop
 
-Para agregar otras versiones a nuestro proyecto:
-
-Seguiremos los pasos anteriores pero respetaremos el órden de nuestras etiquetas.
-
-En este caso si ya tenemos creada la etiqueta de nuestra Versión 1.0 , seleccionaremos otro commit desde donde vamos a iniciar nuestra versión, en este caso seria nuestra versión 2.0
-
-Git tag –a v2.0 –m « versión 2 del proyecto»
-
-Si ejecutamos Git log --oneline nos figurarán las dos versiones realizadas.
-
-También puedes ejecutar Git Show  (mas la versión elegida ) para ver los detalles que te permite el comando mencionado.
-
-Con git tag –a «nombre de la version» –m «mensaje de la version» nos permite utilizar luego git show
-
-
-Cuando nos encontramos modificando archivos y se nos solicita unas nuevas modificaciones
-
-Cuando  nos encontramos modificando, trabajando o creando más archivos de nuestro proyecto, ya sea porque vamos avanzando o porque simplemente hay modificaciones que hacer, es muy probable que en algún punto tengamos que hacer algo así como un freno de emergencia, como un stop de emergencia.
-
-Por ejemplo: Si estamos trabajando en algún archivo y de pronto el cliente pide
-
-una actualización urgente o un cambio que es de vida o muerte, es algo que debe hacerse en el momento.
-
-Pero aún no se ha terminado con las modificaciones  que se estaban realizando, no has acabado tu progreso  por Múltiples razones.
-
-Cómo vamos a solucionar esto?
-
-Git Stash
-
-Me permite generar  un campo temporal en el que se va a guardar el progreso de nuestro proyecto.
-
-Hacemos la modificación que el cliente pide y ya luego podemos continuar en donde lo habíamos dejado.
-
-Vamos a teclear Git Stash
-
-Y nos guardará los cambios sin que se alteren las modificaciones en que estamos trabajando.
-
-Para realizar las modificaciones que nuestro cliente nos esta pidiendo con urgencia.
-
-Luego ejecutaremos git add y comitearemos las modificaciones.
-
-Git commit –am «mensaje del commit»
-
-Luego con el comando
-
-Git stash pop
-
-recuperaremos las modificaciones en las que estábamos trabajando y podremos seguir trabajando en ellas.
-
-El comando Git stash me permite guardar las modificaciones que estaba realizando para atender alguna modificación mas urgente y después seguir trabajando en lo que estaba realizando
-
-
+- El comando Git stash me permite guardar las modificaciones que estaba realizando para atender alguna modificación mas urgente y después seguir trabajando en lo que estaba realizando.
