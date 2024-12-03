@@ -39,7 +39,7 @@ Al no verificar cuidadosamente la calidad del software de terceros, algunas de l
 ## *MEDIDAS DE SEGUIDAD*
 - ​Las medidas de Ciberseguridad o seguridad cibernética están diseñadas para combatir las amenazas contra sistemas en red y aplicaciones, ya sea que esas amenazas se originen dentro o fuera de una organización. 
 
-## ​**¿CÓMO TRABAJA?**
+## **¿CÓMO TRABAJA?**
 - La ciberseguridad trata de trabajar en robustos sistemas que sean capaces de actuar antes, durante y después, no sirve solo para prevenir, sino también dar confianza a los clientes y al mercado, pudiendo así reducir el riesgo de exposición del usuario y de los sistemas.
 
 ## ​**LOS CIBERDELINCUENTES**
@@ -71,7 +71,7 @@ Al no verificar cuidadosamente la calidad del software de terceros, algunas de l
 ### *PROTECCIÓN DE COMUNICACIONES*
 - ​Estas soluciones se encargan de proteger a la organización de un grupo de amenazas, como los ataques de denegación de servicios, accesos no autorizados o la intercepción de las comunicaciones. También debemos de tener en cuenta que las amenazas no solo pueden partir desde Internet, sino también del interior de las empresas, es por ello que la protección de las comunicaciones es imprescindibles cuando existen varias oficinas o sedes en varias partes del mundo, cuando se realizan diariamente a través de internet.
 
-​### *DOMINIOS DE CIBERSEGURIDAD*
+### *DOMINIOS DE CIBERSEGURIDAD*
 - Una estrategia de ciberseguridad sólida tiene capas de protección para defenderse de los delitos cibernéticos, incluyendo aquellos  que intentan acceder, cambiar o destruir datos, extorsionar a los usuarios o la organización, o interrumpir las operaciones empresariales normales. 
 
 - Las contramedidas deben abordar
