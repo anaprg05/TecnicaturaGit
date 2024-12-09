@@ -1,64 +1,43 @@
-# ***GITHUB***
+![image](https://github.com/user-attachments/assets/2becffcc-54cf-45ca-89ab-2bbcd71f76cd)# ***GITHUB***
+## **¿QUÉ ES GITHUB?**
+- Es una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones, y se caracteriza sobre todo por sus funciones colaborativas que ayudan a que todos puedan aportar su granito de arena para mejorar el código.
+- Como buen repositorio, el código de los proyectos que sean abiertos puede ser descargado y revisado por cualquier usuario, lo que ayuda a mejorar el producto y crear ramificaciones a partir de él. Y si se prefiere que tu código no sea visto, también se pueden crear proyectos privados.
 
+## **​¿POR QUÉ UTILIZAMOS GITHUB?**
+- Hasta ahora hemos estado trabajando de manera local en nuestro equipo, pero ahora vamos a comenzar a trabajar de manera global. Esto nos va a permitir que cada usuario o integrante tenga acceso al proyecto en el cual vamos a estar trabajando más adelante en nuestro e-comerce.
+- Para ello, utilizaremos los comandos:
 
+      git push
+      git pull
 
+## **TRABAJO LOCAL ​Y ​TRABAJO REMOTO**
+### *Trabajo Remoto*
+- Git nos permitía trabajar desde nuestro equipo, sin necesidades de un servidor, pero si vamos a trabajar de manera remota y que muchos usuarios tengan acceso a un repositorio y que puedan trabajar en modificaciones desde distintos lugares, utilizaremos GitHub.
+- En GitHub podemos tener repositorios en la nube donde su acceso puede ser público o privado.
 
-¿QUÉ ES GITHUB?
-
-​ ES UNA DE LAS PRINCIPALES PLATAFORMAS PARA CREAR PROYECTOS ABIERTOS DE HERRAMIENTAS Y APLICACIONES, Y SE CARACTERIZA SOBRE TODO POR SUS FUNCIONES COLABORATIVAS QUE AYUDAN A QUE TODOS PUEDAN APORTAR SU GRANITO DE ARENA PARA MEJORAR EL CÓDIGO. ​
+## **¿QUÉ ME PERMITE GITHUB?**
+- GitHub es un portal que me permite gestionar las aplicaciones que utiliza el sistema Git. Esto va a permitir a los desarrolladores almacenar y administrar sus códigos, al igual que llevar un registro y control de cualquier cambio sobre dicho código.
 ​
- COMO BUEN REPOSITORIO, EL CÓDIGO DE LOS PROYECTOS QUE SEAN ABIERTOS PUEDE SER DESCARGADO Y REVISADO POR CUALQUIER USUARIO, LO QUE AYUDA A MEJORAR EL PRODUCTO Y CREAR RAMIFICACIONES A PARTIR DE ÉL. Y SI SE  PREFIERE QUE TU CÓDIGO NO SE VEA, TAMBIÉN  SE PUEDEN CREAR PROYECTOS PRIVADOS.
+​## **PROYECTOS EN LA GITHUB**
+- GitHub me va a permitir subir proyectos con códigos abiertos pero también da la opción de subir proyectos de forma privada.
 
-​¿POR QUÉ UTILIZAMOS GITHUB?
+## **BENEFICIOS DE GITHUB**
+- Seguimientos de errores.
+- Búsqueda rápida.
+- Cuenta con una gran comunidad de desarrolladores en todo el mundo.
 
-HASTA AHORA HEMOS ESTADO TRABAJANDO DE MANERA LOCAL EN NUESTRO EQUIPO. PERO AHORA VAMOS A COMEZAR A TRABAJAR DE MANERA GLOBAL.​
- ESTO NOS VA A PERMITIR QUE CADA USUARIO O INTEGRANTE TENGA ACCESO AL PROYECTO EN EL CUAL VAMOS A ESTAR TABAJANDO MÁS ADELANTE EN NUESTRO E-COMERCE​
- PARA ELLO UTILIZAREMOS LOS COMANDOS​
+### *Ventajas*:
+  - Git nos permitirá llevar el código, una estructura, copias de seguridad, para un buen desarrollo de un proyecto.
+  - GitHub es igual que Git, pero en la nube. Esto significa que cualquier desarrollador podrá acceder a un repositorio.
+  -  En el caso que se pierda el repositorio local, podremos recuperar nuestro repoditorio si lo subimos anteriormente a GitHub.
+  -  GitHub me permitirá trabajar en una interfaz gráfica.
+
+## **COMO SUBIMOS NUESTRO PROYECTOS A GITHUB**
+- Todos los repositorios que tengamos en Git pueden ser subidos a GitHub ya sea de manera pública o privada.​
+
+### *CÓDIGO ABIERTO*
+- Por lo general, en Git trabajamos con códigos abiertos de manera que todos los desarrolladores tengan acceso y puedan hacer mejoras.
+- Cualquier desarrollador que tenga el link del enlace al repositorio podrá tener acceso al mismo y prodrá intervenir en él.
 ​
-    git push
-    git pull
-
-​ 
-TRABAJO LOCAL ​Y ​TRABAJO REMOTO
-TRABAJO REMOTO
-GIT NOS PERMITÍA TRABAJAR DESDE NUESTRO EQUIPO, SIN NECESIDADES DE UN SERVIDOR, PERO SI VAMOS A TRABAJAR DE MANERA REMOTA Y QUE MUCHO USUARIOS TENGAN ACCESO A UN REPOSITORIO Y QUE PUEDAN TRABAJAR EN MODIFICACIONES DESDE DISTINTOS LUGARES, UTILIZAREMOS GITHUB.​
-​
-GITHUB PODEMOS TENER REPOSITORIOS EN LA NUBE DONDE SU ACCESO PUEDE SER PÚBLICO O PRIVADO
-
-¿QUÉ ME PERMITE GITHUB?
-ES UN PORTAL QUE ME PERMITE GESTIONAR LAS APLICACIONES QUE UTILIZA EL SISTEMA GIT. • ESTO VA A PERMITIR A LOS DESARROLLADORES ALMACENAR Y ADMINISTRAR SUS CÓDIGOS, AL IGUAL QUE LLEVAR UN REGISTRO Y CONTROL DE CUALQUIER CAMBIO SOBRE DICHO CÓDIGO ​
-
-PROYECTOS EN LA GITHUB 
-GITHUB ME VA A PERMITIR SUBIR PROYECTOS CON CÓDIGOS ABIERTOS PERO TAMBIÉN DA LA OPCIÓN DE SUBIR PROYECTOS DE FORMA PRIVADA. 
-
-BENEFICIOS DE GITHUB
-SEGUIMIENTOS DE ERRORES ​
-
-BÚSQUEDA RÁPIDA ​
-
-CUENTA CON UNA GRAN COMUNIDAD DE DESARROLLADORES EN TODO EL MUNDO​
-
- PERMITE DESCARGAR COMO ARCHIVO EL CODIGO FUENTE ​
-
-Ventajas:_
-​
-GIT NOS PERMITIA LLEVAR EL CÓDIGO, UNA ESTRUCTURA,  COPIAS DE SEGURIDAD, PARA UN BUEN DESARROLLO DE UN PROYECTO​
-​
-GITHUB AL IGUAL QUE GIT, PERO EN LA NUBE, PODRÁ ACCEDER CUALQUIER DESARROLLADOR A UN REPOSITORIO.​
-​
- EN EL CASO QUE SE PIERDA EL REPOSITORIO LOCAL, PODREMOS RECUPERAR NUETRO REPOSITORIO SI LO HABIAS SUBIDO A GITHUB.​
-
-GITHUB ME PERMITIRÁ TRABAJAR EN UNA INTERFAZ GRÁFICA
-COMO SUBIMOS NUESTRO PROYECTOS A GITHUB
-
-Todos los repositorios que tengamos en Git pueden ser subidos a Github ya sea de manera pública o privada.​
-
-CÓDIGO ABIERTO:
-
-​• POR LO GENERAL EN GIT TRABAJAMOS CON CÓDIGOS ABIERTOS DE MANERA QUE TODOS LOS DESARROLLADORES TENGAN ACCESO Y PUEDAN HACER MEJORAS. ​
-​
-• CUALQUIER DESARROLLADOR QUE TENGA EL LINK DEL ENLACE AL REPOSITORIO PODRA TENER ACESO AL MISMO Y PODRÁ INTERVENEIR EN EL.
-
-CÓDIGO CERRADO: 
-
-​También tenemos repositorios con código cerrado, por ejemplo las empresas se manejan con códigos cerrados para evitar daños en los códigos de personas ajenas a los proyectos..
+### *CÓDIGO CERRADO*
+- También tenemos repositorios con código cerrado, por ejemplo las empresas se manejan con códigos cerrados para evitar daños en los códigos de personas ajenas a los proyectos..
