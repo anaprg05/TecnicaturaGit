@@ -33,17 +33,17 @@
 ​- Algunos de los componentes más conocidos del marco de trabajo de scrum son el conjunto de eventos secuenciales, protocolos o reuniones que los equipos de scrum realizan de forma periódica. En los protocolos es donde observamos la mayoría de las variaciones para los equipos. Por ejemplo, algunos equipos consideran que realizar todos estos protocolos es engorroso y repetitivo, mientras que otros los utilizan como una sesión de control necesaria. Nuestro consejo es empezar usando todos los protocolos para dos sprints y ver cómo va. Después, puedes realizar una retrospectiva rápida y ver en qué puntos es necesario realizar ajustes.​
 
 ## **Protocolos clave en los que un equipo de scrum puede participar**
-1- Organización del backlog​.
+**1-** Organización del backlog​.
 
-2- Planificación de sprint​.
+**2-** Planificación de sprint​.
 
-3- Sprint​.
+**3-** Sprint​.
 
-4- Scrum diario o reunión rápida​.
+**4-** Scrum diario o reunión rápida​.
 
-5- Revisión de sprint​.
+**5-** Revisión de sprint​.
 
-6- Retrospectiva de sprint.
+**6-** Retrospectiva de sprint.
 
 ## **Tres funciones esenciales para alcanzar el éxito con scrum**
 ​- El equipo de scrum debe componerse de tres cargos específicos: el propietario del producto, el experto en scrum y el equipo de desarrollo. Y, puesto que los equipos de scrum son interdisciplinares, el equipo de desarrollo está formado por evaluadores, diseñadores, especialistas en experiencia de usuario e ingenieros de operaciones, además de desarrolladores.​
@@ -62,95 +62,69 @@
 - Un experto en scrum eficaz conoce profundamente el trabajo que realiza el equipo y puede ayudarlo a optimizar su transparencia y flujo de entrega. Como conseguidor principal, planifican los recursos necesarios (tanto humanos como logísticos) para organizar los plazos de los sprints, las reuniones rápidas, la revisión de sprints y las retrospectivas de sprints.
 
 
-ARTEFACTOS SCRUM:
-Un artefacto es algo que ha sido hecho o dado por los humanos y que generalmente va a tomar la forma de herramienta , en nuestro caso un artefacto es algo que ha sido creado por quienes utilizan el marco de trabajo de scrum.​
+## **ARTEFACTOS SCRUM**
+- Un artefacto es algo que ha sido hecho o dado por los humanos y que generalmente va a tomar la forma de herramienta , en nuestro caso un artefacto es algo que ha sido creado por quienes utilizan el marco de trabajo de scrum.​
 
-TRANSPARENCIAS DEL ​ARTEFACTO
-Scrum está basado en la transparencia, la inspección, y la adaptación.​
+### *TRANSPARENCIAS DEL ​ARTEFACTO*
+- Scrum está basado en la transparencia, la inspección, y la adaptación.​
+- Las decisiones que se toman para mejorar el valor y para controlar el riesgo, están basadas en el estado de los artefactos. Por lo tanto, si los artefactos no son lo suficientemente transparentes, entonces las decisiones que se tomen pueden ser defectuosas.​
+- El trabajo del Scrum es trabajar con todos los que están dentro y fuera del Equipo Scrum para garantizar que los artefactos son transparentes.​
+- La transparencia es un proceso que implica entrenamiento, aprendizaje, y cambio, y que no sucede de la noche a la mañana.
 
-Las decisiones que se toman para mejorar el valor y para controlar el riesgo, están basadas en el estado de los artefactos. Por lo tanto, si los artefactos no son lo suficientemente transparentes, entonces las decisiones que se tomen pueden ser defectuosas.​
+## **PRODUCT BACKLOG ​(LISTA DE PRODUCTO)**
+- Es un artefacto diseñado para proporcionar transparencia y oportunidades de inspección y de adaptación.​
+- La lista de producto está compuesta por una lista ordenada de todo lo que se necesita en el producto.​
+- ​Es una lista de requisitos que pueden ser nuevas características o mejoras, correcciones o cualquier otro cambio que deba realizarse en el producto.​​
+- Mientras exista el producto, también existirá su product backlog.
 
-El trabajo del Scrum es trabajar con todos los que están dentro y fuera del Equipo Scrum para garantizar que los artefactos son transparentes.​
+### *​TRABAJO EN EQUIPO SOBRE EL PRODUCT BACKLOG*
+- Si varios equipos trabajan en el mismo producto, se debe usar solo una lista de producto.​
 
-La transparencia es un proceso que implica entrenamiento, aprendizaje, y cambio, y que no sucede de la noche a la mañana.
+### *ELEMENTOS QUE FORMAN PARTE DE LA LISTA DE PRODUCTOS*
+​- Los elementos que forman parte de la lista de producto se denominan product backlog, items o elementos de la lista de producto.
+- ​Los elementos de la lista del producto también deben incluir una descripción que ayudará a probar si el trabajo realizado está completo.
 
-PRODUCT BACKLOG​(LISTA DE PRODUCTO)
-Es un artefacto diseñado para proporcionar transparencia y oportunidades de inspección y de adaptación.​
-
-La lista de producto está compuesta por una lista ordenada de todo lo que se necesita en el producto.​
-
-​Es una lista de requisitos que pueden ser nuevas características o mejoras, correcciones o cualquier otro cambio que deba realizarse en el producto.​​
-
-Mientras exista el producto, también existirá su product backlog.
-
-​TRABAJO EN EQUIPO SOBRE EL PRODUCT BACKLOG
-Si varios equipos trabajan en el mismo producto, se debe usar solo una lista de producto.​
-
-ELEMENTOS QUE FORMAN PARTE DE LA LISTA DE PRODUCTOS:
-​
-
-Los elementos que forman parte de la lista de producto se denominan product backlog, items o elementos de la lista de producto .​
-
-​Los elementos de la lista del producto también deben incluir una descripción que ayudará a probar si el trabajo realizado está completo.
-
-CARATERÍSTICAS DE LA LISTA DE PRODUCTO:
+### *CARATERÍSTICAS DE LA LISTA DE PRODUCTO:*
 - Descripción
 - el orden​
 - la estimación ​
 - el valor.
 - descripción de prueba
 
-RESPONSABLE DE LA LISTA DE PRODUCTO:
-La única persona responsable de la lista de producto es el dueño de producto. (PRODUCT OWNER)​
-Esto significa que el dueño de producto es responsable del contenido y del orden del product backlog.​
+### *RESPONSABLE DE LA LISTA DE PRODUCTO:*
+- La única persona responsable de la lista de producto es el dueño de producto (PRODUCT OWNER).​
+- Esto significa que el dueño de producto es responsable del contenido y del orden del product backlog.​
 
-¿CÓMO SE CREA Y GESTIONA EXACTAMENTE EL ​PRODUCT BACKLOG?
-El dueño del producto generalmente tratará de comprender los requisitos comerciales, manteniendo un​ contacto cercano con las partes interesadas.​
+### *¿CÓMO SE CREA Y GESTIONA EXACTAMENTE EL ​PRODUCT BACKLOG?*
+- El dueño del producto generalmente tratará de comprender los requisitos comerciales, manteniendo un​ contacto cercano con las partes interesadas.​
+- ​El dueño de producto agregará características o ideas a la lista de producto según lo considere relevante​ para el producto.
 
-​El dueño de producto agregará características o ideas a la lista de producto según lo considere relevante​ para el producto.
+​### *GESTIÓN DEL PRODUCT BACKLOG*
+- La gestión del product backlog es un proceso continuo y si bien el dueño de producto es responsablede esa lista de producto puede agregar, ordenar o eliminar elementos de la lista de producto en cualquier momento ​si lo considera oportuno, es necesario que trabaje estrechamente con el equipo de desarrollo en esto.
 
-​GESTIÓN DEL PRODUCT BACKLOG:
+### *EQUIPO DE DESARROLLO*
+- Durante la reunión de refinamiento del product backlog, el dueño del producto y el equipo de desarrollo trabajan para agregar detalles, estimaciones y orden a la lista de producto.​
+- ​Lo que también es importante recordar es que el equipo de desarrollo es responsable de todas las estimaciones​ y tiene la última palabra en ello.
 
-​
+### *ORDEN DE LA LISTA DE PRODUCTOS*
+- ​Los elementos de la lista de producto que se posicionan más arriba en la lista de producto son más importantes,​ ya que proporcionan un valor mayor y por lo general son más claros y más detallados que los elementos​ de la parte inferior de la lista de producto.​
+- En términos generales, no vale la pena invertir mucho tiempo en agregar muchos detalles a los elementos ​de la lista de producto que están más abajo en el producto backlog
 
-La gestión del product backlog es un proceso continuo y si bien el dueño de producto es responsablede esa lista de producto puede agregar, ordenar o eliminar elementos de la lista de producto en cualquier momento ​si lo considera oportuno, es necesario que trabaje estrechamente con el equipo de desarrollo en esto.
+## **TAREAS ANTES DEL SPRING QUE DEBE COMENZAR A REALIZAR EL DUEÑO**
+### *DOS COSAS QUE TENDRÁ EN CUENTA EN PRIMER LUGAR:*
+**1-** Hablar con las partes interesadas para comprender lo que se necesita desde el punto de vista comercial​.
 
-EQUIPO DE DESARROLLO:
-Durante la reunión de refinamiento del product backlog, el dueño del producto y el equipo de desarrollo trabajan para agregar detalles, estimaciones y orden a la lista de producto.​
+**​2-** Hablar también  con el equipo de desarrollo.​
 
-​Lo que también es importante recordar es que el equipo de desarrollo es responsable de todas las estimaciones​ y tiene la última palabra en ello.
+### *LOS ELEMENTOS QUE SE DEBE TENER EN CUENTA AL ELABORAR LA LISTA DE PRODUCTOS*
+- El primer elemento de la lista de producto sería crear la página de inicio del sitio web (en caso que la empresa cuente con un sitio)​.
+- El siguiente elemento sería crear una página para mostrar un producto.​
+- Crear un formulario de pedido.​
+- Mostrar múltiples productos.​
+- Agregar funcionalidad.​
+- El carrito de compras.​
+- Un sistema para pago con tarjeta de crédito, etc..​
+- Cualquier característica o idea relacionada al producto se va a plasmar en la lista de producto.​
 
-ORDEN DE LA LISTA DE PRODUCTOS:
-​Los elementos de la lista de producto que se posicionan más arriba en la lista de producto son más importantes,​ ya que proporcionan un valor mayor y por lo general son más claros y más detallados que los elementos​ de la parte inferior de la lista de producto.​
-En términos generales, no vale la pena invertir mucho tiempo en agregar muchos detalles a los elementos ​de la lista de producto que están más abajo en el producto backlog
-
-TAREAS ANTES DEL SPRING QUE DEBE COMENZAR A REALIZAR EL DUEÑO :
-DOS COSAS QUE TENDRÁ EN CUENTA EN PRIMER LUGAR:
-1- hablar con las partes interesadas para comprender lo que se necesita desde el punto de vista comercial​
-
-​ 2- hablar también  con el equipo de desarrollo.​
-
-LOS ELEMENTOS QUE SE DEBE TENER EN CUENTA AL ELABORAR LA LISTA DE PRODUCTOS:
-​
-
-El primer elemento de la lista de producto sería crear la página de inicio del sitio web. (en caso que la empresa cuente con un sitio)​
-
-El siguiente elemento sería crear una página para mostrar un producto.​
-
-Crear un formulario de pedido.​
-
-Mostrar múltiples productos.​
-
-Agregar funcionalidad.​
-
-El carrito de compras.​
-
-Un sistema para pago con tarjeta de crédito, etc..​
-
-Cualquier característica o idea relacionada al producto se va a plasmar en la lista de producto.​
-
-EL DUEÑO AGREGA MÁS DETALLES JUNTO CON EL EQUIPO DE DESARROLLO:
-​
-
-un elemento de la lista de producto o product backlog item debe tener una descripción,​ un orden, una estimación y un valor, así como también una descripción de prueba.
-
+### *EL DUEÑO AGREGA MÁS DETALLES JUNTO CON EL EQUIPO DE DESARROLLO*
+- Un elemento de la lista de producto o product backlog item debe tener una descripción,​ un orden, una estimación y un valor, así como también una descripción de prueba.
