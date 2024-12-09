@@ -17,6 +17,6 @@
 - El software de código abierto se basa en la idea de que, si compartimos el código, podemos crear software más confiable y mejor.​
 
 #### Creación de Ramas en Git Hub:
-​- En GitHub vaya a la página principal del repositorio. ​
+- En GitHub vaya a la página principal del repositorio. ​
 - Encima de la lista de archivos, haz clic en Ramas. 
 
