@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2becffcc-54cf-45ca-89ab-2bbcd71f76cd)# ***GITHUB***
+# ***GITHUB***
 ## **¿QUÉ ES GITHUB?**
 - Es una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones, y se caracteriza sobre todo por sus funciones colaborativas que ayudan a que todos puedan aportar su granito de arena para mejorar el código.
 - Como buen repositorio, el código de los proyectos que sean abiertos puede ser descargado y revisado por cualquier usuario, lo que ayuda a mejorar el producto y crear ramificaciones a partir de él. Y si se prefiere que tu código no sea visto, también se pueden crear proyectos privados.
