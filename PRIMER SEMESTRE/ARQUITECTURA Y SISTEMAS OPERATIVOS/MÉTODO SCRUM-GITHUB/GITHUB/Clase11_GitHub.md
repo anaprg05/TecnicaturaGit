@@ -11,3 +11,18 @@
 "Puedes clonar tu repositorio existente o clonar el repositorio existente de alguien más para contribuir con un proyecto."
 -----
 
+### *En laTerminal Git Bash*
+**1-** Abrimos la terminal Git Bash.
+
+**2-** Cambia el directorio de trabajo actual a la ubicación en donde quieres clonar el directorio. ​
+
+**3-** Escriba git clone y pegue la dirección URL que ha copiado antes.
+
+- Abrimos terminal Git Bach y digitamos el comando​:
+
+      git clone
+
+### *Comando Git Clone*
+- Pegamos la dirección de nuestro repositorio en GitHub.​
+- Damos Enter. ​
+- Ya hemos generado nuestro repositorio local .​
