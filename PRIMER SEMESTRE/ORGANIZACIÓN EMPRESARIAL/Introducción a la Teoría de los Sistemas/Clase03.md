@@ -29,42 +29,31 @@
 - Estos elementos son la esencia de la aplicación del modelo de isomorfismo, es decir, la correspondencia entre principios que rigen el comportamiento de objetos que, si bien intrínsecamente son diferentes, en algunos aspectos registran efectos que pueden necesitar un mismo procedimiento.
 
 ## **Modelo procesal o del sistema adaptativo complejo**
+- Este modelo implica por asociación la aplicación previa del modelo del rango.
+- Dado que las organizaciones se encuentran dentro del nivel 8, critica y logra la demolición de los modelos existentes tanto dentro de la sociología como dentro de la administración.
+- Los modelos existentes en dos tipos:
+    a) Aquellos de extracción y origen mecánico, a los que denomina modelo de equilibrio.
 
+    b) Aquellos de extracción y origen biológico, a los que llama modelos organísmicos u homeostáticos.
 
+- «…el modelo de equilibrio es aplicable a tipos de sistemas que se caracterizan por perder organización al desplazarse hacia un punto de equilibrio y con posterioridad tienden a mantener ese nivel mínimo dentro de perturbaciones relativamente estrechas. Los modelos homeostáticos son aplicables a sistemas que tienden a mantener un nivel de organización dado relativamente elevado a pesar de las tendencias constantes a disminuirlo. El modelo procesal o de sistema complejo adaptativo se aplica a los sistemas caracterizados por la elaboración o la evolución de la organización; como veremos se benefician con las perturbaciones y la variedad del medio y de hecho dependen de estas».
+- Mientras que ciertos sistemas tienen una natural tendencia al equilibrio, los sistemas del nivel 8 se caracterizan por sus propiedades morfogénicas, es decir que en lugar de buscar un equilibrio estable tienden a una permanente transformación estructural. Este proceso de transformación estructural permanente, constituye el pre-requisito para que los sistemas de nivel 8 se conserven en forma activa y eficiente, en suma es su razón de supervivencia.
 
+## **LAS ORGANIZACIONES COMO SISTEMAS**
+- Una organización es un sistema socio-técnico incluido en otro más amplio que es la sociedad con la que interactúa influyéndose mutuamente.
+- También puede ser definida como un sistema social, integrado por individuos y grupos de trabajo que responden a una determinada estructura y dentro de un contexto al que controla parcialmente, desarrollan actividades aplicando recursos en pos de ciertos valores comunes.
 
-Este modelo implica por asociación la aplicación previa del modelo del rango.
+### *Subsistemas que Forman la Empresa*
+a) Subsistema psicosocial: está compuesto por individuos y grupos en interacción. Dicho subsistema está formado por la conducta individual y la motivación, las relaciones del status y del papel, dinámica de grupos y los sistemas de influencia.
 
-•Dado que las organizaciones se encuentran dentro del nivel 8, critica y logra la demolición de los modelos existentes tanto dentro de la sociología como dentro de la administración.
+b) Subsistema técnico: se refiere a los conocimientos necesarios para el desarrollo de tareas, incluyendo las técnicas usadas para la transformación de insumos en productos.
 
-Los modelos existentes en dos tipos:
+c) Subsistema administrativo: relaciona a la organización con su medio y establece los objetivos, desarrolla planes de integración, estrategia y operación, mediante el diseño de la estructura y el establecimiento de los procesos de control.
 
-•a) aquellos de extracción y origen mecánico, a los que denomina modelo de equilibrio;
-
-•b) aquellos de extracción y origen biológico, a los que llama modelos organísmicos u homeostáticos.
-
-
-•«…el modelo de equilibrio es aplicable a tipos de sistemas que se caracterizan por perder organización al desplazarse hacia un punto de equilibrio y con posterioridad tienden a mantener ese nivel mínimo dentro de perturbaciones relativamente estrechas. Los modelos homeostáticos son aplicables a sistemas que tienden a mantener un nivel de organización dado relativamente elevado a pesar de las tendencias constantes a disminuirlo. El modelo procesal o de sistema complejo adaptativo se aplica a los sistemas caracterizados por la elaboración o la evolución de la organización; como veremos se benefician con las perturbaciones y la variedad del medio y de hecho dependen de estas».
-
-•Mientras que ciertos sistemas tienen una natural tendencia al equilibrio, los sistemas del nivel 8 se caracterizan por sus propiedades morfogénicas, es decir que en lugar de buscar un equilibrio estable tienden a una permanente transformación estructural. Este proceso de transformación estructural permanente, constituye el pre-requisito para que los sistemas de nivel 8 se conserven en forma activa y eficiente, en suma es su razón de supervivencia.
-LAS ORGANIZACIONES COMO SISTEMAS:
-
-•Una organización es un sistema socio-técnico incluido en otro más amplio que es la sociedad con la que interactúa influyéndose mutuamente.
-
-•También puede ser definida como un sistema social, integrado por individuos y grupos de trabajo que responden a una determinada estructura y dentro de un contexto al que controla parcialmente, desarrollan actividades aplicando recursos en pos de ciertos valores comunes.
-
-Subsistemas que forman la Empresa:
-
-•a) Subsistema psicosocial: está compuesto por individuos y grupos en interacción. Dicho subsistema está formado por la conducta individual y la motivación, las relaciones del status y del papel, dinámica de grupos y los sistemas de influencia.
-
-•b) Subsistema técnico: se refiere a los conocimientos necesarios para el desarrollo de tareas, incluyendo las técnicas usadas para la transformación de insumos en productos.
-
-•c) Subsistema administrativo: relaciona a la organización con su medio y establece los objetivos, desarrolla planes de integración, estrategia y operación, mediante el diseño de la estructura y el establecimiento de los procesos de control.
-
-Metodología de aplicaciones de la Teoría General de los Sistemas
-En el Análisis y Diseño del Sistema:
-Desde el punto de vista de la administración está compuesta de las siguientes etapas:
-•a) Análisis de situación: es la etapa en que el analista toma conocimiento del sistema, se ubica en cuanto a su origen, objetivo y trayectoria.
+### *Metodología de Aplicaciones de la Teoría General de los Sistemas*
+#### En el Análisis y Diseño del Sistema:
+- Desde el punto de vista de la administración está compuesta de las siguientes etapas:
+  a) Análisis de situación: es la etapa en que el analista toma conocimiento del sistema, se ubica en cuanto a su origen, objetivo y trayectoria.
 
 1. Definición de objetivo: el analista trata de determinar para qué ha sido requerido ya que en general se le plantean los efectos, pero no las causas.
 2. Formulación del plan de trabajo: el analista fija los límites de interés del estudio a realizar, la metodología a seguir, los recursos materiales y humanos que necesitará, el tiempo que insumirá el trabajo y el costo del mismo. Esta etapa se conoce como propuesta de servicio y a partir de su aprobación se continúa con la metodología.
