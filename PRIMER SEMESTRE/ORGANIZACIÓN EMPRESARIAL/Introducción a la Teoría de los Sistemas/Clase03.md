@@ -69,40 +69,38 @@ c) Subsistema administrativo: relaciona a la organización con su medio y establ
    b) En fases.
 7. Seguimiento y control: El analista debe verificar los resultados del sistema implementado y aplicar las acciones correctivas que considere necesarias para ajustar el problema.
 
-EL SISTEMA DE CONTROL en la Teoría General de los Sistemas
-Concepto:
+## **El Sistema de Control en la Teoría General de los Sistemas**
+### *Concepto:*
+- Un sistema de control estudia la conducta del sistema con el fin de regularla de un modo conveniente para su supervivencia. Una de sus características es que sus elementos deben ser lo suficientemente sensitivas y rápidas como para satisfacer los requisitos para cada función del control.
 
-Un sistema de control estudia la conducta del sistema con el fin de regularla de un modo conveniente para su supervivencia. Una de sus características es que sus elementos deben ser lo suficientemente sensitivas y rápidas como para satisfacer los requisitos para cada función del control.
+### *Elementos básicos:*
+**a)** Una variable; que es el elemento que se desea controlar.
 
-Elementos básicos:
+**b)** Los mecanismos sensores que son sencillos para medir las variaciones a los cambios de la variable.
 
-•a) Una variable; que es el elemento que se desea controlar.
-•b) Los mecanismos sensores que son sencillos para medir las variaciones a los cambios de la variable.
-•c) Los medios motores a través de los cuales se pueden desarrollar las acciones correctivas.
-•d) Fuente de energía, que entrega la energía necesaria para cualquier tipo de actividad.
-•e) La retroalimentación que a través de la comunicación del estado de la variable por los sensores, se logra llevar a cabo las acciones correctivas.
+**c)** Los medios motores a través de los cuales se pueden desarrollar las acciones correctivas.
 
+**d)** Fuente de energía, que entrega la energía necesaria para cualquier tipo de actividad.
 
-Método de control:
+**e)** La retroalimentación que a través de la comunicación del estado de la variable por los sensores, se logra llevar a cabo las acciones correctivas.
 
-•Es una alternativa para reducir la cantidad de información recibida por quienes toman decisiones, sin dejar de aumentar su contenido informativo. Las tres formas básicas de implementar el método de control son:
+### *Método de control:*
+- Es una alternativa para reducir la cantidad de información recibida por quienes toman decisiones, sin dejar de aumentar su contenido informativo. Las tres formas básicas de implementar el método de control son:
+- Las tres formas básicas de implementar el método de control son:
+**1.** Reporte de variación: esta forma de variación requiere que los datos que representan los hechos reales sean comparados con otros que representan los hechos planeados, con el fin de determinar la diferencia. La variación se controla luego con el valor de control, para determinar si el hecho se debe o no informar. El resultado del procedimiento, es que únicamente se informa a quién toma las decisiones acerca de los eventos o actividades que se apartan de modo significativo que los planes, para que tomen las medidas necesarias.
 
-Las tres formas básicas de implementar el método de control son:
-
-1- Reporte de variación: esta forma de variación requiere que los datos que representan los hechos reales sean comparados con otros que representan los hechos planeados, con el fin de determinar la diferencia. La variación se controla luego con el valor de control, para determinar si el hecho se debe o no informar. El resultado del procedimiento, es que únicamente se informa a quién toma las decisiones acerca de los eventos o actividades que se apartan de modo significativo que los planes, para que tomen las medidas necesarias.
-2.- Decisiones Programadas: otra aplicación de sistema de control implica el desarrollo y la implantación de decisiones programadas. Una parte apreciable de las decisiones de carácter técnico y una parte pequeña de las decisiones tácticas abarcan decisiones repetitivas y rutinarias. Diseñando el sistema de información de manera que ejecute esas decisiones de rutina, el analista proporciona a los administradores más tiempo para dedicarse a otras decisiones menos estructuradas.
+**2.** Decisiones Programadas: otra aplicación de sistema de control implica el desarrollo y la implantación de decisiones programadas. Una parte apreciable de las decisiones de carácter técnico y una parte pequeña de las decisiones tácticas abarcan decisiones repetitivas y rutinarias. Diseñando el sistema de información de manera que ejecute esas decisiones de rutina, el analista proporciona a los administradores más tiempo para dedicarse a otras decisiones menos estructuradas.
 
 Si se procura que el sistema vigile las órdenes pendientes y se programa las decisiones de cuáles pedidos necesitan mayor atención, se logrará un significativo ahorro de tiempo y esfuerzo.
-3. Notificación automática: en este caso, el sistema como tal, no toma decisiones, pero como vigila el flujo general de información puede proporcionar datos, cuando sea preciso y en el momento determinado.
+
+**3.** Notificación automática: en este caso, el sistema como tal, no toma decisiones, pero como vigila el flujo general de información puede proporcionar datos, cuando sea preciso y en el momento determinado.
 
 Las notificaciones automáticas se hacen en algunos criterios predeterminados, pero solo quienes toman las decisiones deben decir si es necesario o no emprender alguna acción.
 
-El Sistema de Control en las Organizaciones:
-•El control es uno de los cinco subsistemas corporativos (organización, planificación, coordinación y dirección son los restantes) los cuales son muy difíciles de separar con respecto al de control. De ello se desprende todo el proceso administrativo, debe considerarse como un movimiento circular, en el cual todos los subsistemas están ligados intrincadamente, la relación entre la planificación y el control es muy estrecha ya que el directivo fija el objetivo y además normas, ante las cuales se contrastan y evalúan acciones.
-•
-•Es necesario ver al control para determinar si las asignaciones y las relaciones en la organización están siendo cumplimentadas tal como se las había previsto.
+### *El Sistema de Control en las Organizaciones:*
+- El control es uno de los cinco subsistemas corporativos (organización, planificación, coordinación y dirección son los restantes) los cuales son muy difíciles de separar con respecto al de control. De ello se desprende todo el proceso administrativo, debe considerarse como un movimiento circular, en el cual todos los subsistemas están ligados intrincadamente, la relación entre la planificación y el control es muy estrecha ya que el directivo fija el objetivo y además normas, ante las cuales se contrastan y evalúan acciones.
+- Es necesario ver al control para determinar si las asignaciones y las relaciones en la organización están siendo cumplimentadas tal como se las había previsto.
 
-Sistema o Proceso de Control
-
-•Proceso de control como un sistema cerrado, es decir que posee la característica de la retroalimentación o autorregulación. El movimiento es circular y continuo, produciéndose de la siguiente manera: se parte de la actividad o realidad a la cual debemos medir, con el auxilio o utilización de normas, efectuada la decisión comparamos los resultados de los planes, de esta manera la realidad quedará ajustada para el futuro. Se nota en este punto que no sólo la realidad puede ser ajustada, otras veces son los planes los que necesitan corrección por estar sensiblemente alejado de las actividades.
+#### Sistema o Proceso de Control
+- Proceso de control como un sistema cerrado, es decir que posee la característica de la retroalimentación o autorregulación. El movimiento es circular y continuo, produciéndose de la siguiente manera: se parte de la actividad o realidad a la cual debemos medir, con el auxilio o utilización de normas, efectuada la decisión comparamos los resultados de los planes, de esta manera la realidad quedará ajustada para el futuro. Se nota en este punto que no sólo la realidad puede ser ajustada, otras veces son los planes los que necesitan corrección por estar sensiblemente alejado de las actividades.
 
