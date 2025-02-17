@@ -106,28 +106,22 @@
   - ¿Quiénes se beneficiaron con esta decisión? ¿Qué otras personas se vieron afectadas de forma negativa?
 - Si la solución no ha sido la mejor opción, el equipo puede aplicar técnicas de gestión iterativa de proyectos como ayuda. Les permitirá adaptarse rápidamente a los cambios y tomar las mejores decisiones con los recursos que tienen.
 
-Tipos de toma de decisiones: modelos y ejemplos
+### Tipos de toma de decisiones: modelos y ejemplos
+- Si bien la mayoría de los modelos para tomar decisiones giran en torno a los mismos siete pasos, hay algunas metodologías diferentes que pueden resultar muy útiles para optar por una buena decisión.
 
-•Si bien la mayoría de los modelos para tomar decisiones giran en torno a los mismos siete pasos, hay algunas metodologías diferentes que pueden resultar muy útiles para optar por una buena decisión.
+#### Modelos racionales de toma de decisiones.
+- Este tipo de modelo es el más común que habrás visto. Es lógico y secuencial. Los siete pasos enumerados arriba son un ejemplo de modelo racional de toma de decisiones.
+- Cuando la decisión que se toma genera un gran impacto en el equipo y necesitas maximizar los resultados, este es el tipo de proceso para toma de decisiones que deberías elegir.
 
-Modelos racionales de toma de decisiones.
+#### Modelos intuitivos de toma de decisiones:
+- Con este tipo de modelo de toma de decisiones uno no se rige por la información o los datos duros, sino por el instinto. Para aplicar esta forma de toma de decisiones se requiere experiencia previa y la posibilidad de reconocer patrones para desarrollar instintos marcados.
+  - A este tipo de metodología, por lo general, la aplican las personas que tienen mucha experiencia con clases similares de problemas, quienes ya han tenido éxito antes con las soluciones que están por implementar ahora.
 
-•Este tipo de modelo es el más común que habrás visto. Es lógico y secuencial. Los siete pasos enumerados arriba son un ejemplo de modelo racional de toma de decisiones.
-•
-•Cuando la decisión que se toma genera un gran impacto en el equipo y necesitas maximizar los resultados, este es el tipo de proceso para toma de decisiones que deberías elegir.
+#### Modelos creativos de toma de decisiones:
+- El modelo creativo de toma de decisiones consiste en reunir la información y los análisis acerca del problema, y a partir de allí concebir ideas para hallar una potencial solución al igual que con el modelo racional de toma de decisiones.
+- Quien debe tomar la decisión pasa por un período en el cual debe intentar activamente no pensar en la solución para nada.
+- El objetivo es lograr que el subconsciente se ocupe y lo guíe para tomar la decisión correcta. Es similar al modelo intuitivo de toma de decisiones.
 
-Modelos intuitivos de toma de decisiones:
-
-•Con este tipo de modelo de toma de decisiones uno no se rige por la información o los datos duros, sino por el instinto. Para aplicar esta forma de toma de decisiones se requiere experiencia previa y la posibilidad de reconocer patrones para desarrollar instintos marcados.
-
-•A este tipo de metodología, por lo general, la aplican las personas que tienen mucha experiencia con clases similares de problemas, quienes ya han tenido éxito antes con las soluciones que están por implementar ahora.
-Modelos creativos de toma de decisiones:
-
-•El modelo creativo de toma de decisiones consiste en reunir la información y los análisis acerca del problema, y a partir de allí concebir ideas para hallar una potencial solución al igual que con el modelo racional de toma de decisiones.
-• Quien debe tomar la decisión pasa por un período en el cual debe intentar activamente no pensar en la solución para nada.
-•El objetivo es lograr que el subconsciente se ocupe y lo guíe para tomar la decisión correcta. Es similar al modelo intuitivo de toma de decisiones.
-
-La importancia de la toma de decisiones con una herramienta de gestión del trabajo:
-
-•El seguimiento de las decisiones puede resultar complicado cuando no están debidamente documentadas. Por eso la importancia de utilizar una  una herramienta de gestión del trabajo  puede ayudar a que los integrantes de tu equipo den seguimiento a las decisiones clave, colaboren con sus compañeros de trabajo y estén siempre al tanto del progreso. 
-Todo en un mismo lugar.
+### La importancia de la toma de decisiones con una herramienta de gestión del trabajo:
+- El seguimiento de las decisiones puede resultar complicado cuando no están debidamente documentadas. Por eso la importancia de utilizar una  una herramienta de gestión del trabajo  puede ayudar a que los integrantes de tu equipo den seguimiento a las decisiones clave, colaboren con sus compañeros de trabajo y estén siempre al tanto del progreso.
+- Todo en un mismo lugar.
