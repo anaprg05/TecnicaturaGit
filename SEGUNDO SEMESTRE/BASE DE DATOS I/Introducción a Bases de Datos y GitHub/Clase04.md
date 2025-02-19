@@ -27,7 +27,7 @@
     - Por ejemplo: Si es verdadero o falso, 1 o 0.
     - Por ejemplo: Se quiere saber si un sitio está activo o inactivo.
 
-# ***Contraint (Restricciones)***
+## ***Contraint (Restricciones)***
 - Son un tipo de reglas que van a permitir que tengas en una base de datos, ósea que tipos de datos podemos ingresar.
   - *NotNull*: Esta regla se ocupa que una columna no tenga valores nulos, ósea que no acepte casilleros vacíos.
   - *Unique*: Se asegura que cada valor en la columna no se repita(que sea único)
