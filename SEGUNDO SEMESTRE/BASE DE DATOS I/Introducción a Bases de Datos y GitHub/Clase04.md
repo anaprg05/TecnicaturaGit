@@ -26,3 +26,22 @@
   - *Boolean*: Este tipo de dato puede tener solo dos valores y va a funcionar como un tipo de dato binario. Usando de manera discriminatoria para hacer validaciones.
     - Por ejemplo: Si es verdadero o falso, 1 o 0.
     - Por ejemplo: Se quiere saber si un sitio está activo o inactivo.
+
+# ***Contraint (Restricciones)***
+- Son un tipo de reglas que van a permitir que tengas en una base de datos, ósea que tipos de datos podemos ingresar.
+  - *NotNull*: Esta regla se ocupa que una columna no tenga valores nulos, ósea que no acepte casilleros vacíos.
+  - *Unique*: Se asegura que cada valor en la columna no se repita(que sea único)
+  - *Primary key*: Es una combinación de not null y unique. Es además una etiqueta importante ya qué a través de ella, se nos permite hacer relaciones entre las distintas entidades.
+
+## Foreign Key(llave fortanea)
+- Es el otro lado de la primary key, ya que identifica de manera única una tupla en otra tabla.
+  - Check:  Se asegura que el valor de una columna se cumpla una condición dada.
+- Algunas bases de datos removieron este tipo  de restricciones, pero las que aún las conservan son muy potentes.
+- Otra característica es que permite añadir las reglas que querremos a nuestra base de datos.
+
+## Default
+- Va a colocar un valor por el defecto cuando no hay un valor especificado.
+
+## INDEX
+- Se crea por columna para permitir búsquedas más rápidas.
+- Su desventaja es que suele volverse lenta cada vez que se añade un nuevo registro.
