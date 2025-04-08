@@ -57,12 +57,14 @@
 - Esto lo vemos cuando quiero combinar o relacionar,  los datos de 2 tablas o de dos entidades.
 
 ### Creamos una nueva conexión​
-Haciendo click en el signo + , se nos abrirá una nueva ventana pare crear una nueva conexión. le colocaremos de nombre Dato y seleccionaremos Test connetion.
-Luego nos pedirá la contraseña para realizar la conexión, ingresamos la contraseña y luego seleccionamos ok
-
-
-
-
-
-
-
+- Haciendo click en el signo + , se nos abrirá una nueva ventana pare crear una nueva conexión. le colocaremos de nombre Dato y seleccionaremos Test connetion.
+- Luego nos pedirá la contraseña para realizar la conexión, ingresamos la contraseña y luego seleccionamos ok.
+- Una vez ya conectados crearemos nuestra base de datos.
+- Creamos una Base de Datos: con el nombre Datos.
+- Nos ubicamos dentro de la base de datos creada y creamos una tabla de nombre Estudiantes.
+- Ubicados en la tabla:​
+  - Añadiran las columnas: nombre, apellido y edad, luego hagan clikc en apply y luego en Finish.​
+- La tendremos nuestra tabla creada en nuestra base de Datos​.
+- En edad cambiamos el tipo de dato a INT y en la columna NN, tildamos todas las casillas segun la cantidad de columnas.
+- Hacemos click en finish.
+- ​Nos aparecerá la tabla creada dentro de la base de datos.
