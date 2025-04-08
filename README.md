@@ -14,5 +14,9 @@
 - Inglés I
 
 ## Tercer Semestre
+- Programación III (Lunes y Miércoles)
+- Base de Datos II
+- Metodología de Sistemas
+- Inglés II
 
 ## Cuarto Semestre
