@@ -24,7 +24,7 @@
 - Es una sentencia que va a dar  una orden o una indicación.​
 - Va a recuperar los datos en base a un criterio dado, trayendo datos de una base de datos o de​ una tabla.​
 
-​### CLÁUSULAS SQL
+### CLÁUSULAS SQL
 - Son también sentencias que nos da estados de cada uno de los componentes de la base de datos y de cómo están las querys, si se ejecutan o si no se ejecuta.​
 - Todas las cláusulas van a realizar siempre una función.​
 - Se ve error de sintaxis, entre otras cosas.
