@@ -12,6 +12,7 @@ try:
     archivo.write('Los acentos son importantes para las palabras.\n')
     archivo.write('Como por ejemplo: acción, ejecución y producción.\n')
     archivo.write('Las letras son:\n W(Write),\n R(Read),\n A(Append),\n X,\n T(Text),\n B (Binary),\n W+,\n R+.\n')
+    archivo.write('¡Saludos a todos los alumnos de la tecnicatura!\n')
     archivo.write('Con esto terminamos.')
 
 except Exception as e:
