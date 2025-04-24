@@ -1,0 +1,13 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>230</x><y>230</y><w>130</w><h>70</h></coordinates><panel_attributes>Clase1
+--
++ id: atributo
+--
++ método()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>320</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase2
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>210</y><w>150</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>paquete1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>230</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase3
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>310</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>210</y><w>150</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>paquete2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>110</y><w>450</w><h>50</h></coordinates><panel_attributes>Modificador  | Misma Clase | Mismo Paquete | Subclase | Todas las demás
+--
+protected ( # )	| 								Si											 | 											Si 														| 					Si								 | 													No
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>220</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element></diagram>

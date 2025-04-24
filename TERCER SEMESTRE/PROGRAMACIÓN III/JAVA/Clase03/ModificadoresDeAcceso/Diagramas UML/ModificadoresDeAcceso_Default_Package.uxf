@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>170</x><y>200</y><w>130</w><h>70</h></coordinates><panel_attributes>Clase1
+--
++ id: atributo
+--
++ método()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>290</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase2
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>190</y><w>150</w><h>140</h></coordinates><panel_attributes>bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>160</y><w>100</w><h>30</h></coordinates><panel_attributes>paquete1
+
+bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>210</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase3
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>280</y><w>130</w><h>30</h></coordinates><panel_attributes>Clase4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>190</y><w>150</w><h>140</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>160</y><w>100</w><h>30</h></coordinates><panel_attributes>paquete2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>90</y><w>440</w><h>50</h></coordinates><panel_attributes>Modificador | Misma Clase | Mismo Paquete | Subclase | Todas las demás
+--
+default ( ~ ) 			| 								Si												 | 											Si 														| 					No					 | 													No 
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
