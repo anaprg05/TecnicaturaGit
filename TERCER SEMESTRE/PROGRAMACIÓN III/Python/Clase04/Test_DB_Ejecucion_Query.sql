@@ -20,3 +20,4 @@ SELECT * FROM persona
 -- Eliminar registros
 	-- DELETE FROM tabla WHERE id
 -- DELETE FROM persona WHERE id_persona = 3
+
