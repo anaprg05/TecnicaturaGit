@@ -7,7 +7,7 @@ conexion = psycopg2.connect(
     password='admin',
     host='127.0.0.1',
     port='5432',
-    database='Test_DB',
+    database='Test_BD',
     client_encoding='utf8'
 )
 
