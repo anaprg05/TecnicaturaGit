@@ -23,12 +23,19 @@ try:
         with conexion.cursor() as cursor:
             # Cursor -> Objeto que permite ejecutar sentencias SQL en postgres.
             # cursor = conexion.cursor()
-            sentencia = 'SELECT * FROM persona'
+            # sentencia = 'SELECT * FROM persona'  -> Llamada a la totalidad
+            # sentencia = 'SELECT id_persona, nombre FROM persona' -> LLamado a algo espcífico
+            # sentencia = 'SELECT * FROM persona WHERE id_persona = 1' -> Muesta el id especificado
+            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # -> Placeholder (Parámetro posicional)
+            # Variable que se utilizará como parámetro.
+            id_persona = input('Digite un número para el id_persona: ')
             # Con .execute() se ejecutará la sentencia.
-            cursor.execute(sentencia)
-            # .fetchall() -> Recupera todos los registros de la sentencia que se ha ejecutado.
-            registros = cursor.fetchall()
-
+            # Se pasa el parámetro como una tupla al execute.
+            cursor.execute(sentencia, (id_persona,))
+            # registros = cursor.fetchall()
+            # Método .fetchone() -> Apunta directamente a la tupla y no a la lista.
+            registros = cursor.fetchone()
+            
             print(registros)
 # Excepción
 except Exception as e:
