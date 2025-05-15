@@ -22,7 +22,7 @@ try:
             # Sentencia UPDATE
             sentencia = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
             # Tupla de valores
-            valores = ('Illa', 'Garín', 'igarin@gmail.com', 5)
+            valores = ('Illa', 'Garín', 'igarin@gmail.com', 7)
             # Función .execute
             cursor.execute(sentencia, valores)
             # Función .rowcount

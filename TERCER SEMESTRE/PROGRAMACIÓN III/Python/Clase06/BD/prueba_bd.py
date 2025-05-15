@@ -48,6 +48,3 @@ finally:
 
 # Documentación psycopg2
 # https://www.psycopg.org/docs/usage.html
-
-# En varios sistemas operativos (entre esos, Windows) postgre no muestra los mensajes de errores.
-
