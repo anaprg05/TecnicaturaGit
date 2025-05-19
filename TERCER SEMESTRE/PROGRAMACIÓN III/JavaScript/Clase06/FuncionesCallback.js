@@ -55,3 +55,13 @@ setTimeout(miFuncionCallback, 5000);
 setTimeout(function(){console.log('Saludo asíncrono 2')}, 3000);
 // setTimeout(funcionFlecha, tiempo en milisegundos);
 setTimeout(() => console.log('Saludo asíncrono 3'), 4000);
+
+// Creación de función
+let reloj = () => {
+    let fecha = new Date();
+    console.log(`${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`);
+}
+
+// Por medio de la función setInterval se llamará a la función reloj
+// Intervalo de ejecución en milisegundos
+setInterval(reloj, 1000);
