@@ -17,6 +17,7 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 ├── 📁 Lenguajes/
 │   ├── 🐍 Python/
 │   ├── ☕ Java/
+│   ├── 🟨 JavaScript/
 │   └── 🌐 Web/
 │       ├── HTML
 │       └── CSS
