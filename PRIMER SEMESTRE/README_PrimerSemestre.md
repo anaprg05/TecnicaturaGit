@@ -31,7 +31,7 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 ```javascript
 const habilidades = {
   lenguajes: ['Python', 'Java', 'JavaScript', 'HTML/CSS'],
-  herramientas: ['Git', 'VS Code', 'Terminal'],
+  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal'],
   metodologías: ['Scrum'];
 }
 ```
