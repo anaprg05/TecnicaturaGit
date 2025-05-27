@@ -21,21 +21,32 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 │       └── 🎨 CSS
 │
 └── 📁 Herramientas/
-    ├── 🛠️ Git-GitHub/
-    ├── 📝 Markdown/
-    ├── 🐳 Docker/
-    └── 🏗️ Bizagi/ 
+│   ├── 🛠️ Git-GitHub/
+│   ├── 📝 Markdown/
+│   ├── 🐳 Docker/
+│   └── 🏗️ Bizagi/
+│
+└── 📁 Diseño UI-UX/ 
+    └── 🖼️ Figma/
 ```
 
 ## 🧠 Mi caja de herramientas
 ```javascript
 const habilidades = {
-  lenguajes: ['Python', 'Java', 'JavaScript', 'HTML/CSS'],
-  basesDeDatos: ['MySQL', 'MongoDB', 'PostgreSQL'],
-  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal', 'Docker', 'Bizagi'],
-  metodologías: ['Scrum'],
-  idiomas: ['Inglés II']
-}
+  lenguajes: ['🐍 Python', '☕ Java', '🟨 JavaScript', '📄 HTML/CSS'],
+  basesDeDatos: ['🐬 MySQL', '🍃 MongoDB', '🐘 PostgreSQL'],
+  herramientas: [
+    '🛠️ Git', 
+    '🛠️ GitHub', 
+    '💻 VS Code',  // Emoji de computadora para el editor
+    '⌨️ Terminal', // Teclado para terminal
+    '🐳 Docker', 
+    '🏗️ Bizagi',
+    '🎨 Figma'    // Agregado aquí (herramienta de diseño)
+  ],
+  metodologías: ['🔄 Scrum'],  // Emoji de ciclo iterativo
+  idiomas: ['🌍 Inglés II']
+};
 ```
 
 [![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github)](https://github.com/anaprg05)  - Grupo: Carpinchos Programando ![carpincho](https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf)
