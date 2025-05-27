@@ -1,113 +1,122 @@
-# 📖 Introducción a los Sistemas Operativos  
-
-Un **Sistema Operativo (SO)** es el software esencial que gestiona los recursos de hardware y proporciona servicios para las aplicaciones de computadora. A continuación, se detallan sus funcionalidades, características y tipos.  
+# 🌟 **Introducción a los Sistemas Operativos**  
 
 ---
 
-## 🛠️ **Funcionalidades de un Sistema Operativo**  
+### 🖥️ **Funcionalidades de un Sistema Operativo**  
 
-Para comprender la arquitectura de una computadora, es fundamental entender cómo funciona un **Sistema Operativo**. Sus funcionalidades básicas son:  
+- Para comprender la arquitectura de una computadora es necesario entender cómo funciona un Sistema Operativo.  
+- Las funcionalidades básicas de un Sistema Operativo son:  
 
-### **1. Interfaz entre usuario y hardware**  
-🔹 Actúa como intermediario, haciendo transparente la interacción para el usuario.  
-🔹 Ofrece soporte para que las acciones del usuario se ejecuten sin necesidad de conocimientos técnicos avanzados.  
+  #### **1. Actuar de interfaz entre el usuario y el hardware**  
+  > 📌 *"De manera transparente para el usuario."*  
+  - Ofreciendo un soporte a los usuarios para que sus acciones se transmitan con facilidad.  
+  - No es necesario que sean especialistas en software o hardware para usarlo.  
 
-### **2. Gestión de recursos**  
-🔹 Administra eficientemente el **hardware** (CPU, RAM, almacenamiento) y el **software** (aplicaciones, procesos).  
-🔹 Optimiza el uso de recursos limitados según las necesidades del sistema.  
+  #### **2. Gestionar los recursos software y hardware del equipo**  
+  > 📌 *"Uso eficiente de recursos limitados."*  
+  - Dependiendo del fin y las tareas encomendadas al sistema informático, la eficiencia puede redirigirse a acciones diferentes.  
 
-> 💡 **Nota:** El SO es un software especializado, ya que debe coordinar todos los recursos del sistema entre usuarios y aplicaciones.  
-
----
-
-## 🔍 **Características Fundamentales de un SO**  
-
-| **Característica**  | **Descripción** |
-|---------------------|----------------|
-| **Adaptabilidad**   | Se ajusta a nuevos hardware y software mediante actualizaciones. |
-| **Facilidad de uso** | Diseñado para ser intuitivo, según el propósito del sistema. |
-| **Eficiencia**      | Gestiona recursos limitados (CPU, RAM, red) para múltiples procesos. |
-
-### **Recursos clave gestionados por el SO**  
-- **Memoria RAM** → El *kernel* reside siempre en memoria.  
-- **Procesador** → Maneja múltiples procesos en paralelo (multitarea).  
-- **Red y almacenamiento** → Evita cuellos de botella en acceso a discos y red.  
-- **Colas de impresión** → Organiza trabajos de impresión concurrentes.  
+🔹 **Nota:** *El sistema operativo es un software con características particulares, ya que debe administrar todos los recursos del sistema entre los usuarios y el resto de software.*  
 
 ---
 
-## 📂 **Tipos de Sistemas Operativos**  
+### 🔧 **Características fundamentales que debe soportar cualquier sistema operativo**  
 
-### **1. Por número de procesos**  
-| **Tipo**       | **Descripción** |
-|----------------|----------------|
-| **Monotarea**  | Solo ejecuta un proceso a la vez. |
-| **Multitarea** | Ejecuta múltiples procesos simultáneamente. |
+#### **1. Adaptabilidad**  
+- Se debe acomodar a dos situaciones que evolucionan en paralelo:  
+  - Nuevo software.  
+  - Nuevo hardware.  
+- *"El sistema operativo debe ser capaz de reacondicionarse (normalmente mediante actualizaciones) para hacer uso de nuevas características o mejoras."*  
 
-### **2. Por número de usuarios**  
-| **Tipo**      | **Descripción** |
-|---------------|----------------|
-| **Monousuario** | Atiende a un solo usuario. |
-| **Multiusuario** | Soporta múltiples usuarios al mismo tiempo. |
-
-### **3. Por tipo de procesamiento**  
-| **Tipo**            | **Descripción** | **Ejemplo** |
-|---------------------|----------------|-------------|
-| **Por lotes (Batch)** | Ejecuta tareas en serie sin interacción. | Procesamiento de facturas. |
-| **Tiempo real**     | Plazos estrictos de ejecución. | Aviónica, equipos médicos. |
-| **Interactivos**    | Diseñados para interacción constante. | Windows, macOS, Linux. |
+#### **2. Facilidad de uso**  
+- *"Teniendo como referente el fin al que se empleará el sistema informático."*  
+- **Eficiencia:**  
+  - Los recursos (procesadores, RAM, discos, red, cola de impresión) son limitados.  
+  - Debe atender peticiones de usuarios, programas y el propio sistema operativo.  
 
 ---
 
-## 🖥️ **Interfaz de Usuario**  
+### 💾 **Recursos clave gestionados por el SO**  
 
-| **Tipo**     | **Ventajas** | **Desventajas** |
-|--------------|-------------|----------------|
-| **Textual**  | Más potente y flexible. | Requiere conocimientos técnicos. |
-| **Gráfica**  | Intuitiva y fácil de usar. | Consume más recursos. |
-
----
-
-## 🌐 **Clasificación por Servicios**  
-
-- **SO Cliente/escritorio** → Gestiona una sola computadora (ej: Windows 10).  
-- **SO en red** → Administra recursos compartidos en una red (ej: Windows Server).  
-- **SO distribuido** → Varias máquinas trabajan como una sola (transparente al usuario).  
+| **Recurso**            | **Gestión crítica**                                                                 |
+|-------------------------|------------------------------------------------------------------------------------|
+| **Memoria RAM**         | El *kernel* reside siempre en memoria. El resto de módulos se carga según necesidad. |
+| **Procesador**          | Ejecuta múltiples procesos simultáneos (aunque el software lo solicite).           |
+| **Adaptadores de red**  | Administra conexiones entre aplicaciones, procesos y usuarios.                     |
+| **Medios de almacenamiento** | Evita cuellos de botella en acceso a discos.                                  |
+| **Colas de impresión**  | Gestiona múltiples peticiones a una misma impresora.                               |
 
 ---
 
-## 🔄 **Etapas del Procesamiento de Datos**  
+## 📜 **Tipos de Sistemas Operativos**  
 
-1. **Recopilación** → Obtención de datos.  
-2. **Preparación** → Limpieza y organización.  
-3. **Entrada** → Transformación en información útil.  
-4. **Procesamiento** → Análisis y filtrado.  
-5. **Interpretación** → Resultados en gráficos/texto.  
-6. **Almacenamiento** → Guardado para uso futuro.  
-7. **Salida** → Exteriorización de resultados.  
+### 🔄 **1. Por número de procesos concurrentes**  
+- **A) Monotarea o monoprogramado:**  
+  > ✔️ Solo ejecuta un proceso por usuario.  
+- **B) Multitarea o multiprogramado:**  
+  > ✔️ Un usuario puede ejecutar varios procesos simultáneamente.  
 
----
+### 👥 **2. Por número de usuarios atendidos**  
+- **A) Monousuario:**  
+  > ✔️ Solo atiende a un usuario.  
+- **B) Multiusuario:**  
+  > ✔️ Atiende a múltiples usuarios al mismo tiempo.  
 
-## 📌 **Conceptos Básicos**  
-
-| **Término**      | **Definición** |
-|------------------|---------------|
-| **Bit**          | Unidad mínima de información (0 o 1). |
-| **Campo**        | Dato almacenable (ej: "Nombre"). |
-| **Registro**     | Conjunto de campos relacionados. |
-| **Archivo**      | Colección de registros. |
-| **Base de datos** | Conjunto estructurado de datos. |
-
----
-
-## ❓ **FAQ**  
-
-### **¿Qué es Hardware?**  
-→ Parte física de la computadora (CPU, RAM, discos).  
-
-### **¿Qué es Software?**  
-→ Parte intangible (programas, SO, aplicaciones).  
+### ⏱️ **3. Por tipo de procesamiento**  
+- **A) Por lotes (Batch):**  
+  > 🔹 *Ejemplo:* Procesamiento de facturas agrupadas.  
+- **B) Tiempo real:**  
+  > 🔹 *Ejemplos:* Aviónica, instrumentación médica.  
+- **C) Interactivos (tiempo compartido):**  
+  > 🔹 *Ejemplo:* Windows, macOS, Linux.  
 
 ---
 
-✨ **Conclusión:** Un **Sistema Operativo** es el núcleo de cualquier computadora, permitiendo la interacción entre usuarios, software y hardware de manera eficiente.  
+### 🖱️ **Interfaz de usuario**  
+
+#### **1. Textual**  
+> 🖥️ *"Emplean comandos escritos en terminal. Son potentes pero requieren conocimientos."*  
+
+#### **2. Gráfica**  
+> 🎨 *"Usan ventanas y botones intuitivos. Consumen más recursos."*  
+
+---
+
+### 🌐 **Clasificación por servicios**  
+
+- **Sistemas cliente/escritorio:**  
+  > 💻 Gestionan una sola computadora (ej: hogares, oficinas pequeñas).  
+- **Sistemas en red:**  
+  > 🌐 Centralizados en servidores.  
+- **Sistemas distribuidos:**  
+  > 🔗 Varias computadoras actúan como una sola (transparente para el usuario).  
+
+---
+
+## 🔄 **Etapas del procesamiento de datos**  
+
+1. **📥 Recopilación** → Obtener datos de fuentes disponibles.  
+2. **🧹 Preparación** → Limpieza y organización.  
+3. **⌨️ Entrada** → Transformación a formato utilizable.  
+4. **⚙️ Procesamiento** → Filtrado, análisis, visualización.  
+5. **📊 Interpretación** → Resultados en gráficos/texto.  
+6. **💾 Almacenamiento** → Guardado para futuro uso.  
+7. **📤 Salida** → Exteriorización de resultados.  
+
+---
+
+## 📚 **Conceptos básicos**  
+
+- **Bit:** Unidad básica de almacenamiento (0/1).  
+- **Campo:** Elemento de información almacenable (ej: "Nombre").  
+- **Registro:** Conjunto de campos relacionados.  
+- **Archivo:** Colección de registros.  
+- **Base de datos:** Registros relacionados lógicamente.  
+
+---
+
+### ❓ **¿Qué es el Hardware?**  
+> 🔧 *"La parte física que permite el procesamiento de datos."*  
+
+### ❓ **¿Qué es el Software?**  
+> 📜 *"La parte intangible (programas) que desarrolla el procesamiento."*  
