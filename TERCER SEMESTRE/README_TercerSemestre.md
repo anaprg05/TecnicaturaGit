@@ -38,13 +38,13 @@ const habilidades = {
   herramientas: [
     '🛠️ Git', 
     '🛠️ GitHub', 
-    '💻 VS Code',  // Emoji de computadora para el editor
-    '⌨️ Terminal', // Teclado para terminal
+    '💻 VS Code',
+    '⌨️ Terminal',
     '🐳 Docker', 
     '🏗️ Bizagi',
-    '🎨 Figma'    // Agregado aquí (herramienta de diseño)
+    '🎨 Figma' 
   ],
-  metodologías: ['🔄 Scrum'],  // Emoji de ciclo iterativo
+  metodologías: ['🔄 Scrum'], 
   idiomas: ['🌍 Inglés II']
 };
 ```
