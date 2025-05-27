@@ -13,7 +13,7 @@
 |--------------|----------------------------------------|---------------------|
 | **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
 | **Martes**   | 🏛️ Arquitectura y Sistemas Operativos | Lucero, Natalia     |
-| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Miércoles**| 👨‍💻 Programación I                     | Betancud, Ariel     |
 | **Jueves**   | 🏢 Organización Empresarial           | Lucero, Natalia     |
 | **Viernes**  | 📐 Matemática                         | Giordanini, Osvaldo |
 
@@ -23,7 +23,7 @@
 |--------------|----------------------------------------|---------------------|
 | **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
 | **Martes**   | 🗃️ Base de Datos I                    | Lucero, Natalia     |
-| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Miércoles**| 👨‍💻 Programación II                    | Betancud, Ariel     |
 | **Jueves**   | 🌐 Inglés I                           | Buccella, Liliana   |
 | **Viernes**  | 🎲 Estadística                        | Giordanini, Osvaldo |
 
@@ -32,7 +32,7 @@
 |--------------|----------------------------------------|---------------------|
 | **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
 | **Martes**   | 🗃️ Base de Datos II                   | Lucero, Natalia     |
-| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Miércoles**| 👨‍💻 Programación III                   | Betancud, Ariel     |
 | **Jueves**   | 🌐 Inglés II                          | Buccella, Liliana   |
 | **Viernes**  | 📋 Metodología de Sistemas            | Giordanini, Osvaldo |
 
