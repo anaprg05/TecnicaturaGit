@@ -23,7 +23,8 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 └── 📁 Herramientas/
     ├── 🛠️ Git-GitHub/
     ├── 📝 Markdown/
-    └── 🐳 Docker/
+    ├── 🐳 Docker/
+    └── 🏗️ Bizagi/ 
 ```
 
 ## 🧠 Mi caja de herramientas
@@ -31,7 +32,7 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 const habilidades = {
   lenguajes: ['Python', 'Java', 'JavaScript', 'HTML/CSS'],
   basesDeDatos: ['MySQL', 'MongoDB', 'PostgreSQL'],
-  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal', 'Docker'],
+  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal', 'Docker', 'Bizagi'],
   metodologías: ['Scrum'],
   idiomas: ['Inglés II']
 }
