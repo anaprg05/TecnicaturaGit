@@ -70,8 +70,8 @@ docker stop myapp                  # Detener contenedor
 docker run -it --rm -v "$PWD":/app -w /app openjdk:17 javac Main.java
 ```
 
-# 🚀 Casos de Uso Comunes
-## Pruebas multi-entorno:
+## 🚀 Casos de Uso Comunes
+### Pruebas multi-entorno:
 
 ```bash
 docker run -it openjdk:8 java -version
@@ -79,11 +79,11 @@ docker run -it openjdk:11 java -version
 docker run -it openjdk:17 java -version
 ```
 
-### icroservicios: Cada servicio en su propio contenedor
+### Microservicios: Cada servicio en su propio contenedor
 
 ### CI/CD: Integración continua usando contenedores preconfigurados
 
-## Bases de datos:
+### Bases de datos:
 
 ```bash
 docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=secret postgres
