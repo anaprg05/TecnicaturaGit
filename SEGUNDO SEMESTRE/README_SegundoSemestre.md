@@ -16,9 +16,9 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 │   ├── ☕ Java/
 │   ├── 🟨 JavaScript/
 │   └── 🌐 Web/
-│       ├── HTML
-│       ├── CSS
-│       └── VueJS/
+│       ├── 📄 HTML/  
+│       ├── 🎨 CSS/  
+│       └── 🖌️ VueJS/  
 │
 └── 📁 Herramientas/
     ├── 🛠️ Git-GitHub/
