@@ -28,12 +28,29 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 ## 🧠 Mi caja de herramientas
 ```javascript
 const habilidades = {
-  lenguajes: ['Python', 'Java', 'JavaScript', 'HTML/CSS', 'VueJS'],
-  basesDeDatos: ['MySQL'],
-  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal'],
-  metodologías: ['Scrum'],
-  idiomas: ['Inglés I']
-}
+  lenguajes: [
+    '🐍 Python',
+    '☕ Java',
+    '🟨 JavaScript',
+    '📄 HTML/CSS',
+    '🖌️ VueJS'
+  ],
+  basesDeDatos: [
+    '🐬 MySQL'
+  ],
+  herramientas: [
+    '🛠️ Git',
+    '🛠️ GitHub',
+    '💻 VS Code',
+    '⌨️ Terminal'
+  ],
+  metodologías: [
+    '🔄 Scrum'
+  ],
+  idiomas: [
+    '🌐 Inglés I'
+  ]
+};
 ```
 
 [![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github)](https://github.com/anaprg05)  - Grupo: Carpinchos Programando ![carpincho](https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf)
