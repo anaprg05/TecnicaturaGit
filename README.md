@@ -9,22 +9,32 @@
 
 
 ## 1° Semestre  
-▸ **Programación I** (Lunes/Miércoles)  
-▸ **Arquitectura y Sistemas Operativos**  
-▸ **Matemática**  
-▸ **Organización Empresarial**  
+|     DÍA      |                 MATERIA                |    PROFESOR/A       |
+|--------------|----------------------------------------|---------------------|
+| **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
+| **Martes**   | 🏛️ Arquitectura y Sistemas Operativos | Lucero, Natalia     |
+| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Jueves**   | 🏢 Organización Empresarial           | Lucero, Natalia     |
+| **Viernes**  | 📐 Matemática                         | Giordanini, Osvaldo |
+
 
 ## 2° Semestre  
-▸ **Programación II** (Lunes/Miércoles)  
-▸ **Base de Datos I**  
-▸ **Inglés I**  
-▸ **Estadística**  
+|     DÍA      |                 MATERIA                |    PROFESOR/A       |
+|--------------|----------------------------------------|---------------------|
+| **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
+| **Martes**   | 🗃️ Base de Datos I                    | Lucero, Natalia     |
+| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Jueves**   | 🌐 Inglés I                           | Buccella, Liliana   |
+| **Viernes**  | 🎲 Estadística                        | Giordanini, Osvaldo |
 
 ## 3° Semestre  
-▸ **Programación III** (Lunes/Miércoles)  
-▸ **Base de Datos II**  
-▸ **Inglés II**  
-▸ **Metodología de Sistemas**  
+|     DÍA      |                 MATERIA                |    PROFESOR/A       |
+|--------------|----------------------------------------|---------------------|
+| **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
+| **Martes**   | 🗃️ Base de Datos II                   | Lucero, Natalia     |
+| **Miércoles**| 👨‍💻 Programación I (Prácticas)         | Betancud, Ariel     |
+| **Jueves**   | 🌐 Inglés II                          | Buccella, Liliana   |
+| **Viernes**  | 📋 Metodología de Sistemas            | Giordanini, Osvaldo |
 
 ---
 
