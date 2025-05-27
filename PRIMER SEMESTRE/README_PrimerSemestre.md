@@ -30,10 +30,22 @@ Repositorio personal donde documento mi evolución en el mundo del desarrollo du
 ## 🧠 Mi caja de herramientas
 ```javascript
 const habilidades = {
-  lenguajes: ['Python', 'Java', 'JavaScript', 'HTML/CSS'],
-  herramientas: ['Git', 'GitHub', 'VS Code', 'Terminal'],
-  metodologías: ['Scrum'];
-}
+  lenguajes: [
+    '🐍 Python',      // Serpiente para Python
+    '☕ Java',        // Taza de café para Java
+    '🟨 JavaScript', // Cuadrado amarillo (color oficial de JS)
+    '📄 HTML/CSS'    // Hoja de papel para HTML/CSS
+  ],
+  herramientas: [
+    '🛠️ Git',        // Herramienta para Git
+    '🛠️ GitHub',     // Herramienta para GitHub
+    '💻 VS Code',    // Computadora para VS Code
+    '⌨️ Terminal'    // Teclado para Terminal
+  ],
+  metodologías: [
+    '🔄 Scrum'       // Flecha circular para metodologías ágiles
+  ]
+};
 ```
 
 [![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github)](https://github.com/anaprg05)  - Grupo: Carpinchos Programando ![carpincho](https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf)
