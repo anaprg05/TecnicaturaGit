@@ -21,7 +21,7 @@
 ## 2° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
 |--------------|----------------------------------------|---------------------|
-| **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
+| **Lunes**    | 🖥️ Programación II                    | Betancud, Ariel     |
 | **Martes**   | 🗃️ Base de Datos I                    | Lucero, Natalia     |
 | **Miércoles**| 👨‍💻 Programación II                    | Betancud, Ariel     |
 | **Jueves**   | 🌐 Inglés I                           | Buccella, Liliana   |
@@ -30,7 +30,7 @@
 ## 3° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
 |--------------|----------------------------------------|---------------------|
-| **Lunes**    | 🖥️ Programación I                     | Betancud, Ariel     |
+| **Lunes**    | 🖥️ Programación III                   | Betancud, Ariel     |
 | **Martes**   | 🗃️ Base de Datos II                   | Lucero, Natalia     |
 | **Miércoles**| 👨‍💻 Programación III                   | Betancud, Ariel     |
 | **Jueves**   | 🌐 Inglés II                          | Buccella, Liliana   |
