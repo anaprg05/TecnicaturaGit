@@ -19,5 +19,4 @@ public interface IAccesoDatos {
     void actualizar();
     
     void eliminar();
-    
 }

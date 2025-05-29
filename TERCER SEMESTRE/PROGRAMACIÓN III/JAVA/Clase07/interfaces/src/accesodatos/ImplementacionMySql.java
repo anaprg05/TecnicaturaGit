@@ -8,22 +8,21 @@ public class ImplementacionMySql implements IAccesoDatos {
     // comportamiento de la interface a la clase
     @Override
     public void insertar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Insertar desde MySQL.");
     }
 
     @Override
     public void listar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Listar desde MySQL.");
     }
 
     @Override
     public void actualizar() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        System.out.println("Actualizar desde MySQL."); 
     }
 
     @Override
     public void eliminar() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        System.out.println("Eliminar desde MySQL.");
     }
-    
 }
