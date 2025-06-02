@@ -1,0 +1,65 @@
+08:00:30 PM: DEBUG [Persona.py: 55] 
+            ID Persona: 1,
+            Nombre: Ana,
+            Apellido: Ríos,
+            EMail: arios@mail.com
+        
+08:01:42 PM: DEBUG [Persona.py: 55] 
+            ID Persona: 1,
+            Nombre: Ana,
+            Apellido: Ríos,
+            EMail: arios@mail.com
+        
+08:02:56 PM: DEBUG [Persona.py: 55] 
+            ID Persona: 1,
+            Nombre: Ana,
+            Apellido: Ríos,
+            EMail: arios@mail.com
+        
+08:02:56 PM: DEBUG [Persona.py: 58] 
+            ID Persona: Lautaro,
+            Nombre: Ríos,
+            Apellido: lrios@mail.com,
+            EMail: None
+        
+08:03:24 PM: DEBUG [Persona.py: 55] 
+            ID Persona: 1,
+            Nombre: Ana,
+            Apellido: Ríos,
+            EMail: arios@mail.com
+        
+08:03:24 PM: DEBUG [Persona.py: 58] 
+            ID Persona: None,
+            Nombre: Lautaro,
+            Apellido: Ríos,
+            EMail: lrios@mail.com
+        
+08:04:22 PM: DEBUG [Persona.py: 55] 
+            ID Persona: 1,
+            Nombre: Ana,
+            Apellido: Ríos,
+            EMail: arios@mail.com
+        
+08:04:22 PM: DEBUG [Persona.py: 58] 
+            ID Persona: None,
+            Nombre: Lautaro,
+            Apellido: Ríos,
+            EMail: lrios@mail.com
+        
+08:04:22 PM: DEBUG [Persona.py: 61] 
+            ID Persona: 1,
+            Nombre: None,
+            Apellido: None,
+            EMail: None
+        
+08:35:01 PM: ERROR [conexion.py: 27] Ocurrió un error de tipo: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "test_bd" does not exist
+
+08:35:32 PM: ERROR [conexion.py: 27] Ocurrió un error de tipo: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "test_bd" does not exist
+
+08:38:07 PM: DEBUG [conexion.py: 24] Conexión exitosa: <connection object at 0x00000218A37959C0; dsn: 'user=postgres password=xxx dbname=Test_BD host=127.0.0.1 port=5432', closed: 0>
+08:39:46 PM: DEBUG [conexion.py: 24] Conexión exitosa: <connection object at 0x00000197CFBE59C0; dsn: 'user=postgres password=xxx dbname=Test_BD host=127.0.0.1 port=5432', closed: 0>
+08:39:46 PM: ERROR [conexion.py: 40] Ocurrió un error de tipo: 'NoneType' object has no attribute 'cursor'
+08:43:28 PM: DEBUG [conexion.py: 24] Conexión exitosa: <connection object at 0x00000197D67E59C0; dsn: 'user=postgres password=xxx dbname=Test_BD host=127.0.0.1 port=5432', closed: 0>
+08:43:28 PM: DEBUG [conexion.py: 37] Se abrió correctamente el cursor: <cursor object at 0x00000197D64FEB20; closed: 0>
+08:43:38 PM: DEBUG [conexion.py: 24] Conexión exitosa: <connection object at 0x000001C0B22259C0; dsn: 'user=postgres password=xxx dbname=Test_BD host=127.0.0.1 port=5432', closed: 0>
+08:43:38 PM: DEBUG [conexion.py: 37] Se abrió correctamente el cursor: <cursor object at 0x000001C0B1F3EB20; closed: 0>
