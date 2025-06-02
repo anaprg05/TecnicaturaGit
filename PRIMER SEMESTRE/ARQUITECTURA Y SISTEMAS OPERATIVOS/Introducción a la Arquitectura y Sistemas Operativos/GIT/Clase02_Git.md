@@ -1,155 +1,137 @@
-## ***Comandos Git, Mi Primer Repositorio***
-### *Conceptos Generales*
-Al ser un sistema de control de versiones, permite ver el estado del proyecto, los cambios realizados en cada archivo, la persona que los realizó, así como poder restaurar una versión anterior.
+# 🌿 **Comandos Git - Mi Primer Repositorio**  
 
-### *¿Qué es una versión?*
-- Conjunto de nuevas características y funcionalidades de un software disponibles para el usuario final.
+## 📚 *Conceptos Generales*  
+Sistema de control de versiones que permite:  
+✔ Ver estado del proyecto  
+✔ Rastrear cambios por archivo/autor  
+✔ Restaurar versiones anteriores  
 
-### *Commit*
-- Cada vez que se guarda un  trabajo, Git crea un Commit (confirmación).
-- Una confirmación es una anotación o registro de los cambios realizados en un momento dado . Si un archivo no ha cambiado de una commit a otro, Git usa el archivo almacenado anteriormente.
+### 🔄 *¿Qué es una versión?*  
+Conjunto de nuevas funcionalidades disponibles para el usuario final.  
 
-## **RAMAS**
-### *¿Qué es una Rama?*
-- Es un conjunto de commit que se unen entre si y que sufren  cambios distintos.
-- En cada cambio debe hacerse un commit.
-- Las ramas auxiliares son punteros ligeros y van a administrar una separación de la rama principal. Una vez que se realizaron los cambios en nuestra rama auxiliar, volvemos a incorporarnos en la rama principal o Master.
-- Git nos permite viajar en una línea del tiempo de nuestro proyecto y realizar cambio en el.
-- Los commit crean vínculos a otras confirmaciones, formando un gráfico del historial del desarrollo, a esto llamaremos rama.
-- Al trabajar en ramas auxiliares, estamos trabajando en un espacio temporal y esto me permite realizar cambios que no necesariamente se van a aplicar en nuestro proyecto. Y también proteger nuestro proyecto en caso de que las modificaciones sean fallidas, evitamos cualquier daño a la rama principal.
+### 💾 *Commit*  
+- Registro de cambios en un momento específico.  
+- Si un archivo no cambia, Git reusa la versión anterior.  
 
-### *Estados de Git*
-Es un espacio en el que se puede realizar una acción
-- Espacio de trabajo.
-- Área de preparación.
-- Repositorio (carpeta .git).
+---
 
-## **Flujo de Trabajo en Git**
-El flujo de trabajo básico en Git es el siguiente:
-- Editas una serie de archivos en tu directorio de trabajo.
-- Preparas los archivos que quieras subir al directorio, añadiéndolos a tu área de preparación.
-- Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y guarda esas instantáneas de forma permanente en tu directorio de Git.
+## 🌿 **RAMAS**  
 
-## **Espacio de Trabajo**
-### *¿Cuál es el espacio de trabajo?*
-- Se considera como espacio de trabajo, a todos los archivos que se pueden visualizar en carpeta.
-- Se ha modificado el archivo pero todavía no lo se ha confirmado en tu base de datos local.
-- Git aun no se entera de la existencia de estos archivos, ya que aún no son parte de Git y tampoco es parte del espacio de trabajo.
+### 🌳 *¿Qué es una Rama?*  
+- Conjunto de commits interconectados con cambios independientes.  
+- **Ramas auxiliares**:  
+  - Punteros ligeros que divergen de la rama principal (*master*).  
+  - Permiten trabajar en cambios temporales sin afectar el proyecto principal.  
+  - Protegen el código estable en caso de errores.  
 
-### *Área de preparación (Staging Area)*
-- Se ha marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
-- El área de preparación se inicia, cuando se agrega con el comando:
-                  
-      git add 
+### ⏳ *Viaje en el tiempo*  
+Git permite navegar el historial de cambios como una línea temporal.  
 
-- Los archivos existentes que todavía no están siendo traqueados por git.
-- Acá es donde nosotros vamos a preparar todos los archivos que queremos realizar o mandar al repositorio.
-- Eso es un lugar temporal, como una memoria caché donde vamos a tener nuestros archivos.
-- Por último,  lo pasamos al repositorio.
+---
 
-### *Área de repositorio (Carpeta Git)*
-- El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios que realicemos a nuestro proyecto.
-- Esta carpeta va a ser '.git'.
-- Los datos del archivo están guardados en tu base de datos local.
+## 🏗️ **Estados de Git**  
+Tres espacios clave:  
+1. **Espacio de trabajo** (Working Directory)  
+2. **Área de preparación** (Staging Area)  
+3. **Repositorio** (Carpeta `.git`)  
 
-### *Comandos*
-- Para limpiar terminal o pantalla:
+---
 
-      Control + L
-      clear
-      q
-  
-- Para borrar archivo:
+## 🔄 **Flujo de Trabajo en Git**  
+1. **Editas** archivos en tu directorio.  
+2. **Preparas** cambios con `git add`.  
+3. **Confirmas** con `git commit` (guarda instantánea permanente).  
 
-      rmdir «nombre de la carpeta»
+---
 
-- Para abrir manual de Git:
+## 📂 **Espacios Clave**  
 
-      git --help branch
-      git --help branch (Manual Git)
+### 🖥️ *Espacio de Trabajo*  
+- Archivos visibles en la carpeta.  
+- Cambios aún no confirmados ni rastreados por Git.  
 
-- Para pasar al Estado de preparación:
+### 📥 *Área de Preparación (Staging)*  
+```bash
+git add <archivo>  # Añade archivos al staging
+git rm --cached <archivo>  # Remueve del staging
+git reset  # Limpia el área
+```
+- Zona temporal ("memoria caché") antes del repositorio.
+- Archivos listos para commit aparecen en verde (git status).
 
-      git add <archivo>
+### 📦 *Repositorio (Carpeta .git)*
+- Almacena historial completo de cambios.
+- Confirmación final con:
+```bash
+git commit -m "Mensaje descriptivo"
+```
 
-    - Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero se necesita añadirlos al área de preparación.
-    - Los usuarios mueven los cambios desde el espacio  de trabajo al área de preparación, antes de aprobarlos/commit hacia el repositorio.
-    - El comando “git add .” permite registrar todos los cambios del directorio de trabajo.
-    - Si queremos eliminar el archivo de nuestra zona de preparación antes de enviarlo al repositorio.
+---
 
-          git  rm --cached "nombre del archivo"
-          git reset
+## **🛠️ Comandos Esenciales**
+### *🧹 Limpieza*
+```bash
+Ctrl + L  # Limpiar terminal
+clear     # Alternativa
+q         # Salir de vistas
+```
 
-    - En espacio de preparación ya tenemos un archivo para enviar a nuestro repositorio y ser commiteado.
+### *📜 Ayuda y Configuración*
+```bash
+git --help branch  # Manual de Git
+```
 
-### *GIT STATUS*
-- Permite visualizar el estado de los cambios en el directorio de trabajo y en el área de preparación comparando con el repositorio. Muestra una lista de los archivos modificados o añadidos.
-- Aun no tenemos commit y también nos dice que tenemos archivos sin traquear.
-- Los archivos que están  listos ser trackeados, nos aparecen en "rojo".
-- Para pasar nuestros archivos desde el área de trabajo al área de preparación utilizaremos el comando.
+### *🔍 Git Status*
+```bash
+git status  # Muestra:
+            # - Archivos modificados (rojo)
+            # - Archivos en staging (verde)
+```
 
-      git add «nombre del archivo que se va a mover»
+### *📜 Git Log*
+```bash
+git log  # Muestra historial de commits con:
+         # - ID único
+         # - Autor/fecha
+         # - Mensaje
+```
 
-- Luego volvemos a ejecutar.
+---
 
-      git status (para ver el nuevo estado del nuestro archivo.)
+## **📝 Editor Vim (para commits)**
+1. Se abre automáticamente al ejecutar `git commit`.
+2. Primera línea sin `#`: Escribe el mensaje del commit.
+3. Comandos útiles:
+  - Guardar: `Ctrl + S` o `:w`
+  - Salir: `Ctrl + X`
 
+> *💡 Si no se escribe mensaje, no se crea el commit.*
 
-- Una vez trackeado nos aparece el archivo de "color verde", eso significa que esta listo para ser enviado al repositorio.
+---
 
-      New film: archivo
+## **🚀 Guía Paso a Paso**
+### Pasos para primer commit
+1. Preparar archivos:
+```bash
+git add .  # Añade todo
+git add <archivo>  # Añade específico
+```
 
-### *COMMIT*
-- Una vez que nuestro archivo ya esta en nuestra área de preparación vamos a pasarlo a nuestra área de repositorio.
-- Se inicia los commit (carpeta .git)
-- Nos abrirá un editor de texto que se llama
+2. Verificar estado:
+```bash
+git status  # Archivos verdes = listos
+```
 
-      Vim
+3. Crear commit:
+``` bash
+git commit -m "Mi primer commit"  # Opción rápida
+```
+o
+```bash
+git commit  # Abre Vim para mensaje
+```
 
-### *Editor de texto(Vim)*
-- Una vez que estamos en el editor de texto, nos va a permitir realizar los comentarios sobre las modificaciones que realicemos a nuestro proyecto.
-- En la pantalla del editor nos aparece un mensaje con # , eso quiere decir que todo lo que este  en esas líneas será ignorado, solo nos sirve como contexto de lo que estamos realizando.
-- Sólo en la primera línea nos aparece sin #, en esa línea escribiremos nuestro primer commit
-
-      « mi primer commit con git» ( se inicia el proyecto)
-
-IMPORTANTE: si no escribimos algo no habrá commit.
--
-
-- Comandos para guardar texto
-
-      Ctrlo S
-
-- Comando para salir del editor
-
-      Ctrol X
-
-- Nos aparece el primer commit:
-
-      « mi primer commit con git»( se inicia el proyecto)
-
-- Nos menciona la cantidad de archivos agregados + la cantidad de líneas utilizadas de código.
-- Nos menciona el nombre de los archivos creados.
-
-### *GIT LOG*
-- Con este comando veremos nuestro primer commit.
-- Será el cuaderno, la "Bitácora" que mostrará en pantalla todos los commits, todos los mensajes).
-- Nos aparece el Autor del commit( nombre, apellido y el correo).
-- Fecha y hora del sistema y el mensaje que realizamos en nuestro editor de texto.
-- Cada commit tiene un número identificador  y que permite de manera ordenara realizar cada commit en mi proyecto, de manera que es imposible que se repitan.
-
-### *Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit*
-
-**Paso 1:** Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
-
-**Paso 2:** Tecleamos **git status**. Veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
-              
-**Paso 3:** Tecleamos **git add .** para añadir lo que contiene ambas carpetas. En caso de querer agregar un archivo especifico se debe teclear **git add "nombre del archivo"**. Para borrar el archivo del área de preparación **git reset**.
-
-**Paso 4:** nuevamente tecleamos **git status**. Ahora nos aparecerán los archivos que fueron añadidos en color verde.
-            
-**Paso 5:** nuestros archivos están listos para ser commiteados **git commit** nos abre el editor de texto Vim en la primera línea escribimos " mi primer commit de git" guardamos nuestro mensaje del editor con : w  o  Ctrol. S y Ctrol. x para salir del editor. Otra opción es:
-                
-     git commit --m  "mi primer commit de git"
-                
-**Paso 6:** git log - leemos nuestro commit.
+4. Revisar historial:
+```bash
+git log
+```
