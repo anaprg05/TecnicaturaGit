@@ -50,7 +50,7 @@ public class Persona implements Serializable{
     // Complementos -> No son requeridos
     @Override
     public String toString() {
-        return "Persona{" + "nombre =" + nombre + ", apellido = " + apellido + '}';
+        return "Persona{" + "nombre = " + nombre + ", apellido = " + apellido + '}';
     }
     
 }
