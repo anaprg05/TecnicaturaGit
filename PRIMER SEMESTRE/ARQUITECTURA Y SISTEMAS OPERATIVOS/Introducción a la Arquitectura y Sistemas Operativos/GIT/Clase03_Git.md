@@ -1,83 +1,97 @@
-# ***GIT***
-## **Modificaciones de Carpetas**
-### *¿Qué pasa cuando modificamos algún archivo que ya habíamos commiteado?*
-- Si en nuestra área de trabajo hemos agregado algún archivo nuevo, al ejecutar git status ya estando dentro de nuestra carpeta Git, nos aparecerán en rojo esa modificaciones.
-- Con Git Status comprobamos el estado de nuestra carpeta Git.
-- Una vez que nos aparecen las modificaciones
-- Ya podemos agregarlas a nuestra área de trabajo.
-  
-      git Add . (Para mover todos los archivos)
-      git add «nombre del archivo» (para pasar sólo por nombre)
+# 🌿 **GIT - Manejo de Modificaciones**
 
-- Los archivos ya están listos para ser commiteados.
-  
-      gi commit –m «para escribir mensajes cortos»
+## 📂 **Modificaciones de Carpetas**
 
-- git commit  Nos abre el editor que por defecto tenga su máquina, para escribir mensajes un poco más extenso
-- Al finalizar, 
+### 🔄 ¿Qué pasa al modificar archivos commiteados?
+- Archivos nuevos/modificados aparecen en **rojo** con `git status`.
+- Verifica cambios antes de proceder:
 
-      Ctrol. S( guardamos mensaje de texto )
-      Ctrol. X(salimos del editor)
+```bash
+git status
+```
 
-- Otra opción es tecleamos Esc. y al final del editor nos aparecen : tecleamos wq!( nos guarda nuestro texto y salimos del editor Vim).
+## **🚀 Proceso para actualizar cambios:**
+1. Añadir al staging area:
+```bash
+git add .              # Todos los archivos
+git add <nombre-archivo>  # Archivo específico
+```
 
-## **¿Cómo diferenciamos un archivo de una carpeta en la terminal de Git Bash?**
-    / nombre archivo
-    ../ (indica que hay dos carpetas o una carpeta superior)
+2. Confirmar cambios:
+  - Mensaje corto:
+```bash
+git commit -m "Descripción breve"
+```
 
-## **¿Cómo guardar modificaciones en un Archivo?**
-- Para guardar las modificaciones que hemos hecho en algún archivo.
-- Con:
+  - Mensaje extenso (abre editor Vim):
+```bash
+git commit
+```
 
-      git commit –am  «agregué una línea a mi repositorio»
+- Comandos Vim:
+  1. Guardar: `Ctrl + S` o `:w`
+  2. Salir: `Ctrl + X` o `Esc + :wq!`
 
-- No me permite realizar commitear modificaciones en un mismo archivo.
-- En la capeta tecnicatura Git realizar:
-    - Añadir desde cualquier editor de texto un archivo Readme.txt
-    - Visual Estudio Code
-    - Sublime Tex
-    - Block de notas
+---
 
------
+## **🔍 Diferenciar Archivos vs Carpetas**
+## En terminal Git Bash:
+- `/nombre-archivo` → Archivo
+- `../` → Carpeta superior/subdirectorio
 
-**Ojo! cuando usamos el comando Git add .**
-- *Git add .* Agrega los archivos o modificaciones sólo  en la carpeta o subcarpeta  donde estamos ubicados.
-- Por ej: Si estamos ubicados en una subcarpeta y tecleamos Git add . No nos  agregara los archivos de otra subcarpeta donde no  estemos ubicados.
+---
 
------
+## **💾 Guardar Modificaciones**
+- Para archivos existentes:
+```bash
+git commit -am "Agregué una línea a mi repositorio"
+```
+> *⚠ No funciona con archivos nuevos.*
 
-- Con:
+### 📝 Crear nuevo archivo:
+- Usa cualquier editor:
+  - Visual Studio Code
+  - Sublime Text
+  - Bloc de notas
 
-      git Commit --m « escribimos comentario para el commit»
+---
 
-- Luego nos aparece el commit, con la descripción de lo que hemos modificado.
-- Con Git log  vemos la línea de commit que se va formando, para salir tecleamos la letra q
+⚠ Precauciones con `git add .`
+- Solo afecta archivos en la carpeta **actual**.
+- Ejemplo: En `subcarpeta/`, no añade archivos de otras ubicaciones.
 
-- Cuando tenemos archivos modificados se puede utilizar el siguiente comando
+---
 
-      git commit –am «escribimos el comentario de nuestro commit»
+## **📜 Visualizar Historial**
+```bash
+git log   # Muestra línea de commits
+q         # Salir del historial
+```
 
-- No se puede utilizar con archivos nuevos.
-- Sólo con archivos modificados.
+---
 
-### *Comando Git Checkout*
-- El comando  git checkout me permite borrar archivos modificados .
-- No me permite eliminar archivos nuevos.
+## **🔄 Comandos Avanzados**
+### ↩️ Deshacer Cambios
+- Archivos modificados:
+```bash
+git checkout <archivo>  # Elimina cambios locales
+git checkout -f         # Borra TODOS los cambios recientes
+```
+> *No aplica para archivos nuevos.*
 
-      git checkout « nombre del archivo»
-      git checkout –f (nos va a permitir borrar todos los últimos cambios realizados)
+- Quitar del staging:
+```bash
+git restore --staged <archivo>  # Vuelve al área de trabajo
+```
 
+### 🔍 Comparar Cambios (git diff)
+- Modificaciones detalladas:
+```bash
+git diff
+```
 
-### *Git RESTORE*
-    git restore  --stage «nombre del archivo».
-- Vuelve el archivo al área de trabajo y poder modificarlos.
-  
-### *Comando  Git Diff*
-- Me permite saber qué agregué en el espacios de preparación.
-- Nos muestra las modificaciones que hicimos en el archivo de nuestro repositorio.
-- Este comando nos permite saber que tipo de modificaciones hicimos.
-
-      git diff --stat
-- Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
-
-      git diff –-numstat (solo para ver los números de líneas añadidas y eliminadas)
+- Resumen estadístico:
+```bash
+git diff --stat       # Cambios por archivo
+git diff --numstat    # Líneas añadidas/eliminadas
+```
