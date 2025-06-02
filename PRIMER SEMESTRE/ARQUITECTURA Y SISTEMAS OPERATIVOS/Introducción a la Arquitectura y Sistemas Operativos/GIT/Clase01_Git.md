@@ -1,88 +1,99 @@
-# ***Git Bash***
-Es una herramienta de control de versiones que permite alojar los diferentes proyectos en los que estén trabajando, permitiendo gestionar de forma muy simple y gráfica las diferentes versiones o modificaciones que se vayan realizando en cada uno de sus proyectos.
+# 🌿 **Git Bash**  
 
-Fue desarrollada por Linux Torvalds creador del núcleo Linux.
+Una herramienta de control de versiones que permite alojar proyectos y gestionar modificaciones de forma sencilla y gráfica.  
 
-**Definición, clasificación y funcionamiento**
+*Desarrollada por **Linus Torvalds*** (creador del núcleo Linux).  
 
-Se llama control de versiones a la gestión delos diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra dicho producto en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o SVC (del inglés System Version Control). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico).
+---
 
-Algunos Ejemplos de este tipo de herramientas son entre otros:
+## 📖 **Definición, clasificación y funcionamiento**  
 
-CVS, Subversion, SourceSafe, ClearCase, Darcs, Bazaar , Plastic SCM, Git, Mercurial, Perforce.
+El **control de versiones** gestiona cambios en elementos de un producto o configuración. Una *versión* es el estado del producto en un momento dado de su desarrollo.  
 
-*Git es como un diario de viaje:*
-- Una Bitácora de un Capitán que va dejando todo los registro de las rutas de sus viajes.
-- En este caso Git les va a permitir ir registrando cada modificación que vayan realizando a su proyecto.
-- Ese registro se va a llevar a cabo con los commit.
+🔹 **Tipos de sistemas de control de versiones (SCV):**  
+- Manual  
+- Automatizado (*CVS, Subversion, SourceSafe, ClearCase, Darcs, Bazaar, Plastic SCM, Git, Mercurial, Perforce*)  
 
-*Ventajas de Git:*
-- Podemos trabajar a nivel local sin tener que comprometer el repositorio principal a cada cambio que realicemos.
-- Gracias a este sistema, los desarrolladores del proyecto podrán trabajar de forma independiente hasta el momento en el que tengan que poner en común con el resto del equipo su código, controlando los cambios en las versiones y mejorando el seguimiento al desarrollo.
+### 🧭 **Git como diario de viaje**  
+- **Bitácora** que registra cada modificación (*commit*).  
+- Permite rastrear historial completo de cambios.  
 
-## **Terminología**
-**-** *Repositorio ("repository")*: El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
+### 🚀 **Ventajas de Git**  
+- Trabajo local sin afectar repositorio principal.  
+- Colaboración independiente hasta integración final.  
+- Seguimiento optimizado del desarrollo.  
 
-  **1-** *Repositorios Locales*: Los cambios son guardados localmente y no se comparten con nadie. Esta arquitectura es la antecesora de las dos siguientes. El modelo local utiliza una copia de la base de control de versiones y una copia de los archivos del proyecto. Este tipo es el más sencillo y no es recomendable cuando se trabaja en equipo ya que todos tienen que acceder a los mismos archivos.
-  
-  **2-** *Repositorios Centralizados*: Existe un repositorio centralizado de todo el código, del cual es responsable un único usuario (o conjunto de ellos). Se facilitan las tareas administrativas a cambio de reducir flexibilidad, pues todas las decisiones fuertes (como crear una nueva rama) necesitan la aprobación del responsable.
+---
 
-Se realiza en un servidor que se encargará de recibir y dar los cambios realizados en el archivo a cada uno de los usuarios.
+## 📜 **Terminología**  
 
-**3-** *Repositorios Distribuidos*: Cada usuario tiene su propio repositorio. Los distintos repositorios pueden intercambiar y mezclar revisiones entre ellos. Es frecuente el uso de un repositorio, que está normalmente disponible, que sirve de punto de sincronización de los distintos repositorios locales.
+### **Repositorio ("repository")**  
+Lugar donde se almacenan datos actualizados e históricos.  
 
-El modelo distribuido es el más utilizado, en este caso cada usuario tiene un control de versiones propio que a su vez son manejadas por el servidor. 
+#### 🖥️ **1. Repositorios Locales**  
+- Cambios guardados *localmente*.  
+- No compartidos con otros.  
+- Modelo sencillo (poco recomendable para equipo).  
 
-## **Comandos para la configuración de GIT**
-*Git config*: es un comando que permite configurar  todos los aspectos de cómo funcionará Git de manera local, global o system.
+#### 🌐 **2. Repositorios Centralizados**  
+- **Servidor único** gestiona cambios.  
+- Menos flexibilidad (decisiones requieren aprobación).  
 
-  - *git config mantiene su valor entre actualizaciones.* Por lo tanto, se debe configurar solo una vez. Todos los archivos de configuración tienen la misma sintaxis, pero un alcance diferente. Esto ofrece mucha flexibilidad.
+#### 🔄 **3. Repositorios Distribuidos** *(Más usado)*  
+- Cada usuario tiene su repositorio.  
+- Sincronización mediante repositorio principal.  
 
-  Existe 3  comandos para el almacenamiento:
-  
-  **- Local.**
-    
-  **- Global.**
-    
-  **- System.**
+---
 
-Además, es importante recordar que cada nivel anula los valores del nivel anterior.
+## ⚙️ **Comandos para configuración de GIT**  
 
-Prioridad:
-    
-    Local > Global > System
+### `git config`  
+Configura comportamiento de Git (*local*, *global* o *system*).  
 
-**- Local**: las configuraciones locales están disponibles solo para el repositorio actual. Puede hacer que git lea y escriba desde la computadora que se está utilizando solo localmente .
+#### 🔹 **Jerarquía de configuración**  
+```bash
+Prioridad: Local > Global > System
+```
 
-          git config --local
+- Local `(--local)`: Solo para el repositorio actual.
+- Global `(--global)`: Para todos los proyectos del usuario.
+- System `(--system)`: Para todos los usuarios del sistema (requiere admin).
 
-**- Global**: las configuraciones globales están disponibles para los usuarios actuales para todos los proyectos.
+### 🔧 Configuración básica
+```bash
+git config --local user.name "Nombre Apellido"
+git config --local user.email "tuemail@ejemplo.com"
+```
 
-     git config --global
+### 📋 Ver configuraciones
+```bash
+git config --list  # Muestra todas las configuraciones
+git config --l     # Atajo
+```
 
-**- System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
+---
 
-     git config --system
+## **🛠️ Crear tu primer repositorio**
+1. Listar archivos:
+```bash
+ls
+```
 
-- *Configurar el usuario que va a escribir en la bitácora.* Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. Con git config podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. Esto lo podemos realizar mediante los comandos:
+2. Crear carpeta:
 
-      git config --local user.name "Nombre Apellido"
-      git config --local user.email "tuemail@ejemplo.com" (para configurar el usuario que va a escribir
-                                                           en la "Bitácora" desde una máquina).
+```bash
+mkdir nombre-del-proyecto
+```
 
-- *Para traer todas las actualizaciones que hemos realizado.*
+3. Entrar a carpeta:
+```bash
+cd nombre-del-proyecto/
+```
 
-      git config --list
-      git config --l (atajo) 
+4. Inicializar Git:
+```bash
+git init
+```
 
-### **¿Cómo creas tu primer repositorio?**
+> *💡 Todos los archivos/carpetas que empiezan con . (punto) están ocultos.*
 
-- El comando **ls** muestra todos los archivos en carpeta.
-- El comando **mkdir (make directory)** crea una carpeta.
-
-      Ejemplo: mkdir nombre-del-proyecto
-      cd nombre-del-proyecto/ (para entrar a la carpeta existente).
-      git init (una vez dentro de la carpeta, ejecutar este comando).
-
-“Todos los archivos y carpetas que empiezan con . (punto) son archivos o carpetas ocultos”
--
