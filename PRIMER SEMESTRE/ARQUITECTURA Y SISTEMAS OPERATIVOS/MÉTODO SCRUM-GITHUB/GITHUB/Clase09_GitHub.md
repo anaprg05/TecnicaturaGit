@@ -1,43 +1,77 @@
-# ***GITHUB***
-## **¿QUÉ ES GITHUB?**
-- Es una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones, y se caracteriza sobre todo por sus funciones colaborativas que ayudan a que todos puedan aportar su granito de arena para mejorar el código.
-- Como buen repositorio, el código de los proyectos que sean abiertos puede ser descargado y revisado por cualquier usuario, lo que ayuda a mejorar el producto y crear ramificaciones a partir de él. Y si se prefiere que tu código no sea visto, también se pueden crear proyectos privados.
+# 🐙 **GITHUB**  
 
-## **​¿POR QUÉ UTILIZAMOS GITHUB?**
-- Hasta ahora hemos estado trabajando de manera local en nuestro equipo, pero ahora vamos a comenzar a trabajar de manera global. Esto nos va a permitir que cada usuario o integrante tenga acceso al proyecto en el cual vamos a estar trabajando más adelante en nuestro e-comerce.
-- Para ello, utilizaremos los comandos:
+---
 
-      git push
-      git pull
+## 🔍 **¿QUÉ ES GITHUB?**  
+- Plataforma líder para proyectos abiertos de herramientas/aplicaciones, destacando por sus **funciones colaborativas**.  
+- Los proyectos públicos permiten:  
+  - 📥 Descargar/revisar código.  
+  - 🌱 Crear ramificaciones (*forks*).  
+- También soporta proyectos **privados** (código restringido).  
 
-## **TRABAJO LOCAL ​Y ​TRABAJO REMOTO**
-### *Trabajo Remoto*
-- Git nos permitía trabajar desde nuestro equipo, sin necesidades de un servidor, pero si vamos a trabajar de manera remota y que muchos usuarios tengan acceso a un repositorio y que puedan trabajar en modificaciones desde distintos lugares, utilizaremos GitHub.
-- En GitHub podemos tener repositorios en la nube donde su acceso puede ser público o privado.
+---
 
-## **¿QUÉ ME PERMITE GITHUB?**
-- GitHub es un portal que me permite gestionar las aplicaciones que utiliza el sistema Git. Esto va a permitir a los desarrolladores almacenar y administrar sus códigos, al igual que llevar un registro y control de cualquier cambio sobre dicho código.
-​
-​## **PROYECTOS EN LA GITHUB**
-- GitHub me va a permitir subir proyectos con códigos abiertos pero también da la opción de subir proyectos de forma privada.
+## 🚀 **¿POR QUÉ UTILIZAMOS GITHUB?**  
+- Transición del trabajo local (en tu equipo) al **trabajo global** (equipos distribuidos).  
+- Ideal para proyectos colaborativos como *e-commerces*.  
+- Comandos clave:  
+  ```bash
+  git push   # Subir cambios al repositorio remoto
+  git pull   # Descargar actualizaciones del remoto
+  ```
 
-## **BENEFICIOS DE GITHUB**
-- Seguimientos de errores.
-- Búsqueda rápida.
-- Cuenta con una gran comunidad de desarrolladores en todo el mundo.
+---
 
-### *Ventajas*:
-  - Git nos permitirá llevar el código, una estructura, copias de seguridad, para un buen desarrollo de un proyecto.
-  - GitHub es igual que Git, pero en la nube. Esto significa que cualquier desarrollador podrá acceder a un repositorio.
-  -  En el caso que se pierda el repositorio local, podremos recuperar nuestro repoditorio si lo subimos anteriormente a GitHub.
-  -  GitHub me permitirá trabajar en una interfaz gráfica.
+## **💻 TRABAJO LOCAL vs. TRABAJO REMOTO**
+### 🌐 Trabajo Remoto
+- Git local no requiere servidor, pero GitHub permite:
+  - 📂 Repositorios en la nube (públicos/privados).
+  - 👥 Colaboración multi-usuario desde cualquier ubicación.
 
-## **COMO SUBIMOS NUESTRO PROYECTOS A GITHUB**
-- Todos los repositorios que tengamos en Git pueden ser subidos a GitHub ya sea de manera pública o privada.​
+---
 
-### *CÓDIGO ABIERTO*
-- Por lo general, en Git trabajamos con códigos abiertos de manera que todos los desarrolladores tengan acceso y puedan hacer mejoras.
-- Cualquier desarrollador que tenga el link del enlace al repositorio podrá tener acceso al mismo y prodrá intervenir en él.
-​
-### *CÓDIGO CERRADO*
-- También tenemos repositorios con código cerrado, por ejemplo las empresas se manejan con códigos cerrados para evitar daños en los códigos de personas ajenas a los proyectos..
+## **✨ ¿QUÉ ME PERMITE GITHUB?**
+- Gestión de proyectos usando Git en la nube.
+- Funcionalidades clave:
+  - 🗄 Almacenar y administrar código.
+  - 📝 Registrar y controlar cambios (versionado).
+
+---
+
+## **📂 PROYECTOS EN GITHUB**
+- Subida de proyectos con:
+  - 🔓 Código abierto (open-source).
+  - 🔒 Código privado (empresas/equipos cerrados).
+
+---
+
+## **✅ BENEFICIOS DE GITHUB**
+- 🐞 Seguimiento de errores (issues).
+- 🔍 Búsqueda rápida en repositorios.
+- 🌍 Comunidad global de desarrolladores.
+
+🏆 Ventajas:
+- Git:
+  - 🏗 Estructura y copias de seguridad.
+  - 🔄 Control de versiones local.
+
+- GitHub:
+  - ☁ Git en la nube (acceso global).
+  - 🛡 Recuperación ante pérdidas locales.
+  - 🖥 Interfaz gráfica intuitiva.
+
+---
+
+## **⬆ ¿CÓMO SUBIMOS NUESTROS PROYECTOS A GITHUB?**
+- Cualquier repositorio local (Git) puede subirse a GitHub:
+  - 🌎 Público: Visible para todos.
+  - 🔐 Privado: Restringido a colaboradores.
+
+### 🔓 CÓDIGO ABIERTO
+- 👩💻 Acceso universal (con enlace al repo).
+- 🤝 Colaboración abierta (forks, pull requests).
+
+### 🔐 CÓDIGO CERRADO
+- 🏢 Usado por empresas para:
+  - 🚫 Limitar accesos no autorizados.
+  - 🛡 Proteger propiedad intelectual.
