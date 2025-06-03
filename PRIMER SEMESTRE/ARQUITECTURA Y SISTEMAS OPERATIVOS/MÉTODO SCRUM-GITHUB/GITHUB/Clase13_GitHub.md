@@ -1,23 +1,45 @@
-# ***Eliminar Rama desde GitHub***
-## **Paso a Paso**
-- ​Para eliminar una rama realizaremos los siguientes pasos:​
-**1)** Nos volvemos a ubicar en la página principal de nuestro repositorio
-  
-**2)** Encima de la lista de archivos, haga clic en branch/rama.
+# 🗑 **Eliminar Ramas en GitHub**
 
-**3)** Desplácese hasta la rama que desea eliminar y, a continuación, haga clic en el tacho de basura.
+---
 
-**4)** Nos figurará la acción realizada en la rama eliminada.​
+## 🛠 **Eliminación Manual de Ramas**
 
-## **Eliminar ramas de forma automática**
-- Cualquier persona con permisos de administrador para un repositorio puede habilitar o deshabilitar la eliminación automática de ramas. ​
+### 📝 Pasos a seguir:
+1. **Ir** a la página principal del repositorio
+2. **Hacer clic** en `Branch/Rama` (encima de la lista de archivos)
+3. **Buscar** la rama a eliminar
+4. **Hacer clic** en el icono de basura 🗑
+5. **Confirmar** la eliminación
 
-### *Pasos para configurar eliminación de ramas de forma automática:*
-**1)** Abrimos la página principal de nuestro repositorio y seleccionamos Setting/Configuración.
-  - Nos desplazamos hasta el final En "Solicitudes de extracción", seleccione o anule la selección de Eliminar automáticamente las ramas principales.
+> 💡 *Verás una notificación confirmando la acción realizada*
 
-## **Ramas Protegidas**
-- Los administradores de repositorios pueden habilitar protecciones en una sucursal. Si está trabajando en una rama que está protegida, no podrá eliminar ni forzar la inserción en la rama. Los administradores de repositorios también pueden habilitar varias otras configuraciones de sucursal protegidas para aplicar varios flujos de trabajo antes de que se pueda combinar una rama.
+---
 
+## ⚡ **Eliminación Automática de Ramas**
 
+### 🔧 Configuración:
+1. Ir a `Settings/Configuración`
+2. Navegar hasta "Solicitudes de extracción"
+3. Activar/desactivar:
+   ```markdown
+   [✓] Eliminar automáticamente las ramas principales
+   ```
+Requisitos:
+- 🔒 Necesitas permisos de administrador
+- ⚙️ Configurable por repositorio
 
+---
+
+## **🛡 Ramas Protegidas**
+Características principales:
+- 🔐 Protección contra eliminación
+   -Los colaboradores no pueden borrar ramas protegidas
+- � Restricciones de push
+  - No se permiten pushes forzados
+- ✔ Requisitos para merge
+  - Pueden incluir:
+    - ✅ Revisiones aprobatorias
+    - ✔ Checks de CI
+    - ✍️ Firmas de commits
+
+> *Nota: Solo administradores pueden configurar protecciones*
