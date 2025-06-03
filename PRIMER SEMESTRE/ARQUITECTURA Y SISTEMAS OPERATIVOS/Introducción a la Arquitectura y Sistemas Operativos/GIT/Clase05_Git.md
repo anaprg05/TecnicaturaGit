@@ -77,11 +77,11 @@ Cuando ocurre un conflicto durante merge:
 1. Git marca archivos conflictivos con:
 
 ```diff
-<<<<<<< HEAD (Current Change)
++ <<<<<<< HEAD (Current Change)
 [cambios actuales]
 =======
 [cambios entrantes]
->>>>>>> nombre-rama (Incoming Change)
+- >>>>>>> nombre-rama (Incoming Change)
 ```
 
 2. Editar manualmente el archivo:
