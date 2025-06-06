@@ -1,47 +1,105 @@
-# ***Datos***
-## Tipos de Datos
-- *CHAR (n)*: Nos va a permitir almacenar caracteres y cadenas de texto, pero en forma limitada. Este tipo de dato va a reservar un espacio de memoria del número de caracteres que va a ser ocupado.
-- *Varchar(n)*: Al igual que Char, va a reservar espacio en la memoria, La diferencia es que esta reserva un espacio mínimo de memoria y a partir de esa va creciendo o encogiéndose(su límite es de 255 caracteres) por ejemplo : Si queremos guardar una cadena de 100 caracteres o de 2 caracteres, esto se debe a que es dinámico.
-- *Tex*: Su función es guardar cadenas de texto muy grandes de más de 1000 caracteres.
+# 🗄️ **Datos**
 
-## Tipo de Datos Numéricos
-- Este tipo de datos nos ayuda a guardar números.
-  - *Integer(entero)*: Hace referencia al número que no tienen punto decimal y se usa para declarar. Un tipo de dato entero que me pueda servir para realizar operaciones.Cuando se utiliza este tipo de datos, nuestra base de datos sabrá que estamos hablando de números y no solo de un simple caracter.
-  - *Bigint*: Es un subtipo de números enteros que nos sirve para declarar números muy grandes.
-  - *Smallint*: También es un subtipo de números enteros que nos va a servir para declarar números muy pequeños (99 o menos).
-  - *Decimal(n,s)*: Tiene dos parámetro. La primera entrada es para números eneros y la segunda para números decimales.
-  - *Numeric(n,s)*: Al igual que Decimal tiene dos parámetros donde ingresan en la primera entrada números enteros y en la segunda números decimales.
+## 📝 Tipos de Datos de Texto
 
-## Tipo de Datos de Fecha y Hora
-- Nos van a servir para hacer operaciones más precisas.
-- Esta clase de tipo de dato es muy peculiar, ya que nos ayuda a tener una bitácora o registro de nuestra base de datos.
-- Por ejemplo: Para saber cuándo alguien creo un registro, lo modificó o lo borró.
-  - *Date*: Sólo contiene la fecha (año, mes y día).
-  - *Time*: Sólo contiene la hora.
-  - *Date time*: Es una mezcla de los dos primeros y va a contener fecha y hora.
-  - *TimeStamp*: Es el número de segundos que han transcurrido desde que un archivo fue creado. En otras palabras, podría decirse que es un medidor de tiempo.
+### `CHAR(n)`
+- 🔹 Almacena caracteres y cadenas de texto de longitud fija
+- 🔹 Reserva espacio de memoria exacto para `n` caracteres
+- 🔸 Ejemplo: `CHAR(10)` siempre usará espacio para 10 caracteres
 
-## Tipos de Datos Lógicos
-- Son los tipos de datos que pueden ser verdadero o falso.
-  - *Boolean*: Este tipo de dato puede tener solo dos valores y va a funcionar como un tipo de dato binario. Usando de manera discriminatoria para hacer validaciones.
-    - Por ejemplo: Si es verdadero o falso, 1 o 0.
-    - Por ejemplo: Se quiere saber si un sitio está activo o inactivo.
+### `VARCHAR(n)`
+- 🔹 Almacena cadenas de texto de longitud variable
+- 🔹 Reserva espacio mínimo y crece según necesidad (hasta 255 caracteres)
+- 🔹 Más eficiente para textos de longitud variable
+- 🔸 Ejemplo: `VARCHAR(100)` puede almacenar desde 1 hasta 100 caracteres
 
-## ***Contraint (Restricciones)***
-- Son un tipo de reglas que van a permitir que tengas en una base de datos, ósea que tipos de datos podemos ingresar.
-  - *NotNull*: Esta regla se ocupa que una columna no tenga valores nulos, ósea que no acepte casilleros vacíos.
-  - *Unique*: Se asegura que cada valor en la columna no se repita(que sea único)
-  - *Primary key*: Es una combinación de not null y unique. Es además una etiqueta importante ya qué a través de ella, se nos permite hacer relaciones entre las distintas entidades.
+### `TEXT`
+- 🔹 Diseñado para cadenas de texto muy largas (+1000 caracteres)
+- 🔹 Ideal para contenido extenso como artículos o descripciones largas
 
-## Foreign Key(llave fortanea)
-- Es el otro lado de la primary key, ya que identifica de manera única una tupla en otra tabla.
-  - Check:  Se asegura que el valor de una columna se cumpla una condición dada.
-- Algunas bases de datos removieron este tipo  de restricciones, pero las que aún las conservan son muy potentes.
-- Otra característica es que permite añadir las reglas que querremos a nuestra base de datos.
+---
 
-## Default
-- Va a colocar un valor por el defecto cuando no hay un valor especificado.
+## 🔢 Tipo de Datos Numéricos
 
-## INDEX
-- Se crea por columna para permitir búsquedas más rápidas.
-- Su desventaja es que suele volverse lenta cada vez que se añade un nuevo registro.
+| Tipo         | Descripción                                  | Ejemplo           |
+|--------------|---------------------------------------------|-------------------|
+| `INTEGER`    | Números enteros sin decimales               | `42`, `-15`       |
+| `BIGINT`     | Enteros de gran magnitud                    | `9999999999`      |
+| `SMALLINT`   | Enteros pequeños (<100)                     | `25`, `99`        |
+| `DECIMAL(n,s)`| Números con precisión exacta (n=total, s=decimales) | `DECIMAL(5,2)` → `123.45` |
+| `NUMERIC(n,s)`| Equivalente a DECIMAL                       | `NUMERIC(7,3)` → `1234.567` |
+
+---
+
+## 📅 Tipo de Datos de Fecha y Hora
+
+### `DATE`
+- 📌 Solo almacena fecha (AAAA-MM-DD)
+- 🔹 Útil para fechas de nacimiento, eventos, etc.
+
+### `TIME`
+- 📌 Solo almacena hora (HH:MM:SS)
+- 🔹 Ideal para horarios de apertura/cierre
+
+### `DATETIME`
+- 📌 Combina fecha y hora (AAAA-MM-DD HH:MM:SS)
+- 🔹 Perfecto para registros de actividad
+
+### `TIMESTAMP`
+- 📌 Segundos desde la época Unix (01/01/1970)
+- 🔹 Automático en muchos sistemas
+- 🔹 Ideal para auditorías y logs
+
+---
+
+## ✔️ Tipos de Datos Lógicos
+
+### `BOOLEAN`
+- 🔘 Solo dos valores posibles: `TRUE`/`FALSE` o `1`/`0`
+- 🔹 Uso común:
+  - Activo/Inactivo
+  - Sí/No
+  - Habilitado/Deshabilitado
+
+---
+
+# 🔐 **Constraints (Restricciones)**
+
+## 🔒 Restricciones Básicas
+
+| Restricción  | Función                                     | Ejemplo                 |
+|--------------|--------------------------------------------|-------------------------|
+| `NOT NULL`   | Obliga a que el campo tenga siempre valor   | `nombre VARCHAR(50) NOT NULL` |
+| `UNIQUE`     | Garantiza valores únicos en la columna      | `email VARCHAR(100) UNIQUE` |
+| `PRIMARY KEY`| Identificador único + NOT NULL + UNIQUE     | `id INT PRIMARY KEY`    |
+
+## 🔗 Foreign Key (Llave Foránea)
+
+- 🌉 Establece relaciones entre tablas
+- 🔹 Debe coincidir con una PRIMARY KEY en otra tabla
+- 🔸 Ejemplo: 
+  ```sql
+  FOREIGN KEY (user_id) REFERENCES users(id)
+  ```
+
+### ⚙️ Otras Restricciones
+`CHECK`
+- ✅ Valida que los datos cumplan una condición
+- 🔹 Ejemplo:
+```sql
+edad INT CHECK (edad >= 18)
+```
+
+`DEFAULT`
+- ⚖️ Establece un valor predeterminado
+- 🔹 Ejemplo:
+```sql
+activo BOOLEAN DEFAULT TRUE
+```
+
+`INDEX`
+- 🚀 Acelera búsquedas pero ralentiza inserciones
+- 🔹 Uso típico:
+```sql
+CREATE INDEX idx_nombre ON usuarios(nombre);
+```
