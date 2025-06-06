@@ -1,70 +1,100 @@
-# ***MySQL***
-## Gestor​ de​ Base​ de Datos
-- Un sistema gestor de bases de datos es un conjunto de programas que permiten el almacenamiento, modificación y extracción de la información en una base de datos.
-- Es un software que nos permite a nosotros gestionar lo que es una base de datos, ya sea ingresar, crear, eliminar o modificar lo que son datos o la base de datos en sí.
+# 🗄️ **MySQL**  
+## *Gestor de Bases de Datos*  
 
-### Gestores
-​- Algunos gestores que podemos encontrar son:
-![image](https://github.com/user-attachments/assets/3df16a85-5fa5-479b-b50a-3e8d1f2aa168)
+### 📌 **Definición**  
+- Un **Sistema Gestor de Bases de Datos (SGBD)** es un conjunto de programas que permiten el **almacenamiento, modificación y extracción** de información en una base de datos.  
+- Es un *software* que nos permite gestionar una base de datos, ya sea **ingresar, crear, eliminar o modificar** datos o la estructura misma de la base.  
 
-## Base de Datos
-- Es una unidad donde voy a almacenar la información. 
+---
 
-### Clasificación de las Bases de Datos
-- Puedes ser relacionales o no relacionales:
-  - Relacionales:
-    - ​Tienen un esquema definido y estable y a su vez también tienen lo que son un identificador, el cual une las tablas o une los datos.
-    - Eso se le considera una base de datos reales de datos relacional.
-  - No relacionales:
-​    - Tienen la misma finalidad que la base de datos relacional, ya que este no tiene una estructura y esta orientado a objetos u orientado a documentos. 
-    - A esto se refiere con no SQL, que no está estructurados o están semiestructurada y las relaciones que tienen no son tan predefinidas como en la base relacional.
+## 🔧 **Gestores de Bases de Datos**  
+Algunos de los gestores más conocidos son:  
 
-### Diferencia entre ambos gestores
-- Gestor de bases de datos relacional está solo centrado a ese tipo de base de datos.
-- Y un gestor de base de datos no relacional está orientado a ese mismo tipo de base de datos.
-- Así que hay que tener mucho cuidado con esos conceptos y los gestores que utilicemos ocupado.
+![Gestores de Bases de Datos](https://github.com/user-attachments/assets/3df16a85-5fa5-479b-b50a-3e8d1f2aa168)  
 
-#### ¿Qué es un dato?
-- ​Es una representación de una variable que puede ser cuantitativa o cualitativa.
-- Es decir, que me puede indicar un valor que se le asigna a las cosas y que se representa.
-- Este puede ser representado a través de secuencias de símbolos, números y letras.
-- Por ejemplo, como la edad de una persona.
-  - ¿Cuál es el valor del dato?
-  - Por ejemplo, si Juan tiene como edad quince años, el dato de su edad sería 15.
-- Entonces el dato representa valores y numéricos, sino que también me refiero a valores alfabético o alfanuméricos.
+---
 
-### Tablas
-- ​Una tabla es el espacio donde se va a organiza la información.
-- La tabla va a estar conformada por:
-  - Columnas y Filas​
+## 🗃️ **Base de Datos**  
+- Es una **unidad** donde se almacena información de manera estructurada.  
 
-### Entidad
-- Una entidad es todo aquello en lo cual guardamos datos, por ejemplo clientes,  facturas y o agencias.
-- Entonces las entidades son todas aquellos datos referentes, de la vida real o no, 
-- Por ejemplo :cliente es dato, es una entidad.
+### 🔄 **Clasificación**  
+Las bases de datos pueden ser:  
 
-### Registros o datos sellados primarios
-​- Son una llaves que identifican a la entidad, son llaves únicas o son datos únicos y no repetibles.
-- Luego de esto tenemos lo que son las llaves foráneas.
-- Cuando una entidad figura la clave primaria de autenticidad, esto se denomina clave foránea o clave ajena
+#### **1. Relacionales**  
+- Tienen un **esquema definido y estable**.  
+- Utilizan **identificadores (claves primarias)** para relacionar tablas.  
+- Ejemplo: MySQL, PostgreSQL, Oracle.  
 
-### Llave foránea
-- Las llaves foráneas son columnas que aparecen en otras tablas que no son la de destino. Las llaves foráneas de una tabla necesariamente son la llave primaria de la tabla de donde vienen. Las llaves primarias y foráneas tienen una característica denominada integridad referencial, que consiste en hacer que ciertas funciones, como eliminar e insertar en un campo, sean cuidadosas.
+#### **2. No Relacionales (NoSQL)**  
+- **Sin estructura fija**, orientadas a documentos o objetos.  
+- **Flexibles**, sin relaciones predefinidas como en las relacionales.  
+- Ejemplo: MongoDB, Cassandra, Redis.  
 
-### Relación de entidades
-- Las entidades se relacionan entre sí a través de la clave foránea.
-- Las llaves primarias también tienen otra función y es cumplir el papel de llaves foráneas.
-- Esto lo vemos cuando quiero combinar o relacionar,  los datos de 2 tablas o de dos entidades.
+### ⚖️ **Diferencia entre ambos gestores**  
+| **Relacional** | **No Relacional** |  
+|---------------|-------------------|  
+| Estructura fija | Estructura flexible |  
+| SQL como lenguaje | No usa SQL (o lo adapta) |  
+| Ideal para datos estructurados | Ideal para datos dinámicos |  
 
-### Creamos una nueva conexión​
-- Haciendo click en el signo + , se nos abrirá una nueva ventana pare crear una nueva conexión. le colocaremos de nombre Dato y seleccionaremos Test connetion.
-- Luego nos pedirá la contraseña para realizar la conexión, ingresamos la contraseña y luego seleccionamos ok.
-- Una vez ya conectados crearemos nuestra base de datos.
-- Creamos una Base de Datos: con el nombre Datos.
-- Nos ubicamos dentro de la base de datos creada y creamos una tabla de nombre Estudiantes.
-- Ubicados en la tabla:​
-  - Añadiran las columnas: nombre, apellido y edad, luego hagan clikc en apply y luego en Finish.​
-- La tendremos nuestra tabla creada en nuestra base de Datos​.
-- En edad cambiamos el tipo de dato a INT y en la columna NN, tildamos todas las casillas segun la cantidad de columnas.
-- Hacemos click en finish.
-- ​Nos aparecerá la tabla creada dentro de la base de datos.
+> **Nota:** Es importante elegir el gestor adecuado según el tipo de base de datos que necesitemos.  
+
+---
+
+## 📊 **Conceptos Clave**  
+
+### 🔢 **¿Qué es un dato?**  
+- Es una **representación** de una variable (cuantitativa o cualitativa).  
+- Puede ser **numérico, alfabético o alfanumérico**.  
+- **Ejemplo:**  
+  - *Juan tiene 15 años.* → El dato es `15` (valor numérico).  
+
+### 📋 **Tablas**  
+- Espacio donde se organiza la información.  
+- Compuesta por:  
+  - **Columnas (atributos)**  
+  - **Filas (registros)**  
+
+### 🏷️ **Entidad**  
+- Objeto del mundo real del cual almacenamos datos (ej: *clientes, facturas, productos*).  
+
+### 🔑 **Claves en Bases de Datos**  
+| Tipo | Descripción |  
+|------|------------|  
+| **Primaria** | Identificador único (no repetible). |  
+| **Foránea** | Referencia a una clave primaria en otra tabla. |  
+
+#### 🔗 **Relación entre Entidades**  
+- Las entidades se vinculan mediante **claves foráneas**.  
+- Permiten combinar datos de múltiples tablas.  
+
+---
+
+## 🛠️ **Guía Práctica: Crear una Base de Datos en MySQL**  
+
+1. **Nueva Conexión**  
+   - Haz clic en `+` → Asigna un nombre (ej: *Dato*).  
+   - Selecciona *Test Connection* e ingresa la contraseña.  
+
+2. **Crear Base de Datos**  
+   - Ejecuta: `CREATE DATABASE Datos;`  
+
+3. **Crear Tabla**  
+   - Ubícate en la base *Datos* y crea una tabla:  
+     ```sql
+     CREATE TABLE Estudiantes (
+       nombre VARCHAR(50) NOT NULL,
+       apellido VARCHAR(50) NOT NULL,
+       edad INT NOT NULL
+     );
+     ```  
+   - Configura:  
+     - Tipo de dato en `edad`: **INT**.  
+     - Marca **NN (NOT NULL)** en todas las columnas.  
+
+4. **¡Listo!**  
+   - La tabla `Estudiantes` estará disponible en la base de datos.  
+
+---
+
+✨ **¡Ahora puedes gestionar tus datos de manera eficiente!**  
