@@ -1,38 +1,71 @@
-# ***FORK***
-- Cuando hablamos de fork nos estamos refiriendo a realizar una copia de un repositorio público y que  podemos  copiar y trabajar en nuestra cuenta de github
-- En el buscador de git hub seleccionaremos un proyecto abierto y haremos click en el botón de fork.
-- Copiaremos todos los archivos del proyecto público a nuestra cuenta de github, seleccionando create fork.
-- Y tendrán una copia del proyecto público que elijan en su cuenta de git hub.
-- Lo que podemos hacer con el repositorio que copiamos a nuestra cuenta de github es descargarla de manera local.
-- Lo primero que haremos es crear un repositorio nuevo con Mkdir y el nombre que le daremos a ese repositorio, después iniciaremos el repositorio. Ingresaremos al repositorio y clonaremos el repositorio remoto a nuestro repositorio local.
-- Esto me permitirá trabajar con otros repositorios y adaptarlos a lo que esté necesitando.
-- Utilizaremos el comando visto clase anteriores git clone más la dirección https de github del repositorio.
-- Una vez que lo hemos clonado ingresaremos al repositorio.
-- Aplicaremos un GIT LOG --ONELINE --ALL Y PODREMOS VISUALIZAR TODOS LOS COMMIT QUE TIENE EL REPOSITORIO.
-- AÑADIREMOS UN NUEVO ARCHIVO AL REPOSITORIO CON EL COMANDO touch “nombre”. ext.
-- Y por último lo que nos queda es subir los cambios con git push.
-- Actualizamos nuestro github y nos aparecerá los cambio realizados.
+# 🍴 **FORK**
 
-## Issues
-- Se utiliza para rastrear ideas, retroalimentación, tareas o errores para trabajar. Este trabajo por lo general lo realizan los tester, que son los encargados que todo funcione bien.
-- También va a servir para alertar al desarrollador los errores y poder corregirlos.
-- Entonces GithUB tiene issues que permite colocar los errores de un proyecto o código.
-- Añadiremos  a modo ejemplo una issues  con bug en “scrip.js” de  nombre y una descripción.
-- También podremos seleccionar labels que sería como etiquetas para las revisiones de los errores.
-- Una vez seleccionada la persona encargada y el labels, haremos click en comment.
-- Y por último seleccionamos submit new issues.
-- Y podríamos visualizar la issue creada
-- También tenemos la opción de crear nuestras label. Colocaremos un nombre
-  - por ej: función sin retorno y una descripción.
-  - por ej: este label es para funciones que no tienen retorno, seleccionamos color y hacemos click en crear label.
-- Podremos visualizar nuestra label creada.
-- Crearemos otra issues, con otro nombre por ej: No hay recursividad en “scrip.js” y en la descripción colocaremos por ej: Todo el código no es resursivo. pero esta vez seleccionaremos la labels creada
-- Y podremos visualizar nuestra nueva issue creada.
+## ¿Qué es un Fork?
+- Es una **copia de un repositorio público** que puedes llevar a tu cuenta de GitHub para trabajar en él.
 
-- *Milestone*: Es una funcionalidad de github que me permite establecer una fecha para la resolución de un problema.
-  - El milestone me va a permitir establecer un tiempo determinado para solucionar un problema, cuando el problema se resuelva, se elimina el milestone. Creamos un nuevo milestone.
-  - Colocaremos un título por ej: solventar bug de función seleccionar un tiempo que nos puede llevar el arreglo y por último agregar una descripción de lo que se va a realizar
+## 🛠️ Proceso para hacer un Fork
+1. Busca un proyecto público en GitHub
+2. Haz clic en el botón **Fork**
+3. Selecciona **Create Fork** para copiar el proyecto a tu cuenta
 
+## 📥 Clonar el Fork localmente
+```bash
+mkdir nombre-repositorio
+cd nombre-repositorio
+git clone https://github.com/tu-usuario/repositorio-forkeado.git
+```
 
+## **🔍 Ver historial de commits**
+```bash
+git log --oneline --all
+```
 
+### ✨ Añadir cambios
+1. Crear nuevo archivo:
+```bash
+touch "nombre.ext"
+```
 
+2. Subir cambios:
+```bash
+git push
+```
+
+---
+
+## **🐞 ISSUES**
+### ¿Para qué sirven?
+- Rastrear ideas, feedback, tareas o bugs
+- Alertar a desarrolladores sobre errores
+- Organizar el trabajo del equipo (especialmente testers)
+
+### 🏷️ Crear un Issue
+1. Selecciona New Issue
+2. Completa:
+  - Título (ej: "Bug en script.js")
+  - Descripción detallada
+  - Asignar responsable
+  - Seleccionar Labels (etiquetas)
+
+### 🎨 Crear Labels personalizados
+1. Ve a Labels → New Label
+2. Completa:
+  - Nombre (ej: "Función sin retorno")
+  - Descripción
+  - Color distintivo
+
+### 🗓️ Milestones
+Funcionalidad que permite:
+- Establecer plazos para resolver issues
+- Organizar el flujo de trabajo
+
+Crear un Milestone:
+1. New Milestone
+2. Completa:
+  - Título (ej: "Solventar bug de función")
+  - Fecha límite
+  - Descripción del objetivo
+
+---
+
+> *💡 Consejo: Usa milestones para gestionar sprints o hitos importantes en tu proyecto.*
