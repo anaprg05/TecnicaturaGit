@@ -1,67 +1,100 @@
-# ***Base de Datos No Reacionales***
-## Base de Datos NoSQL
-- Cuando hablamos de bases de datos nosql , nos referimos a un conjunto de datos no relacionales.
-- Es una amplia base de datos, la cual no utiliza lenguaje SQL como lenguaje principal de consulta, sino que se maneja con documentos.
+# 🍃 **Bases de Datos No Relacionales (NoSQL)**
 
-### VENTAJAS
-#### Productividad:
-- En el desarrollo de aplicaciones. El sistema NOSQL nos proporciona un modelo de datos que encajan con las necesidades de las aplicaciones.
-- Es adaptable y cuando surge las bases nosql, produjo muchas migraciones de una base de datos relacional a una no relacional.
+## 🧩 **Bases de Datos NoSQL**
+- Conjunto de datos **no relacionales** que no utilizan SQL como lenguaje principal
+- Manejo de datos mediante **documentos flexibles** en lugar de tablas rígidas
 
-#### Datos a Gran Escala:
-- Esta base de datos está diseñada para ejecutarse sobre clústeres.
-- Me va a permitir manejar mucha cantidad de base de datos.
+### 🚀 **VENTAJAS**
 
-### Características
-- No utiliza  SQL como lenguaje principal.
-- Generalmente es de código abierto.
-- No posee un esquema fijo.
+#### 🛠️ Productividad
+```diff
++ Modelo de datos que se adapta a las necesidades de las aplicaciones
++ Facilitó migraciones masivas desde bases relacionales
+```
 
-## Modelos de Base de Datos NOSQL
-### Modelo Clave-Valor
-- Se basa en un método simple clave-valor. Almacenando los datos como un conjunto de pares clave-valor.
-- Almacenando los datos como conjunto de pares clave-valor en la que una clave sirve como un identificador único.
+### 📈 Datos a Gran Escala
+```mermaid
+graph LR
+    A[Clúster] --> B[Nodo 1]
+    A --> C[Nodo 2]
+    A --> D[Nodo 3]
+```
+- Diseñada para operar en clústeres distribuidos
+- Capacidad para manejar grandes volúmenes de datos
 
-### Modelo Orientado a Documentos
-- Una base de datos orientada a documentos es un subconjunto de base de datos NOSQL.
-- Siendo esta base de datos semi-estructurado.
-- Estas bases se almacenan en documentos y sobre esos documentos se realizan las consultas.
-- Por ej: Facebook utiliza base de DaTOS NO REACIONALES YA QUE MANEJA MUCHOS DATOS DE USUARIOS
+### 🔍 Características Principales
+- ❌ No utiliza SQL como lenguaje principal
+- 🔓 Generalmente de código abierto
+- � Sin esquema fijo (schemaless)
 
-### Modelo Basado en Columnas
-- La base de datos basada en columnas son creadas para la velocidad, trabajan de una forma que permite omitir los datos irrelevantes para el análisis y leer de inmediato lo que se busca.
+---
 
-#### Documentos
-- Cuando hablamos de documentos, no nos referimos a los documentos que tenemos en nuestra computadora, sino a documentos de base de datos nosql, estos serian lo que en una base de datos relacionales llamamos filas o tuplas.
+## **📌 Modelos NoSQL**
+### 1. 🔑 Modelo Clave-Valor
+```json
+{
+  "user_id": "503",
+  "username": "kevin_503"
+}
+```
+- Almacenamiento simple en pares clave-valor
+- Clave como identificador único
 
-## Mongo DB
-- Es una base de datos, que va a funcionar mediante documentos, o sea que todos los datos en los que se trabaja se almacenan en documentos.
+### 2. 📄 Modelo Documental
+```diff
+! Ejemplo: Facebook usa este modelo para datos de usuarios
+```
+- Datos semi-estructurados en documentos (JSON/BSON)
+- Consultas directas sobre documentos
 
-### ¿Cómo es el almacenamiento en Mongo DB?
-- Mongo DB almacena los datos estructurados de forma JSON (Notación de objetos basados en JavaScript), utilizando un esquema dinámico llamado BSON (Esquema no fijo) que es actualizable.
+### 3. 📊 Modelo Columnar
+```sql
+-- Ejemplo conceptual
+SELECT columnas_específicas FROM mega_tabla
+```
+- Optimizado para análisis rápido
+- Omite datos irrelevantes durante las consultas
 
-#### Los Documentos contiene múltiples pares clave valor
-- Cuando decimos que los documentos contienen múltiples pares clave valor nos referimos a que las claves serian como los atributos en Mysql y el valor a los datos que se almacenan en un campo.
+---
 
-### Características de Mongo DB
-- Las claves están definidas como cadenas y puede utilizarce cualquier carácter.
-- En las claves no pueden quedar el valor nulo/0 o usar “.” o “$” ya que tienen propiedades especiales (no se puedes utilizar este tipo de caracteres).
-- Mongo db es sensitivo a como se escriben los datos( mayúsculas y minúsculas ej:
+## **🍃 MongoDB Deep Dive**
+### 📦 Almacenamiento
+```json
+// Documento BSON ejemplo
+{
+  "_id": ObjectId("5099803df3f4948bd2f983a0"),
+  "nombre": "Kevin",
+  "edad": 25,
+  "hobbies": ["programar", "fútbol"]
+}
+```
+- Formato JSON/BSON con esquema dinámico
+- Actualizaciones en tiempo real
 
-      {USUARIO: “kevin 503”}, {usuario: kevin 503}
+### ⚠️ Reglas de Claves
+| 📌 **Regla**          | ✅ **Ejemplo Válido** | ❌ **Inválido**         | 💡 **Explicación**                     |
+|----------------------|----------------------|------------------------|---------------------------------------|
+| **No nulas**         | `"edad": 25`         | `"": 25`               | Las claves no pueden estar vacías      |
+| **Sin caracteres especiales** | `"usuario"`    | `"user$"` o `"data.old"` | Prohibido usar `.` o `$` en claves    |
+| **Case-sensitive**   | `"Nombre"` ≠ `"nombre"` | -                    | MongoDB distingue mayúsculas/minúsculas |
+| **Únicas por documento** | `{"id": 1, "name": "A"}` | `{"id": 1, "id": 2}` | No se permiten claves duplicadas       |
 
-- Va a cambiar el concepto de la clave
-- Un documento no puede tener la clave duplicada( las claves deben ser de diferentes formas)
-- Por ej:
-![image](https://github.com/user-attachments/assets/05000ab2-1ffc-447a-80d7-6db24dba65f9)
+### ❌ Prohibido
+- Claves duplicadas en un documento
+- Uso de `.` o `$` en nombres de claves
 
-## Instalaciónes
-### Mongo DB
-1. En el Buscador escribiremos Mongo DB, una vez que nos aparece la página, ingresaremos en el enlace Community Edition.
-2. Una vez que ya ingresamos al enlace, nos aparecerá una página donde seleccionaremos la versión mas actual.
-3. Una vez seleccionada la versión que deseamos instalar, iniciamos la descarga.
+---
 
-### STUDIO 3T
-1. En el buscador escribimos Robo 3T, una vez que nos aparece la página, seleccionamos el primer enlace.
-2. Una vez que ingresamos al enlace, nos abrirá la página principal.
-3. Iniciaremos la descarga de STUDIO 3T.
+## **💻 Instalación**
+### MongoDB Community Edition
+1. 🔍 Buscar "MongoDB" en navegador
+2. 🏷️ Seleccionar versión más reciente
+3. ⬇️ Descargar e instalar
+
+Studio 3T (Robo 3T)
+```mermaid
+graph TB
+    A[Buscar "Robo 3T"] --> B[Acceder a sitio oficial]
+    B --> C[Descargar versión estable]
+    C --> D[Instalar]
+```
