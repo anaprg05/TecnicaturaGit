@@ -1,33 +1,77 @@
-# ***BASE DE ​DATOS NO RELACIONALES​***
-## MONGO DB
-### ¿CÓMO PODEMOS INGRESAR DATOS A UN DOCUMENTO O DOCUMENTOS A UNA COLECCIÓN?
-- INSERT: el comando insert me permite insertar datos en la shell de Mongo DB​.
-  - Al insertar datos vamos a tener la facilidad que tiene los documentos o de admitir documentos con distintos parámetros o distintos datos sin importar la cantidad de éstos.​
-- INSERT ONE: Inserta un documento en una colección.
-- INSERT MANY: El Insert Many es un comando de MongoDB que me permite  poder insertar diversos documentos en una colección.​
+# 🗄️ BASE DE DATOS NO RELACIONALES
 
-#### EJECUTAMOS COMANDOS
-- Utilizaremos el comando:
+## 🍃 MONGO DB
 
-      insertOne
-- Utilizaremos el comando:
+### 📥 ¿CÓMO PODEMOS INGRESAR DATOS A UN DOCUMENTO O DOCUMENTOS A UNA COLECCIÓN?
 
-      insertMany
+#### 🔹 INSERT
+- El comando `insert` permite insertar datos en la shell de MongoDB​
+- Permite admitir documentos con distintos parámetros sin importar la cantidad​
 
-#### Comandos para Mongo
-- Show dbs: para ver las bases de datos​.
-- Use + "nombre de la base creada": para crear una nueva base de datos.​
-- Use "nombre de bases": seleccionamos en que base de datos vamos a trabajar.​
-- db."nombre de la base ".find(): es para saber y consultas sobre las base creadas.​
-- Cls: limpiamos pantalla.
+#### 🔹 INSERT ONE
+```javascript
+db.collection.insertOne({documento})
+```
+- Inserta un único documento en una colección
 
-## STUDIO 3T
-### ¿CÓMO CREAR UN BASE DE DATOS DESDE STUDIO 3T?
-- ANTES DE INICIAR UNA COLECCIÓN EN STUDIO 3T SE DEBE CONECTAR LA SHELL DE MONGODB.
-- Para iniciar abrir la shell de Mongo realizamos los siguientes a pasos:​
-  1. Nos vamos a la carpeta de la sell de mongo , abrimos carpeta bin y hacemos doble click en  mongosh. Y minimizamos ventana, no la cerramos. Ingresamos mongod , y la nos conetará  Studio 3T  a la shell de Mongo.
-  2. Seleccionamos connected, y nos apáreceran las conecciones de mongo. Seleccionamos en la que estemos trabajando. Si no hemos conectado la shell no nos figurará nada.
+#### 🔹 INSERT MANY
+```javascript
+db.collection.insertMany([{doc1}, {doc2}])
+```
+- Permite insertar múltiples documentos en una colección​
 
-### ¿CÓMO CREAMOS NUESTRA BASE DE DATOS?
-- Paso: Seleccionamos nuestra base de datos y hacemos click con el botón derecho y seleccionaremos Add Database , nos aparecerá una ventana donde ingresaremos el nombre de la nueva base de datos que quiero crear.
-- PODEMOS INGRESAR LOS DATOS  A NUESTRAS BASE DE DATOS.
+---
+
+## **💻 EJECUTAMOS COMANDOS**
+#### 🔸 INSERT ONE
+```javascript
+> db.usuarios.insertOne({nombre: "Juan", edad: 25})
+```
+
+#### 🔸 INSERT MANY
+```javascript
+> db.usuarios.insertMany([
+    {nombre: "María", edad: 30},
+    {nombre: "Carlos", edad: 28}
+  ])
+```
+
+---
+
+## **🛠 COMANDOS BÁSICOS PARA MONGO**
+| Comando         | Descripción                          | Ejemplo                  |
+|-----------------|--------------------------------------|--------------------------|
+| `show dbs`      | Muestra todas las bases de datos     | `> show dbs`             |
+| `use`           | Crea/selecciona una base de datos    | `> use miDB`             |
+| `db.find()`     | Consulta documentos                  | `> db.usuarios.find()`   |
+| `cls`           | Limpia la pantalla                   | `> cls`                  |
+
+---
+
+## **🖥 STUDIO 3T**
+### 🔌 ¿CÓMO CREAR UNA BASE DE DATOS DESDE STUDIO 3T?
+#### 📌 REQUISITO PREVIO
+```diff
++ ANTES DE INICIAR: Debe estar conectada la shell de MongoDB
+```
+#### 🔹 Pasos para conectar:
+1. Abrir la shell de Mongo:
+   - Ir a la carpeta `bin`
+   - Ejecutar `mongosh` (minimizar, no cerrar)
+
+2. Ejecutar:
+```bash
+mongod
+```
+
+3. En Studio 3T:
+   - Seleccionar "Connected"
+   - Aparecerán las conexiones disponibles
+
+---
+
+🏗 ¿CÓMO CREAMOS NUESTRA BASE DE DATOS?
+1. Click derecho sobre la conexión
+2. Seleccionar "Add Database"
+3. Ingresar el nombre de la nueva base de datos
+4. ¡Listo! Ya podemos ingresar datos a nuestra base
