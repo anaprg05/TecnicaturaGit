@@ -1,96 +1,119 @@
-# ***Sentencias***
-## Order by
-- Se utiliza para ordenar de forma ascendente o descendente una un campo en una tabla, ya sea por medio de A la Z, z a la A de 1 hasta el infinito o desde el infinito hasta el 1.
+# 📌 **Sentencias SQL**  
 
-      use <nombre de la base>;
-      Select * from <nombre de la base>. <nombre tabla> order by <nombre columna> asc;
+## 🔄 **ORDER BY**  
+Se utiliza para ordenar de forma ascendente o descendente un campo en una tabla, ya sea alfabéticamente (A-Z / Z-A) o numéricamente (1-∞ / ∞-1).  
 
-- Orden de forma ascendente
+### Sintaxis básica:  
+```sql
+USE <nombre_de_la_base>;
+SELECT * FROM <nombre_base>.<nombre_tabla> ORDER BY <nombre_columna> ASC|DESC;
+```
 
-      use base1;
-      select * from base1.usuario order by nombre asc;
+### Ejemplos:
+- Orden ascendente (ASC):
+```sql
+USE base1;
+SELECT * FROM base1.usuario ORDER BY nombre ASC;
+```
 
-- Ordenar de forma descenedente
+- Orden descendente (DESC):
+```sql
+USE base1;
+SELECT * FROM base1.usuario ORDER BY nombre DESC;
+```
 
-      use base1;
-      Select * from base1.usuario order by nombre desc;
+---
 
-## SENTENCIA NOT
-- El operador Not lo que hace es que no me muestra el valor que yo le indique, esto me permitirá traer sólo los datos que necesito trabajar en ese momento.
+## **❌ SENTENCIA NOT**
+Excluye registros que coincidan con un valor específico.
 
-      use <nombre de la base>;
-      Select * from <nombre base>. <nombre tabla>
-      Where not <columna de la tabla>  = “dato específico";
+### Sintaxis:
+```sql
+USE <nombre_de_la_base>;
+SELECT * FROM <nombre_base>.<nombre_tabla>
+WHERE NOT <columna> = "valor";
+```
 
-- Utilizamos el operador Not para eliminar algún dato que no necesite ver en mi tabla
+### Ejemplo:
+```sql
+USE base1;
+SELECT * FROM base1.Usuario
+WHERE NOT apellido = "Rojas";
+```
 
-      use base1;
-      Select * from base1.Usuario
-      Where not apellido = "Rojas";
+---
 
-## Sentencia DROP
-- Esta sentencia me permite  eliminar columnas,  un dato en específico y  eliminar una base de datos.
-  
-      Use <nombre de la base>;
-      alter table <nombre tabla>
-      drop column <nombre columna>
+## **🗑️ SENTENCIA DROP**
+Elimina columnas, datos específicos o bases de datos completas.
 
-- Ej:
+### Sintaxis para eliminar columnas:
+```sql
+USE <nombre_de_la_base>;
+ALTER TABLE <nombre_tabla>
+DROP COLUMN <nombre_columna>;
+```
 
-      use base1;
-      alter table Usuario
-      drop column correo
+### Ejemplo:
+sql
+```USE base1;
+ALTER TABLE Usuario
+DROP COLUMN correo;
+```
 
-- Se eliminará la columna seleccionada
+---
 
-## Sentencia Delete
-- Esta sentencia nos permitirá eliminar, contenidos de tablas específicos o en general.
-- Si utilizamos sólo el comando DELETE FROM y el nombre de la tabla eliminaremos todo el contenido de dicha tabla.
+## **🧹 SENTENCIA DELETE**
+Elimina registros específicos o todos los datos de una tabla.
 
-      use <nombre de la base>;
-      delete from <nombre de la tabla>
+### Sintaxis general (elimina todo):
+```sql
+USE <nombre_de_la_base>;
+DELETE FROM <nombre_tabla>;
+```
 
-- EJ.
+Ejemplo con filtro (`WHERE`):
+```sql
+USE base1;
+DELETE FROM usuario WHERE <columna> = "valor";
+```
 
-      use base1;
-      delete from usuario
+---
 
-- Para no eliminar todos los datos de una tabla acompañamos el delete con el where
+## **📊 Normalización de Bases de Datos**
+Proceso para reorganizar atributos y evitar redundancia, optimizando espacio y recursos.
 
-      use <nombre de la base>;
-      delete from >nombre de la tabla> where <nombre de la columna> = “dato específico”;
+### 🎯 Objetivo
+Evitar la repetición de datos y mejorar la eficiencia en el almacenamiento.
 
-- De esta manera sólo estaríamos eliminando datos específicos y no todos los datos.
+### 📌 Tres Formas de Normalización
+1️⃣ Primera Forma (1FN)
+- Elimina datos repetidos.
+- Crea tablas separadas por grupos de datos relacionados.
+- Asigna claves primarias a cada grupo.
 
-## Normalización
-- La normalización es un proceso el cual los atributos de una tabla pasan a ser re organizados, evitando así la repetición de estos y ahorrar espacio en una base de datos.
+2️⃣ Segunda Forma (2FN)
+- Crea tablas adicionales para datos aplicables a múltiples registros.
+- Establece relaciones mediante claves foráneas.
 
-### ¿PARA QUÉ SE UTILIZA?
-- La normalización es un proceso al cual el programador utiliza lo que es su lógica para evitar datos repetidos en una base de datos y así optimizar y ahorrar espacio y recursos en una empresa.
+3️⃣ Tercera Forma (3FN)
+- Elimina campos que no dependan directamente de la clave primaria.
+- Ejemplo: Si `C` depende de `B` y `B` de `A`, al eliminar `B`, `C` mantiene su relación con `A`.
 
-### OBJETIVO:
-- La normalización tiene como objetivo principal evitar la redundancia de datos en una base de datos y a su vez el ahorro de espacio en la misma. Muchas veces estarán limitados por la mismas empresas.
-- Tres formas de Normalización:
-  - Primera forma:
-    - Se encarga de eliminar los datos repetidos que tiene una tabla y separarlos.
-    - Crea una tabla por separado por cada grupo de datos relacionado.
-    - Identifica cada grupo de datos relacionados con una clave primaria.
-  - Segunda forma:
-    - Se crean tablas separadas para aquellos grupos de datos que se aplican a varios registros.
-    - Las tablas se relacionan mediante una clave externa.
-  - Tercera forma:
-    - Es la relación y dependencia que tiene cada tabla.
-    - Elimina todos aquellos campos que no dependan de una clave.
-    - Por ejemplo, si la tabla A, B y C. B depende de A, entonces  C depende de B y de A, pero si yo elimino B, C  sigue dependiendo de A.
+---
 
-### Seleccionar datos de diferentes tablas
-- Utilizaremos el comando:
+## **🔍 Seleccionar Datos de Múltiples Tablas**
+### Sintaxis básica:
+```sql
+USE base1;
+SELECT * FROM <tabla1>, <tabla2>;
+```
 
-      SELECT * FROM  <nombre de tabla1> , <nombre de tabla 2>;
-
-- Para seleccionar datos específicos de tablas, utilizaremos:
-
-      use base1;
-      Select *from  <nombre de tabla 1>, <nombre de tabla 2>;
-      SELECT * FROM usuario, serial ; select usuario.nombre, usuario.apellido , serial. n_serial from usuario, serial where usuario.idusuario=serial.idserial;
- 
+### Ejemplo con campos específicos:
+```sql
+SELECT 
+    usuario.nombre, 
+    usuario.apellido, 
+    serial.n_serial 
+FROM usuario, serial 
+WHERE usuario.idusuario = serial.idserial;
+```
