@@ -1,44 +1,58 @@
-# ***Sentencias***
-- Sentencia para traer datos específicos de una o varias tablas.
-- Para ello utilizaremos las sentencia:
+# 🔍 **Sentencias SQL Avanzadas**
 
-      use base1;
-      select * from usuario where nombre like "J%";
+## 🎯 Búsqueda de datos específicos con `LIKE`
+Para traer datos específicos de una o varias tablas usando patrones:
 
-- El símbolo de  %, hace referencia a cuando buscamos un dato que empiece con una letra , se va  a colocar la letra específica de la búsqueda y luego el sígno de porcentaje
+```sql
+USE base1;
+SELECT * FROM usuario WHERE nombre LIKE "J%";
+```
 
-      “LETRA%”
-- Si se quiere buscar una palabra que finalice con una determinada letra se colocará delante de la letra.
+📌 Uso del símbolo `%`
+- `"LETRA%"`
+  - Busca datos que empiecen con la letra especificada.
+  - Ejemplo: `"J%"` encuentra "Juan", "Julia", etc.
 
-      “%LETRA”
+- `"%LETRA"`
+  - Busca datos que terminen con la letra especificada.
+  - Ejemplo: `"%a"` encuentra "Maria", "Andrea", etc.
 
-- O si se necesita buscar datos que contengan letras específicas se clocará
+- `"%letra%"`
+  - Busca datos que contengan la letra en cualquier posición.
+  - Ejemplo: `"%e%"` encuentra "Pedro", "Elena", "Marta".
 
-      “%letra%”
+---
 
-  - “letra%”, nos arroja el dato que empieza con la letra específica.
-  - “%letra” nos arroja con la letra que finaliza el dato.
-  - “%letra%”, para búsquedas de letras específicas en datos.
-- También se puede especificar por  cantidad de carácter que tenga un dato.
-- Según la cantidad de carácter que tenga ese dato.
-- Por ejemplo si un dato tiene 5 carácter utilizaremos el guión bajo “_” según la cantidad de caracteres que tenga el dato que necesitamos que nos arroje.
+## **🔢 Búsqueda por longitud de caracteres**
+Usando _ (guión bajo) para especificar la cantidad exacta de caracteres:
+```sql
+USE base1;
+SELECT * FROM usuario WHERE nombre LIKE "_____";  -- 5 caracteres exactos
+Cada _ representa un carácter. Ejemplo: "___" busca nombres de 3 letras.
+```
 
-- Ejemplo:
+---
 
-      use base1;
-      select * from usuario where nombre like "_____";
+✏️ Cambiar nombres de columnas y tablas
+🔄 Renombrar una columna
+sql
+USE nombre_base;
+ALTER TABLE nombre_tabla 
+CHANGE nombre_columna nuevo_nombre_columna VARCHAR(50);
 
-- Utilizando “_” el guion bajo para  especificar la cantidad de caracteres que necesitamos que nos arroje.
-- Como cambiar nombre de columnas y tablas utilizando sentencias.
-- Para cambiar el nombre a las columnas utilizaremos:
+SELECT * FROM nombre_tabla;  -- Verificar cambios
+🏷️ Renombrar una tabla completa
+sql
+ALTER TABLE nombre_tabla 
+RENAME TO nuevo_nombre_tabla;
+Nota: Refresca la base de datos para visualizar los cambios.
 
-      Use nombre base;
-      alter table nombre tabla change nombre de columna Nuevo nombre de columna varchar (50);
-      select * from nombre tabla; //para visualizer la modificación de nuestra tabla//
+---
 
-- Utilizamos la sentencia chage para cambiar nombre a nuestra columna.
-- Para cambiar el nombre de la tabla utilizaremos el Rename:
+📚 Resumen de operadores
+Operador	Función	Ejemplo
+%	Coincidencia parcial de texto	"J%", "%a"
+_	Carácter individual	"A___"
+CHANGE	Renombrar columna	SQL arriba
+RENAME	Renombrar tabla	SQL arriba
 
-      alter table <nombre tabla> Rename < nuevo nombre tabla>;
-
-- Para visualizar el cambio de nombre de nuestra tabla, refrescamos datos.
