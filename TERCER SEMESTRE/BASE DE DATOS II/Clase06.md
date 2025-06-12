@@ -98,7 +98,7 @@ Ventajas de `background: true`:
 ```mermaid
 graph TB
     A[Seleccionar colección] --> B[Click derecho → Add index]
-    B --> C[Add Field(s)]
+    B --> C[Add Fields]
     C --> D[Seleccionar campo]
     D --> E[Configurar tipo]
     E --> F[Confirmar]
