@@ -70,7 +70,7 @@ mongod
 
 ---
 
-🏗 ¿CÓMO CREAMOS NUESTRA BASE DE DATOS?
+## 🏗 ¿CÓMO CREAMOS NUESTRA BASE DE DATOS?
 1. Click derecho sobre la conexión
 2. Seleccionar "Add Database"
 3. Ingresar el nombre de la nueva base de datos
