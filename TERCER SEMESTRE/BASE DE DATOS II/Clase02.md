@@ -92,9 +92,6 @@ SELECT columnas_específicas FROM mega_tabla
 3. ⬇️ Descargar e instalar
 
 Studio 3T (Robo 3T)
-```mermaid
-graph TB
-    A[Buscar "Robo 3T"] --> B[Acceder a sitio oficial]
-    B --> C[Descargar versión estable]
-    C --> D[Instalar]
-```
+1. 🔍 Buscar "Studio 3T" en navegador
+2. 🏷️ Seleccionar versión más reciente
+3. ⬇️ Descargar e instalar
