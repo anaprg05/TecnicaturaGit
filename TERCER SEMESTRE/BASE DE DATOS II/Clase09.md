@@ -118,7 +118,7 @@ db.coleccion.find({...}).explain("executionStats")
 
 ---
 
-🏁 Conclusión
+## 🏁 Conclusión
 La optimización en MongoDB requiere:
 - Diseño cuidadoso del esquema
 - Indexación estratégica
