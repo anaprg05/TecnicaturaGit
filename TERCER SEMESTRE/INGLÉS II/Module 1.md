@@ -1,8 +1,4 @@
-# 📚 MÓDULO 1 - TUP  
-
-## 🎓 Module 1: ENGLISH 2  
-**👩‍🏫 Litiana Buccella**  
-*TECNICATURA EN PROGRAMACIÓN | UTN – FR SAN RAFAEL*  
+# 🎓 Module 1: ENGLISH 2  
 
 ---
 
