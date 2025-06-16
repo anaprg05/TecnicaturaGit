@@ -54,8 +54,8 @@
 └── 📁 TERCER SEMESTRE/
     ├── 🐘 BASE DE DATOS II/
     ├── 🧠 PROGRAMACION III/
-    ├── 🌍 INGLES II/
-    └── 📊 METODOLOGÍA DE SISTEMAS/
+    └── 🌍 INGLES II/
+
 ```
 
 ---
