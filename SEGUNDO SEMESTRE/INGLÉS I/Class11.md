@@ -1,78 +1,79 @@
-# Website Development
-
-## 1. Website Development Process
-### Key Steps:
-1. **First**, discuss client requirements and target audience.  
-2. **Next**, analyze the gathered information.  
-3. **Then**, create a website specification.  
-4. **After that**, design and develop the website.  
-5. **Finally**, test and publish the website.  
-
-**Flowchart Example:**  
-## 1. Client Consultation → 2. Analysis → 3. Specification → 4. Design → 5. Testing
+# 🚀 Website Development
 
 ---
 
-## 2. Language: Describing Steps
-### Useful Phrases:
-- **Sequencing:** *First, Next, Then, Finally*  
-- **Example:** *"First, gather client requirements. Next, create a mockup."*  
+## 🔄 1. Website Development Process  
+### 🛠️ Key Steps:  
+1. **📝 First**: Discuss client requirements and target audience  
+2. **🔍 Next**: Analyze gathered information  
+3. **📋 Then**: Create website specification  
+4. **🎨 After that**: Design and develop website  
+5. **✅ Finally**: Test and publish website  
+
+**📊 Flowchart Example**:  
+```mermaid
+graph LR
+    A[Client Consultation] --> B[Analysis]
+    B --> C[Specification]
+    C --> D[Design]
+    D --> E[Testing]
+```
 
 ---
 
-## 3. Speaking & Reading Activities
-### Website Analysis:
-- **Example Questions:**  
-  - *What is the purpose of Amazon.com?* → **Sell products.**  
-  - *Main features?* → **Product listings, shopping cart, reviews.**  
-
-### Developer-Client Dialogue:
-- **Key Questions to Ask:**  
-  - *"What is your company’s primary business?"*  
-  - *"Who is your target audience?"*  
+## 💬 2. Language: Describing Steps
+### 📌 Useful Phrases:
+- Sequencing:
+  - *First, Next, Then, Finally*
+- Example:
+  - *"First, gather client requirements. Next, create mockup."*
 
 ---
 
-## 4. Vocabulary (Describing Websites)
-### Adjectives:
-- *"The most **user-friendly** website is Google due to its simple design."*  
-- *"Wikipedia is highly **informative** for research."*  
+## 🗣️ 3. Speaking & Reading Activities
+### 🌐 Website Analysis:
+- Example Questions:
+  - What is Amazon.com's purpose? → Sell products
+  - Main features? → Product listings, shopping cart, reviews
+
+### 💼 Developer-Client Dialogue:
+- Key Questions:
+  - "What is your primary business?"
+  - "Who is your target audience?"
 
 ---
 
-## 5. Essential Webpage Features
-### Checklist:
-| Feature | Description |
-|---------|-------------|
-| **Clear Navigation** | Menu bar, search functionality. |
-| **Responsive Design** | Mobile-friendly, fast loading. |
-| **SEO Optimization** | Meta tags, keyword integration. |
+## 📖 4. Vocabulary (Describing Websites)
+### ✨ Adjectives:
+- *"Google is the most **user-friendly** website"*
+- *"Wikipedia is highly **informative**"*
 
 ---
 
-## 6. Proposal Template (Learning Now Ltd.)
-| Section | Content |
-|---------|---------|
-| **Purpose** | Promote online language courses. |
-| **Users** | Young adults globally. |
-| **Features** | Interactive tools, audio support. |
+## ✔️ 5. Essential Webpage Features
+### 🧰 Checklist:
+| Característica       | Descripción                          |
+|-------------------------|--------------------------------------|
+| 🧭**Clear Navigation** | • Menú de navegación<br>• Búsqueda   |
+| 📱**Responsive Design**| • Compatible con móviles<br>• Carga rápida |
+| 🔍**SEO Optimization** | • Meta tags<br>• Palabras clave      |
 
 ---
 
-## 7. Presentation Skills (Product Design)
-### Vocabulary Matching:
-1. **to unveil** → *c. Show something for the first time.*  
-2. **Gantt chart** → *g. Project timeline visualization.*  
-
-### Presentation Phrases:
-- **Structure:** *"Firstly, I’ll discuss the key features."*  
-- **Conclusion:** *"In summary, this design targets tech-savvy adventurers."*  
+## 📄 6. Proposal Template (Learning Now Ltd.)
+| 📌 Section  | 📋 Content                          |
+|------------|------------------------------------|
+| 🎯**Purpose** | Promote online language courses   |
+| 👥**Users**   | Young adults globally             |
+| ✨**Features** | Interactive tools, audio support |
 
 ---
 
-### Resources:
-- [Presentation Tips](https://learnenglishteens.britishcouncil.org/exams/speaking-exams/oral-presentation)  
-- [Listening Exercise](https://learnenglish.britishcouncil.org/skills/listening/b2-listening/design-presentation)  
+## 🎤 7. Presentation Skills
+### 🔤 Vocabulary Matching:
+1. **to unveil** → c. Show something first time
+2. **Gantt chart** → g. Project timeline
 
-**Source:**  
-Olejniczak, M. (2011). *English for Information Technology 1*. Pearson.  
+### 🗣️ Presentation Phrases:
+- **Structure**: "Firstly, I'll discuss key features"
+- **Conclusion**: "In summary, this targets tech-savvy users"
