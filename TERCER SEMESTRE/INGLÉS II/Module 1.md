@@ -1,10 +1,6 @@
-# 🎓 Module 1: ENGLISH 2  
+# 📌 MODULE 1  
 
----
-
-## 📌 MODULE 1  
-
-### 🎯 Objectives:  
+## 🎯 Objectives:  
 - Describe browser problems.  
 - Explain advantages of mobile devices.  
 - Discuss the advantages and disadvantages of video conferencing.  
@@ -84,3 +80,9 @@
 ### 📝 Practice:
 - Translate sentences like:
   - `"If the new software is developed in Canada, the company will save $59,000."`
+ 
+---
+
+## 📚 Additional Resources:
+- 🔗 Liveworksheets links for extra grammar practice.
+- 📖 References: English for Information Technology 2 by David Hill.
