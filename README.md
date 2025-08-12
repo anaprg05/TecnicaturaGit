@@ -36,6 +36,15 @@
 | **Jueves**   | 🌐 Inglés II                          | Buccella, Liliana   |
 | **Viernes**  | 📋 Metodología de Sistemas            | Giordanini, Osvaldo |
 
+## 4° Semestre  
+|     DÍA      |                 MATERIA                |    PROFESOR/A       |
+|--------------|----------------------------------------|---------------------|
+| **Lunes**    | 🖥️ Programación IV                   | Betancud, Ariel     |
+| **Martes**   | 📊🔍 Intro. al Análisis de Datos - Gestión de Desarrollo de Software                 | Lucero, Natalia     |
+| **Miércoles**| 👨‍💻 Programación IV                   | Betancud, Ariel     |
+| **Jueves**   | 📝 Legislación                         | Sánchez, Miguel   |
+| **Viernes**  | 📋 Metodología de Sistemas II          | Giordanini, Osvaldo |
+
 ---
 
 ## 📌 Estructura Actual  
@@ -52,9 +61,12 @@
 │   └── 👩‍💻 PROGRAMACION II/
 │
 └── 📁 TERCER SEMESTRE/
-    ├── 🐘 BASE DE DATOS II/
-    ├── 🧠 PROGRAMACION III/
-    └── 🌍 INGLES II/
+│   ├── 🐘 BASE DE DATOS II/
+│   ├── 🧠 PROGRAMACION III/
+│   └── 🌍 INGLES II/
+└── 📁 TERCER SEMESTRE/
+    ├── 📊 INTRO. AL ANÁLISIS DE DATOS - GESTIÓN DE DESARROLLO DE SOFTWARE/
+    └── 🧠 PROGRAMACION IV/
 
 ```
 
