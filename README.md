@@ -60,7 +60,7 @@
 │   ├── 🌐 INGLES I/
 │   └── 👩‍💻 PROGRAMACION II/
 │
-└── 📁 TERCER SEMESTRE/
+├── 📁 TERCER SEMESTRE/
 │   ├── 🐘 BASE DE DATOS II/
 │   ├── 🧠 PROGRAMACION III/
 │   └── 🌍 INGLES II/
