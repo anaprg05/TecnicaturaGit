@@ -66,4 +66,4 @@ Responsibilidades:
 --
 Responsibilidades:
 - Configuración del logging para
-toda la aplicación.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+toda la aplicación.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>130</y><w>800</w><h>520</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>100</y><w>140</w><h>30</h></coordinates><panel_attributes>laboratorio_usuarios</panel_attributes><additional_attributes></additional_attributes></element></diagram>
