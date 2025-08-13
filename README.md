@@ -1,12 +1,16 @@
-# 📂 Repositorio Académico - Tecnicatura en Programación UTN FRSR  
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=500&color=58A6FF&width=435&lines=Bienvenido+a+mi+aprendizaje" alt="Banner de escritura animado">
-</div>
+
+# 📂 Repositorio Académico - Tecnicatura en Programación UTN FRSR  
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=500&color=58A6FF&width=435&lines=Bienvenido+a+mi+aprendizaje" alt="Banner de escritura animado">
 
 ---
 
 ## 📅 Organización por Semestres
 
+</div>
+
+<div align="center">
 
 ## 1° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
@@ -17,6 +21,9 @@
 | **Jueves**   | 🏢 Organización Empresarial           | Lucero, Natalia     |
 | **Viernes**  | 📐 Matemática                         | Giordanini, Osvaldo |
 
+</div>
+
+<div align="center">
 
 ## 2° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
@@ -25,7 +32,11 @@
 | **Martes**   | 🗃️ Base de Datos I                    | Lucero, Natalia     |
 | **Miércoles**| 👨‍💻 Programación II                    | Betancud, Ariel     |
 | **Jueves**   | 🌐 Inglés I                           | Buccella, Liliana   |
-| **Viernes**  | 🎲 Estadística                        | Giordanini, Osvaldo |
+| **Viernes**  | � Estadística                        | Giordanini, Osvaldo |
+
+</div>
+
+<div align="center">
 
 ## 3° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
@@ -36,6 +47,10 @@
 | **Jueves**   | 🌐 Inglés II                          | Buccella, Liliana   |
 | **Viernes**  | 📋 Metodología de Sistemas            | Giordanini, Osvaldo |
 
+</div>
+
+<div align="center">
+
 ## 4° Semestre  
 |     DÍA      |                 MATERIA                |    PROFESOR/A       |
 |--------------|----------------------------------------|---------------------|
@@ -44,6 +59,8 @@
 | **Miércoles**| 👨‍💻 Programación IV                   | Betancud, Ariel     |
 | **Jueves**   | 📝 Legislación                         | Sánchez, Miguel   |
 | **Viernes**  | 📋 Metodología de Sistemas II          | Giordanini, Osvaldo |
+
+</div>
 
 ---
 
@@ -69,9 +86,10 @@
     ├── 📊 INTRODUCCIÓN AL ANÁLISIS DE DATOS/
     ├── 🔍 GESTIÓN DE DESARROLLO DE SOFTWARE/
     └── 🧠 PROGRAMACION IV/
-
 ```
 
----
+<div align="center">
+  
+https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github - Grupo: Carpinchos Programando https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf
 
-[![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github)](https://github.com/anaprg05)  - Grupo: Carpinchos Programando ![carpincho](https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf)
+</div> 
