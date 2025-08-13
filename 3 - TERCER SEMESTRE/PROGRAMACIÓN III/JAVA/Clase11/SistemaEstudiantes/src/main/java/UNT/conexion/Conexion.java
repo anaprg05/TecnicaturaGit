@@ -10,7 +10,7 @@ public class Conexion {
         // Variable de conexión inicializada en 'null'
         Connection conexion = null;
         // Variables para la conexión a la base de datos
-        var baseDatos = "estudiantes2024";
+        var baseDatos = "estudiantes";
         var url = "jdbc:mysql://localhost:3306/"+baseDatos;
         var usuario = "root";
         var password = "admin";

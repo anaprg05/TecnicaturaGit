@@ -20,7 +20,7 @@ public class EstudianteDAO {
 
         // Objeto de tipo Conexion
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes.estudiantes2024 ORDER BY idEstudiante";
+        String sql = "SELECT * FROM estudiantes.estudiantes2024 ORDER BY idestudiantes2024";
         try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
