@@ -90,6 +90,6 @@
 
 <div align="center">
   
-https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github - Grupo: Carpinchos Programando https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf
+[![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-blue?logo=github)](https://github.com/anaprg05)  - Grupo: Carpinchos Programando ![carpincho](https://github.com/user-attachments/assets/34c61984-7f45-403c-a3ae-a57dd16a27bf)
 
 </div> 
