@@ -1,113 +1,114 @@
-# Introducción al Análisis de Datos
+# 📊 Introducción al Análisis de Datos
 
-## ¿Qué es el Análisis Exploratorio de Datos (EDA)?
+## 🔍 ¿Qué es el Análisis Exploratorio de Datos (EDA)?
 
-Proceso desarrollado por el científico **John W. Turkey** para el tratamiento estadístico de muestras recogidas durante la investigación.
+🧪 *Desarrollado por John W. Turkey*  
+Proceso estadístico para examinar muestras de investigación.
 
-**Definición:**  
-Proceso de conocer en detalle los datos, darles sentido, visualizarlos por primera vez y analizar su comportamiento. Incluye identificar variables, sus tipos, y formular preguntas para transformarlos en información útil.
+**📚 Definición:**  
+Proceso de conocer en detalle los datos, darles sentido, visualizarlos por primera vez y analizar su comportamiento. Incluye:
 
----
-
-## Procesos básicos para un EDA
-
-1. **Transformar los datos**  
-   - Manejar valores nulos, faltantes o atípicos
-   - Evaluar necesidad de reducir dimensionalidad
-
-2. **Visualizar**  
-   - Crear representaciones gráficas de los datos
-
-3. **Analizar e Interpretar**  
-   - Examinar datos a través de visualizaciones
-
-4. **Documentar**  
-   - Registrar todas las gráficas y estadísticas generadas
+- Identificar variables y sus tipos  
+- Formular preguntas clave  
+- Transformar datos en información útil  
 
 ---
 
-## ¿Por qué realizar un EDA?
+## 🛠️ Procesos básicos para un EDA
 
-### 📊 Organizar y entender las variables
-- Identificar tipos de variables y categorías
-- Determinar el tipo de análisis posible
+1. **🔄 Transformar los datos**  
+   - Manejar valores nulos, faltantes o atípicos  
+   - Evaluar reducción de dimensionalidad  
 
-### 🔗 Establecer relaciones entre variables
-- Analizar cómo se modifican las variables entre sí
-- Descubrir patrones ocultos (data insights)
+2. **📊 Visualizar**  
+   - Crear representaciones gráficas  
 
-### 🤖 Escoger el modelo correcto
-- Identificar variables relevantes
-- Determinar qué modelo se ajusta mejor a los datos
+3. **🧐 Analizar e Interpretar**  
+   - Examinar datos a través de visualizaciones  
 
-### 🎯 Toma de decisiones basada en datos
-- Usar hechos y métricas para guiar decisiones estratégicas
+4. **📝 Documentar**  
+   - Registrar gráficas y estadísticas generadas  
 
 ---
 
-## Pasos para realizar un EDA
+## ❓ ¿Por qué realizar un EDA?
 
-### 🔍 PASO 1: Hacer preguntas
-- ¿Qué te gustaría encontrar?
-- ¿Cuál es el objetivo del análisis?
-- Generar una guía para la exploración
+### 🔎 Organizar y entender
+- Identificar tipos de variables  
+- Determinar análisis posibles  
 
-### 📏 PASO 2: Determinar el tamaño de los datos
-- Número de observaciones y variables
-- ¿Necesito todos los datos?
+### 🔗 Establecer relaciones
+- Analizar correlaciones  
+- Descubrir patrones ocultos  
 
-### 🗂 PASO 3: Categorizar las variables
-- Variables categóricas vs. continuas
-- Estrategias de exploración por tipo
+### 🤖 Escoger modelos
+- Identificar variables relevantes  
+- Seleccionar mejor modelo  
 
-### 🧹 PASO 4: Limpieza y validación
-- Valores faltantes (proporción y tratamiento)
-- Distribución de datos
-- Valores atípicos
-
-### ↔️ PASO 5: Establecer relaciones
-- Relaciones entre variables (X, Y, Z)
-- Significado de agrupaciones y patrones
-
-> **Nota:** Este proceso es cíclico pero debe culminar para obtener valor.
+### 🎯 Decisiones basadas en datos
+- Usar métricas para estrategias  
 
 ---
 
-# Programación Orientada a Objetos (POO)
+## 🚀 Pasos para realizar un EDA
 
-## ¿Qué es la POO?
+### 1️⃣ Hacer preguntas
+- ¿Qué buscar?  
+- ¿Cuál es el objetivo?  
 
-Paradigma de programación basado en **objetos** que optimiza aplicaciones.
+### 2️⃣ Determinar tamaño
+- N° observaciones/variables  
+- ¿Todos los datos son necesarios?  
 
-### Modelos de resolución de problemas:
-1. Lenguajes Imperativos
-2. Funcionales
-3. Declarativos
-4. **POO** (nos enfocamos en este)
+### 3️⃣ Categorizar variables
+- Categóricas vs. continuas  
+- Estrategias por tipo  
 
-## ¿Qué son los objetos?
+### 4️⃣ Limpieza y validación
+- Valores faltantes  
+- Distribución y atípicos  
 
-Entidades del mundo real que pueden ser manipuladas (edificios, artefactos, seres humanos).
+### 5️⃣ Establecer relaciones
+- Relaciones X/Y/Z  
+- Significado de patrones  
 
-### Características de los objetos:
-- **Datos/Atributos:** Características del objeto
-- **Funcionalidad/Métodos:** Acciones que realiza
+> 💡 *Nota:* Proceso cíclico que debe culminar para obtener valor.
 
-## Ventajas de POO
-- Ideal para trabajo en equipo
-- Fácil actualización y organización
-- Simplifica añadir nuevas funcionalidades
+---
 
-## Clases: Moldes de objetos
+# 🧩 Programación Orientada a Objetos (POO)
 
-### Estructura de una clase:
-1. **Nombre**  
-   - Debe representar su propósito claramente
+## 🏗️ ¿Qué es la POO?
 
-2. **Atributos (variables)**  
-   - Características óptimas de la clase
+Paradigma basado en **objetos** que optimiza aplicaciones.
 
-3. **Métodos (funciones)**  
-   - Acciones que realiza la clase (ej: validar usuario)
+### Modelos de resolución:
+1. Imperativos  
+2. Funcionales  
+3. Declarativos  
+4. **POO** *(nuestro foco)*  
 
-> **Analogía:** Como un molde de galletas donde cada galleta (objeto) tiene sus particularidades (atributos).
+## 🧱 ¿Qué son los objetos?
+
+Entidades del mundo real con:  
+- **📌 Atributos:** Características  
+- **⚙️ Métodos:** Acciones  
+
+## 💎 Ventajas de POO
+- 👥 Ideal para equipos  
+- 🔄 Fácil actualización  
+- ➕ Nueva funcionalidad simple  
+
+## 🍪 Clases: Moldes de objetos
+
+### Estructura:
+1. **🏷️ Nombre**  
+   - Representa propósito  
+
+2. **📊 Atributos**  
+   - Características óptimas  
+
+3. **🛠️ Métodos**  
+   - Acciones (ej: validar usuario)  
+
+> 🍪 *Analogía:* Molde de galletas donde cada una (objeto) tiene particularidades (atributos).
