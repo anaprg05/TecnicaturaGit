@@ -1,0 +1,8 @@
+# **Sistema Estudiantes**
+1. Listar estudiantes.
+2. Buscar estudiante.
+3. Agregar estudiante.
+4. Modificar estudiante.
+5. Eliminar estudiante.
+6. Salir.
+> Elige una opción: 
