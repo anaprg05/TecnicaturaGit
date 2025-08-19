@@ -172,7 +172,7 @@ public class EstudianteDAO {
          */
 
         // Eliminar estudiante
-        var estudianteEliminar = new Estudiante(3);
+        var estudianteEliminar = new Estudiante(5);
         var eliminado = estudianteDAO.eliminarEstudiante(estudianteEliminar);
         if(eliminado)
             System.out.println("Estudiante eliminado: " + estudianteEliminar);
@@ -188,13 +188,13 @@ public class EstudianteDAO {
         System.out.println();
 
         // Modificar estudiante
-        var estudianteModificado = new Estudiante(6, "Nelson", "Ríos", "11 3456-2348", "nrios@gmail.com");
-        var modificado = estudianteDAO.modificarEstudiante(estudianteModificado);
+        // var estudianteModificado = new Estudiante(6, "Nelson", "Ríos", "11 3456-2348", "nrios@gmail.com");
+        // var modificado = estudianteDAO.modificarEstudiante(estudianteModificado);
         // Comprobación
-        if(modificado)
-            System.out.println("Estudiante modificado correctamente: " + estudianteModificado);
-        else
-            System.out.println("No se modificó el estudiante: " + estudianteModificado);
+        // if(modificado)
+        //    System.out.println("Estudiante modificado correctamente: " + estudianteModificado);
+        // else
+        //    System.out.println("No se modificó el estudiante: " + estudianteModificado);
 
         /*
         // Buscar por ID

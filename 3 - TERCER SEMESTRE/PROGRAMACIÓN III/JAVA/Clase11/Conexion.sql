@@ -3,7 +3,7 @@
 SELECT * FROM estudiantes.estudiantes2024;
 
 -- INSERT INTO: Insertar un estudiante
-INSERT INTO estudiantes.estudiantes2024(nombre, apellido, telefono, email) VALUES ("Ana Paula", "Ríos Garín", "11 9825-0874", "apriosgarin@gmail.com");
+INSERT INTO estudiantes.estudiantes2024(nombre, apellido, telefono, email) VALUES ("Lautaro", "Ríos Garín", "11 3462-8627", "lriosgarin@gmail.com");
 
 -- UPDATE: Modificar/actualizar un estudiante
 UPDATE estudiantes.estudiantes2024 SET nombre = "Ana", apellido = "Garín", email = "agarin@gmail.com" WHERE idestudiantes2024 = 1;
