@@ -36,7 +36,7 @@ public class SistemaEstudiantesApp {
     }
 
     // Método ejecutarOpciones
-    private static void ejecutarOpciones(Scanner consola, EstudianteDAO estudianteDao){
+    private static boolean ejecutarOpciones(Scanner consola, EstudianteDAO estudianteDao){
         var opcion = Integer.parseInt(consola.nextLine());
         var salir = false;
         switch (opcion){
@@ -44,17 +44,21 @@ public class SistemaEstudiantesApp {
                 System.out.println("Listado de Estudiantes");
                 var estudiantes = estudianteDao.listarEstudiantes();
                 estudiantes.forEach(System.out::println);
+
+                System.out.println();
             }
 
             case 2 -> {
                 System.out.println("Introducir ID del estudiante que desea buscar: ");
                 var idEstudiante = Integer.parseInt(consola.nextLine());
                 var estudiante = new Estudiante(idEstudiante);
-                var encontrado = estudianteDao.buscarEstudiantePorId(estudiante);
+                var encontrado = estudianteDao.bucarEstudiantePorId(estudiante);
                 if(encontrado)
                     System.out.println("Estudiante encontrado: " + estudiante);
                 else
                     System.out.println("Estudiante NO encontrado: " + estudiante);
+
+                System.out.println();
             }
 
             case 3 -> {
@@ -74,6 +78,8 @@ public class SistemaEstudiantesApp {
                     System.out.println("Estudiante agregado: " + estudiante);
                 else
                     System.out.println("Estudiante NO agregado: " + estudiante);
+
+                System.out.println();
             }
 
             case 4 -> {
@@ -95,6 +101,8 @@ public class SistemaEstudiantesApp {
                     System.out.println("Estudiante modificado: " + estudiante);
                 else
                     System.out.println("Estudiante NO modificado: " + estudiante);
+
+                System.out.println();
             }
 
             case 5 -> {
@@ -108,6 +116,8 @@ public class SistemaEstudiantesApp {
                     System.out.println("Estudiante eliminado: " + estudiante);
                 else
                     System.out.println("Estudiante NO eliminado: " + estudiante);
+
+                System.out.println();
             }
 
             case 6 -> {
@@ -120,4 +130,4 @@ public class SistemaEstudiantesApp {
         } // Fin Switch
         return salir;
     } // Fin Método ejecutarOpciones
-}
+} // Fin Clase
