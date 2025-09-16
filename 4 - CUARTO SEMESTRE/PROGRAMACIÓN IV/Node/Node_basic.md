@@ -21,7 +21,7 @@ Uno de los usos más comunes de Node.js es el desarrollo de servidores web. En u
 - ⚡ Cuando nos encontramos con tareas intensivas en CPU, Node.js tiene el módulo de Worker Threads para crear nuevos hilos. Cada hilo tiene su propia instancia de Node y del motor de JavaScript (para evitar problemas de concurrencia), por lo que tiene un impacto en la memoria.
 - 📊 Calidad irregular en los módulos de npm. Existen paquetes muy estables y también otros que están poco probados y no tienen mucha documentación.
 
-```
+```mermaid
 flowchart TD
     subgraph Input [Entrada]
         A[Function]
