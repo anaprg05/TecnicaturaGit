@@ -4,7 +4,7 @@ import tareasRoutes from './src/router/tareas.routes.js';
 import authRoutes from './src/router/auth.routes.js';
 
 const app = express();
-
+//Middlewares
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
