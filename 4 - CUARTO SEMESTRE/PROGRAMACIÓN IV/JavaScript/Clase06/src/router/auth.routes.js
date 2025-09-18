@@ -9,6 +9,6 @@ router.post("/signup", singup);
 
 router.post("/signout", singout);
 
-router.post("/profile", profile);
+router.get("/profile", profile);
 
 export default router;
