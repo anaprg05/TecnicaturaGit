@@ -1,0 +1,156 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>360</x><y>450</y><w>170</w><h>170</h></coordinates><panel_attributes>Reserva
+--
+- idReserva: int
+- fechaReserva: Date
+- precioTotal: double
+- estado: String
+- metodoPago: String
+--
++ calcularPrecioTotal()
++ generarVouchers()
++ confirmarPago()
++ cancelarReserva()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>450</y><w>170</w><h>180</h></coordinates><panel_attributes>Cliente 
+--
+- idCliente: int
+- nombre: String
+- email: String
+- telefono: String
+- documento: String
+--
++ registrarse()
++ buscarVuelos()
++ confirmarCompra()
++ solicitarReembolso()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>530</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>710</y><w>170</w><h>170</h></coordinates><panel_attributes>Vuelo
+--
+- idVuelo: int
+- origen: String
+- destino: String
+- fechaSalida: DateTime
+--
++ verificarDisponibilidad()
++ reservarAsiento()
++ obtenerPrecio()
++ cancelarAsiento()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>790</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>630</y><w>170</w><h>170</h></coordinates><panel_attributes>Hotel
+--
+- idHotel: int
+- nombre: String
+- ubicacion: String
+- categoria: int
+--
++ verificarDisponibilidad()
++ reservarHabitación()
++ obtenerPrecio()
++ cancelarReserva()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>700</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>150</y><w>30</w><h>670</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;650</additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>810</y><w>170</w><h>160</h></coordinates><panel_attributes>Excursión
+--
+- idExcursion: int
+- nombre: String
+- descripcion: String
+- duracion: int
+--
++ verificarDisponibilidad()
++ reservarCupo()
++ obtenerPrecio()
++ cancelarRerseva()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>880</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>660</y><w>170</w><h>130</h></coordinates><panel_attributes>Consulta
+--
+- idConsulta: int
+- mensaje: String
+- email: String
+--
++ enviar()
++ responder()
++ marcarResuelta()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>620</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>100</y><w>170</w><h>140</h></coordinates><panel_attributes>Reembolso
+--
+- idReembolso: int
+- motivo: String
+- estado: String
+--
++ solicitar()
++ aprobar()
++ rechazar()
++ procesarDevolucion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>150</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>300</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>250</y><w>170</w><h>140</h></coordinates><panel_attributes>Pago
+--
+- idPago: int
+- monto: String
+- fechaPago: Date
+--
++ procesarPago()
++ validarTarjeta()
++ emitirRecibo()
++ reembolsar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>90</y><w>170</w><h>160</h></coordinates><panel_attributes>AgenteViajes
+--
+- idAgente: int
+- nombre: String
+- email: String
+- nivelAcceso: String
+--
++ administrarCatalogo()
++ modificarPrecio()
++ gestionarReembolso()
++ responderConsultas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>160</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1040</x><y>110</y><w>140</w><h>140</h></coordinates><panel_attributes>Promocion
+--
+- idPromocion: int
+- descripcion: String
+- descuento: double
+--
++ aplicarDescuento()
++ validarVigencia()
++ activar()
++ desactivar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>160</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>700</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>790</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>400</y><w>140</w><h>140</h></coordinates><panel_attributes>Voucher
+--
+- idVoucher: int
+- tipo: String
+- codigoQR: double
+--
++ generar()
++ enviarPorEmail()
++ validar()
++ imprimir()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>460</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>590</y><w>390</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>370;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>710</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>880</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1040</x><y>590</y><w>30</w><h>320</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;300</additional_attributes></element><element><id>Relation</id><coordinates><x>1040</x><y>710</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>670</y><w>170</w><h>110</h></coordinates><panel_attributes>/&lt;&lt;abstract&gt;&gt; Servicio/
+--
+- precio: double
+- disponibilidad: boolean
+--
++ verificarDisponibilidad()
++ obtenerPrecio()
++ reservar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>180</y><w>170</w><h>70</h></coordinates><panel_attributes>_Leyenda de Relaciones_
+--
+Herencia: 
+Dependencia: 
+group=group-0</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>200</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-
+group=group-0</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>220</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.
+group=group-0</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>530</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1790</x><y>10</y><w>120</w><h>40</h></coordinates><panel_attributes>Validar datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>10</y><w>120</w><h>40</h></coordinates><panel_attributes>Registrarse</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>90</y><w>120</w><h>40</h></coordinates><panel_attributes>Seleccionar 
+destino</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1790</x><y>90</y><w>120</w><h>40</h></coordinates><panel_attributes>Verificar
+disponibilidad</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>150</y><w>120</w><h>40</h></coordinates><panel_attributes>Buscar vuelos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1800</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>Seleccionar
+alojamiento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1800</x><y>240</y><w>120</w><h>40</h></coordinates><panel_attributes>Elegir
+excursiones</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>210</y><w>120</w><h>40</h></coordinates><panel_attributes>Reserva</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>270</y><w>120</w><h>40</h></coordinates><panel_attributes>Confirmar
+compra</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>330</y><w>120</w><h>40</h></coordinates><panel_attributes>Cancelar reserva</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1800</x><y>330</y><w>120</w><h>40</h></coordinates><panel_attributes>Solicitar
+reembolso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>1440</x><y>520</y><w>60</w><h>140</h></coordinates><panel_attributes>Agencia
+de
+Viajes</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1600</x><y>380</y><w>120</w><h>40</h></coordinates><panel_attributes>Enviar consulta</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>220</y><w>140</w><h>200</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;120;180</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>210</y><w>140</w><h>160</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;120;140</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>200</y><w>140</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;120;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>190</y><w>140</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;120;40</additional_attributes></element><element><id>Relation</id><coordinates><x>1710</x><y>0</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1710</x><y>190</y><w>110</w><h>60</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>90;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>1710</x><y>220</y><w>110</w><h>60</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>90;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1710</x><y>330</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>160</y><w>140</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;30;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>100</y><w>140</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;80;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>20</y><w>140</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;150;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1710</x><y>90</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>1430</x><y>170</y><w>60</w><h>110</h></coordinates><panel_attributes>Cliente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1590</x><y>450</y><w>120</w><h>40</h></coordinates><panel_attributes>Administrar
+catálogo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1590</x><y>510</y><w>120</w><h>40</h></coordinates><panel_attributes>Modificar precios</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1590</x><y>570</y><w>120</w><h>40</h></coordinates><panel_attributes>Cargar
+promociones</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1590</x><y>640</y><w>120</w><h>40</h></coordinates><panel_attributes>Gestionar
+reembolsos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1590</x><y>700</y><w>120</w><h>40</h></coordinates><panel_attributes>Responder
+consultas</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1490</x><y>570</y><w>120</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;100;150</additional_attributes></element><element><id>Relation</id><coordinates><x>1490</x><y>560</y><w>120</w><h>120</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;100;100</additional_attributes></element><element><id>Relation</id><coordinates><x>1490</x><y>550</y><w>120</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;100;40</additional_attributes></element><element><id>Relation</id><coordinates><x>1490</x><y>520</y><w>120</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;30;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1490</x><y>460</y><w>120</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;70;100;10</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1790</x><y>510</y><w>120</w><h>40</h></coordinates><panel_attributes>Aplicar
+descuentos</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1700</x><y>510</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>1440</x><y>800</y><w>80</w><h>150</h></coordinates><panel_attributes>Sistema
+de
+Pago
+(externo)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1580</x><y>780</y><w>120</w><h>40</h></coordinates><panel_attributes>Generar vouchers</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1580</x><y>830</y><w>120</w><h>50</h></coordinates><panel_attributes>Calcular precio
+total</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1580</x><y>890</y><w>120</w><h>40</h></coordinates><panel_attributes>Procesar pago</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1780</x><y>780</y><w>120</w><h>40</h></coordinates><panel_attributes>Enviar email</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1690</x><y>780</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1500</x><y>850</y><w>100</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;80;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1500</x><y>830</y><w>100</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1500</x><y>790</y><w>100</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;40;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>800</y><w>170</w><h>110</h></coordinates><panel_attributes>Catalogo
+--
+- 
+--
++ </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>880</y><w>170</w><h>120</h></coordinates><panel_attributes>Destino
+--
+- idDestino: int
+- nombre: String
+- pais: String
+--
++ obtenerHoteles()
++ obtenerExcursiones()
++ actualizarInfo()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>590</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>
